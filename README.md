@@ -1,7 +1,7 @@
 # The Pack App 🤯
 
 ## Description
-TBD
+Coming Soon
 
 ## Team
 - Estu
