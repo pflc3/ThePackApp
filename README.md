@@ -4,4 +4,4 @@
 Coming Soon
 
 ## Team
-- Estu
+- Estuardo
