@@ -4,5 +4,5 @@
 Coming Soon
 
 ## Team
-- Estu
+- Estuardo
 - Bradley
