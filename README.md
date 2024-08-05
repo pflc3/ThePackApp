@@ -5,3 +5,4 @@ Coming Soon
 
 ## Team
 - Estu
+- Trendel
