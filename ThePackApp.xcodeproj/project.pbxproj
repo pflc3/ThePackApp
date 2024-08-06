@@ -12,6 +12,7 @@
 		E88C99BF2C5EA69400C22347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C99BE2C5EA69400C22347 /* Assets.xcassets */; };
 		E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */; };
 		E88C99C92C5EA6E000C22347 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C82C5EA6E000C22347 /* README.md */; };
+		E89020452C62A9C800895CC5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E89020442C62A9C800895CC5 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E88C99BE2C5EA69400C22347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E88C99C82C5EA6E000C22347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E89020442C62A9C800895CC5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		E88C99AE2C5EA69200C22347 = {
 			isa = PBXGroup;
 			children = (
+				E89020442C62A9C800895CC5 /* .gitignore */,
 				E88C99C82C5EA6E000C22347 /* README.md */,
 				E88C99B92C5EA69200C22347 /* ThePackApp */,
 				E88C99B82C5EA69200C22347 /* Products */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89020452C62A9C800895CC5 /* .gitignore in Resources */,
 				E88C99C92C5EA6E000C22347 /* README.md in Resources */,
 				E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */,
 				E88C99BF2C5EA69400C22347 /* Assets.xcassets in Resources */,
