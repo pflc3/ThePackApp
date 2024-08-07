@@ -6,6 +6,7 @@ Dog app
 ## Team
 - Estuardo
 - Bradley
+- Manno
 - Fatoumata
 - Trendel
 - Pamela
