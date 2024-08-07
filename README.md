@@ -5,3 +5,4 @@ Dog app
 
 ## Team
 - Estuardo
+- Bradley
