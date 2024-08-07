@@ -5,3 +5,5 @@ Dog app description
 
 ## Team
 - Estuardo
+- Bradley
+- Fatoumata
