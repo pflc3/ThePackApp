@@ -7,3 +7,7 @@ Dog app
 - Estuardo
 - Bradley
 - Manno
+- Fatoumata
+- Trendel
+- Pamela
+- Nathaniel
