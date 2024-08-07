@@ -1,7 +1,7 @@
 # The Pack App 🤯
 
 ## Description
-Dog app
+Dog app description
 
 ## Team
 - Estuardo
