@@ -9,3 +9,4 @@ Dog app description
 - Fatoumata
 - Nate
 - Trendel
+- Pamela
