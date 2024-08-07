@@ -7,3 +7,4 @@ Dog app description
 - Estuardo
 - Bradley
 - Fatoumata
+- Trendel
