@@ -1,6 +1,6 @@
 # The Pack App 🤯
 
-## Description
+## Description!
 Dog app description
 
 ## Team
