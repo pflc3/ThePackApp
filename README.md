@@ -7,4 +7,5 @@ Dog app description
 - Estuardo
 - Bradley
 - Fatoumata
+- Nate
 - Trendel
