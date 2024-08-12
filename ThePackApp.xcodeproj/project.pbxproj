@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E88C99BB2C5EA69200C22347 /* ThePackAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C99BA2C5EA69200C22347 /* ThePackAppApp.swift */; };
+		E86627362C6A5B3800E84A4C /* PackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86627352C6A5B3800E84A4C /* PackApp.swift */; };
 		E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C99BC2C5EA69200C22347 /* ContentView.swift */; };
 		E88C99BF2C5EA69400C22347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C99BE2C5EA69400C22347 /* Assets.xcassets */; };
 		E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */; };
@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E86627352C6A5B3800E84A4C /* PackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackApp.swift; sourceTree = "<group>"; };
 		E88C99B72C5EA69200C22347 /* ThePackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E88C99BA2C5EA69200C22347 /* ThePackAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePackAppApp.swift; sourceTree = "<group>"; };
 		E88C99BC2C5EA69200C22347 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E88C99BE2C5EA69400C22347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		E88C99B92C5EA69200C22347 /* ThePackApp */ = {
 			isa = PBXGroup;
 			children = (
-				E88C99BA2C5EA69200C22347 /* ThePackAppApp.swift */,
+				E86627352C6A5B3800E84A4C /* PackApp.swift */,
 				E88C99BC2C5EA69200C22347 /* ContentView.swift */,
 				E88C99BE2C5EA69400C22347 /* Assets.xcassets */,
 				E88C99C02C5EA69400C22347 /* Preview Content */,
@@ -146,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */,
-				E88C99BB2C5EA69200C22347 /* ThePackAppApp.swift in Sources */,
+				E86627362C6A5B3800E84A4C /* PackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
