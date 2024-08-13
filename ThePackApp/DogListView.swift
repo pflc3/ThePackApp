@@ -9,7 +9,14 @@ import SwiftUI
 
 struct DogListView: View {
     var body: some View {
-        Text("Dog List View!")
+        VStack {
+            Text("Your Dogs!")
+            DogRow()
+            DogRow()
+            DogRow()
+            
+        }
+        Spacer()
     }
 }
 
