@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SurveyView: View {
     var body: some View {
-        Text("Survey Viewwwwwwwww")
+        Text("Name (First)")
+        Text("Name (Last)")
+        Text("Choose up to 3 dog breeds")
     }
 }
 
