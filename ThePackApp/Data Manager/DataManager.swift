@@ -2,8 +2,6 @@
 //  DataManager.swift
 //  BucketList
 //
-//  Created by Gcode on 8/6/24.
-//
 
 import Foundation
 import SwiftUI
