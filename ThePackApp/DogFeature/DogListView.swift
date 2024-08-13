@@ -2,8 +2,6 @@
 //  DogListView.swift
 //  ThePackApp
 //
-//  Created by Gcode on 8/13/24.
-//
 
 import SwiftUI
 
