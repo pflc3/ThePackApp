@@ -6,15 +6,6 @@
 //
 
 /*
-        Text("Name (First)")
-        Text("Name (Last)")
-        Text("Choose up to 3 dog breeds")
-        Text("Experienced with dog owning")
-        Text("beginner, Intermediate, experienced")
-        Text("sign in/sign up")
-        Text("username")
-        Text("password")
-        Text("*up to 8 letters")
 */
 
 import SwiftUI
@@ -29,32 +20,38 @@ struct SurveyView: View {
         @State var Password: String = ""
         
         NavigationView {
-            VStack(alignment: .leading, spacing: 30) {
+            VStack(alignment: .leading, spacing: 20) {
                 // Question 1
-                Text("1. What is your First/Last name?")
+                Text("1. What is your first/last name?")
                     .font(.headline)
                 TextField("Enter your name", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 // Question 2
-                Text("2. Choose Up To 3 Dog Breeds?")
+                Text("2. Choose up to 3 dog breeds? (At least 1)")
                     .font(.headline)
-                TextField("Name 3 breeds", text: $Dogbreed )
+                TextField("Name first dog breed", text: $Dogbreed )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
+                TextField("Name second dog breed", text: $Dogbreed )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
+                TextField("Name third dog breed", text: $Dogbreed )
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
                 
                 // Question 3
-                Text("3. What is your Experience With Dog Owning?")
+                Text("3. What's your experience with dog owning?")
                     .font(.headline)
-                TextField(" pick a choice", text: $Experienced)
+                TextField("Pick a choice", text: $Experienced)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Text("4.UserName")
+                Text("UserName")
                     .font(.headline)
                 TextField("Enter Your Username", text: $option)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Text("5.Password?")
+                Text("Password")
                     .font(.headline)
                 TextField("Enter your password", text: $Password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
