@@ -37,7 +37,7 @@ struct SurveyView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 // Question 2
-                Text("2. Choose Up To 3 Dog Breeds?")
+                Text("2. Choose Up To 3 Dog Breeds")
                     .font(.headline)
                 TextField("Name 3 breeds", text: $Dogbreed )
                     .textFieldStyle(RoundedBorderTextFieldStyle())

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Golden Retriever",
+        "age": "0-6+ years",
+        "details": "Golden Retrievers are friendly, intelligent, and energetic dogs known for their loyalty and affectionate nature. They have a distinctive golden coat, enjoy being active and social, and are often great with families and other pets. They are also highly trainable and excel in various activities and roles, including as service dogs."
+    },
+    
+    {
+        "name": "Siberian Husky",
+        "age":"0-8+ years" ,
+        "description":"Siberian Huskies are energetic, independent, and friendly dogs known for their striking blue eyes and thick double coat. They have a strong work ethic, originally bred for sledding, and are highly social and playful. They require regular exercise and mental stimulation and are known for their vocal and spirited nature." ,
+
+    }
+]
+
+
+
