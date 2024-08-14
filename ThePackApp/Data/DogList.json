@@ -1,17 +1,38 @@
 [
     {
-        "name": "Golden Retriever",
-        "age": "0-6+ years",
-        "details": "Golden Retrievers are friendly, intelligent, and energetic dogs known for their loyalty and affectionate nature. They have a distinctive golden coat, enjoy being active and social, and are often great with families and other pets. They are also highly trainable and excel in various activities and roles, including as service dogs."
-    },
-    
-    {
-        "name": "Siberian Husky",
-        "age":"0-8+ years" ,
-        "description":"Siberian Huskies are energetic, independent, and friendly dogs known for their striking blue eyes and thick double coat. They have a strong work ethic, originally bred for sledding, and are highly social and playful. They require regular exercise and mental stimulation and are known for their vocal and spirited nature." ,
+       
+       [
+           {
+               "name": "Golden Retriever",
+               "lifeStage": "Puppy",
+               "age": "0-15 months",
+               "key": "value"
+               "Descrip1": "Golden Retrievers are very energetic"
+               "Descrip2": "Very dependent as newborns"
+               "Descrip3": "Around 9-12 months they reach full size"
+               "MedAdv1": "Need to ensure vaccinations and start parasite control (0-6 months)"
+               "MedAdv2": "Need dental care and alot of socialization (6-12 months)"
+               "MedAdv3": "Need vet check-ups, weight management, and good exercise (12-15 months)"
+               "FoodAdv1": "Feed a high-quality puppy food designed for large breeds.(0-6 months)
+               "FoodAdv2": "Transition to adult food as advised by your vet. (6-12 months)"
+               "FoodAdv3": " Maintain a balanced diet; monitor weight and adjust portions as needed. (12-15 months)"
+               "Ttwaf1":"Monitor for signs of hip dysplasia, allergies, and dental problems."
+               "Ttwaf2":"Check for excessive shedding, mats, or skin issues."
+               "Ttwaf3":"Ensure they get adequate exercise to prevent obesity and maintain joint health.
 
-    }
-]
+               
+           
+           },
+           
+           {
+               "name": "Siberian Husky",
+               "age":"0-8+ years" ,
+               "description":"Siberian Huskies are energetic, independent, and friendly dogs known for their striking blue eyes and thick double coat. They have a strong work ethic, originally bred for sledding, and are highly social and playful. They require regular exercise and mental stimulation and are known for their vocal and spirited nature." ,
+
+           }
+       ]
+
+
 
 
 
