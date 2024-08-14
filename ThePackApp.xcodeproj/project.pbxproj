@@ -65,7 +65,6 @@
 		E846BBE82C6C005700A0A199 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				BFE7ED2D2C6BD5330013C661 /* DataManager.swift */,
 				BFE7ED2B2C6BD50B0013C661 /* DogList.json */,
 			);
 			path = Data;
@@ -98,6 +97,7 @@
 				E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */,
 				E846BBF02C6C02CB00A0A199 /* PostRow.swift */,
 				E846BBF42C6C03FB00A0A199 /* PostDetailView.swift */,
+				BFE7ED2D2C6BD5330013C661 /* DataManager.swift */,
 			);
 			path = PostBoardFeature;
 			sourceTree = "<group>";
