@@ -73,8 +73,8 @@ struct SurveyView: View {
                     
                     Spacer()
                     
-                    // Submit Button (no functionality rn)
-                    Button(action: {}) {
+                    // Submit Button
+                      NavigationLink(destination: HomeView()) {
                         Text("Submit")
                             .frame(maxWidth: .infinity)
                             .padding()
