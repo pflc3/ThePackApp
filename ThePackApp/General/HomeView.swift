@@ -1,11 +1,11 @@
 //
-//  MainScreenView.swift
+//  HomeView.swift
 //  ThePackApp
 //
 
 import SwiftUI
 
-struct MainScreenView: View {
+struct HomeView: View {
     var body: some View {
         // Dog facts array
         let dogFacts: [String] = [
@@ -35,7 +35,7 @@ struct MainScreenView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                // Title of mainscreen
+                // Title of homeView
                 Text("Welcome to The Pack")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -148,5 +148,5 @@ struct MainScreenView: View {
 }
 
 #Preview {
-    MainScreenView()
+    HomeView()
 }

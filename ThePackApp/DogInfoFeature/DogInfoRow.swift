@@ -1,11 +1,11 @@
 //
-//  DogRow.swift
+//  DogInfoRow.swift
 //  ThePackApp
 //
 
 import SwiftUI
 
-struct DogRow: View {
+struct DogInfoRow: View {
     var body: some View {
         HStack {
             Image(systemName: "pawprint.fill")
