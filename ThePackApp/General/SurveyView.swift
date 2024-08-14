@@ -2,20 +2,6 @@
 //  SurveyView.swift
 //  ThePackApp
 //
-//  Created by Gcode on 8/12/24.
-//
-
-/*
-        Text("Name (First)")
-        Text("Name (Last)")
-        Text("Choose up to 3 dog breeds")
-        Text("Experienced with dog owning")
-        Text("beginner, Intermediate, experienced")
-        Text("sign in/sign up")
-        Text("username")
-        Text("password")
-        Text("*up to 8 letters")
-*/
 
 import SwiftUI
 
@@ -23,44 +9,51 @@ struct SurveyView: View {
     var body: some View {
         // Declare variables
         @State var name: String = ""
-        @State var Dogbreed: String = ""
-        @State var Experienced: String = ""
-        @State var option: String = ""
-        @State var Password: String = ""
+        @State var dogBreed1: String = ""
+        @State var dogBreed2: String = ""
+        @State var dogBreed3: String = ""
+        @State var experience: String = ""
+        @State var username: String = ""
+        @State var password: String = ""
         
         NavigationView {
-            VStack(alignment: .leading, spacing: 30) {
-                // Question 1
-                Text("1. What is your First/Last name?")
+            VStack(alignment: .leading, spacing: 20) {
+                // Question 1: Name
+                Text("1. What is your first/last name?")
                     .font(.headline)
                 TextField("Enter your name", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                // Question 2
-                Text("2. Choose Up To 3 Dog Breeds?")
+                // Question 2: Dog Breeds
+                Text("2. Choose up to 3 dog breeds? (At least 1)")
                     .font(.headline)
-                TextField("Name 3 breeds", text: $Dogbreed )
+                TextField("Name first dog breed", text: $dogBreed1 )
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.numberPad)
-                
-                // Question 3
-                Text("3. What is your Experience With Dog Owning?")
-                    .font(.headline)
-                TextField(" pick a choice", text: $Experienced)
+                TextField("Name second dog breed", text: $dogBreed2 )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Name third dog breed", text: $dogBreed3 )
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Text("4.UserName")
+                // Question 3: Experience
+                Text("3. What's your experience with dog owning?")
                     .font(.headline)
-                TextField("Enter Your Username", text: $option)
+                TextField("Pick a choice", text: $experience)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Text("5.Password?")
+                // UserName
+                Text("UserName")
                     .font(.headline)
-                TextField("Enter your password", text: $Password)
+                TextField("Enter Your Username", text: $username)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                // Password
+                Text("Password")
+                    .font(.headline)
+                TextField("Enter your password", text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Spacer()
                 
-                // Submit Button (just for looks)
+                // Submit Button (no functionality rn)
                 Button(action: {}) {
                     Text("Submit")
                         .frame(maxWidth: .infinity)
