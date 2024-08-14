@@ -38,7 +38,6 @@ struct DogInfoListView: View {
                 endPoint: .bottom
             )
         )
-        
     }
 }
 
