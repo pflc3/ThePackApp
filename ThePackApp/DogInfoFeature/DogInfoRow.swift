@@ -28,10 +28,23 @@ struct DogInfoRow: View {
                 .padding(.trailing, 10)
         }
         .padding()
-        .background(Color.blue)
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.blue.opacity(0.7), Color.blue]),
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+        )
         .cornerRadius(15)
-        .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: 2)
+        .shadow(color: Color.blue.opacity(0.5), radius: 5, x: 0, y: 2)
+        .scaleEffect(1)
         .padding(.horizontal)
+        .onTapGesture {
+            withAnimation(.easeIn(duration: 0.2)) {
+                // Perform any action on tap or just a simple scale effect
+            }
+        }
     }
 }
+
 
