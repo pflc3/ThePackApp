@@ -1,16 +1,16 @@
 //
-//  MessageBoardListView.swift
+//  PostBoardListView.swift
 //  ThePackApp
 //
 
 import SwiftUI
 
-struct MessageBoardListView: View {
+struct PostBoardListView: View {
     var body: some View {
-        Text("Message Board List View!")
+        Text("Post Board List View!")
     }
 }
 
 #Preview {
-    MessageBoardListView()
+    PostBoardListView()
 }

@@ -1,11 +1,11 @@
 //
-//  DogListView.swift
+//  DogInfoListView.swift
 //  ThePackApp
 //
 
 import SwiftUI
 
-struct DogListView: View {
+struct DogInfoListView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Your Dogs!")
@@ -15,9 +15,9 @@ struct DogListView: View {
                 .padding(.leading, 20)
                 .padding(.top, 20)
 
-            DogRow()
-            DogRow()
-            DogRow()
+            DogInfoRow()
+            DogInfoRow()
+            DogInfoRow()
             
         }
         .background(Color.white.ignoresSafeArea())
@@ -25,5 +25,5 @@ struct DogListView: View {
 }
 
 #Preview {
-    DogListView()
+    DogInfoListView()
 }
