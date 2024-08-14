@@ -12,6 +12,8 @@
 		BF4451B92C6BBC3D007E25F8 /* DogInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */; };
 		BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */; };
 		BF7EDBBE2C6A8108003C0A15 /* SplashLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7EDBBD2C6A8108003C0A15 /* SplashLaunch.storyboard */; };
+		BF8440BD2C6D0D4700D3ADD7 /* DogMessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8440BC2C6D0D4700D3ADD7 /* DogMessagesManager.swift */; };
+		BF8440BF2C6D0DD400D3ADD7 /* DogMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8440BE2C6D0DD400D3ADD7 /* DogMessages.json */; };
 		BFE7ED2C2C6BD50B0013C661 /* DogList.json in Resources */ = {isa = PBXBuildFile; fileRef = BFE7ED2B2C6BD50B0013C661 /* DogList.json */; };
 		BFE7ED2E2C6BD5330013C661 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7ED2D2C6BD5330013C661 /* DataManager.swift */; };
 		E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */; };
@@ -33,6 +35,8 @@
 		BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoListView.swift; sourceTree = "<group>"; };
 		BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRow.swift; sourceTree = "<group>"; };
 		BF7EDBBD2C6A8108003C0A15 /* SplashLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashLaunch.storyboard; sourceTree = "<group>"; };
+		BF8440BC2C6D0D4700D3ADD7 /* DogMessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMessagesManager.swift; sourceTree = "<group>"; };
+		BF8440BE2C6D0DD400D3ADD7 /* DogMessages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogMessages.json; sourceTree = "<group>"; };
 		BFE7ED2B2C6BD50B0013C661 /* DogList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogList.json; sourceTree = "<group>"; };
 		BFE7ED2D2C6BD5330013C661 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBoardListView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,9 @@
 		E846BBE82C6C005700A0A199 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BFE7ED2D2C6BD5330013C661 /* DataManager.swift */,
+				BF8440BC2C6D0D4700D3ADD7 /* DogMessagesManager.swift */,
+				BF8440BE2C6D0DD400D3ADD7 /* DogMessages.json */,
 				BFE7ED2B2C6BD50B0013C661 /* DogList.json */,
 			);
 			path = Data;
@@ -199,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8440BF2C6D0DD400D3ADD7 /* DogMessages.json in Resources */,
 				BFE7ED2C2C6BD50B0013C661 /* DogList.json in Resources */,
 				E89020452C62A9C800895CC5 /* .gitignore in Resources */,
 				BF7EDBBE2C6A8108003C0A15 /* SplashLaunch.storyboard in Resources */,
@@ -216,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E846BBF52C6C03FB00A0A199 /* PostDetailView.swift in Sources */,
+				BF8440BD2C6D0D4700D3ADD7 /* DogMessagesManager.swift in Sources */,
 				E846BBF32C6C03E000A0A199 /* DogInfoDetailView.swift in Sources */,
 				E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */,
 				E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */,
