@@ -93,7 +93,7 @@ struct MainScreenView: View {
 
                 Spacer()
                 
-                // Navigation bar
+                // Navigation bar (no functionality rn)
                 HStack {
                     Spacer()
                     
