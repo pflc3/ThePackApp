@@ -48,7 +48,7 @@ struct MainScreenView: View {
                 Spacer()
                 
                 // Title for facts
-                Text("Fur Facts")
+                Text("Furr Facts")
                     .font(.system(size: 30))
                     .bold()
                     .foregroundColor(.white)
