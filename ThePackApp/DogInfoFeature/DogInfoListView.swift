@@ -19,7 +19,6 @@ struct DogListView: View {
             DogRow()
             DogRow()
             
-            
         }
         .background(Color.white.ignoresSafeArea())
     }
