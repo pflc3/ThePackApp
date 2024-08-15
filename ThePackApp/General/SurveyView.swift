@@ -5,6 +5,17 @@
 
 import SwiftUI
 
+// Used for drop down answers
+func dropDownAnswer(title: String, selection: Binding<String>, options: [String]) -> some View {
+        Picker(title, selection: selection) {
+            ForEach(options, id: \.self) {
+                Text($0)
+            }
+        }
+        .pickerStyle(MenuPickerStyle())
+        .background(RoundedRectangle(cornerRadius: 5).stroke(Color(UIColor.systemGray4), lineWidth: 0.8))
+}
+
 struct SurveyView: View {
     var body: some View {
         // Declare variables
@@ -14,14 +25,17 @@ struct SurveyView: View {
         @State var isSignUp: Bool = true
         
         @State var name: String = ""
-        @State var dogBreed1: String = ""
-        @State var dogBreed2: String = ""
-        @State var dogBreed3: String = ""
+        @State var dogBreed1: String = "None"
+        @State var dogBreed2: String = "None"
+        @State var dogBreed3: String = "None"
         @State var experience: String = "Beginner"
+        let dogBreeds: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
+        let experienceAry: [String] = ["Beginner", "Intermediate", "Expert"]
+
         
         NavigationView {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 25) {
                     // SignIn And SignUp Switch
                     Picker("Sign Up / Sign In", selection: $isSignUp) {
                         Text("Sign Up").tag(true)
@@ -52,23 +66,14 @@ struct SurveyView: View {
                         // Question 2: Dog Breeds
                         Text("2. Choose up to 3 dog breeds? (At least 1)")
                             .font(.headline)
-                        TextField("Name first dog breed", text: $dogBreed1 )
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        TextField("Name second dog breed", text: $dogBreed2 )
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        TextField("Name third dog breed", text: $dogBreed3 )
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        dropDownAnswer(title: "First Dog breed", selection: $dogBreed1, options: dogBreeds)
+                        dropDownAnswer(title: "Second Dog breed", selection: $dogBreed1, options: dogBreeds)
+                        dropDownAnswer(title: "Third Dog breed", selection: $dogBreed1, options: dogBreeds)
                         
                         // Question 3: Experience
                         Text("3. What's your experience with dog owning?")
                             .font(.headline)
-                        Picker("Sign Up / Sign In", selection: $experience) {
-                            Text("Beginner").tag("Beginner")
-                            Text("Intermediate").tag("Intermediate")
-                            Text("Expert").tag("Expert")
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        .padding(.vertical)
+                        dropDownAnswer(title: "Your Experience", selection: $experience, options: experienceAry)
                     }
                     
                     Spacer()
