@@ -27,7 +27,6 @@ struct SettingsAndProfileView: View {
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
                 }
-                
                 Spacer()
                 
                 // Message Board icon
@@ -38,7 +37,6 @@ struct SettingsAndProfileView: View {
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
                 }
-                
                 Spacer()
                 
                 // Home icon
@@ -49,7 +47,6 @@ struct SettingsAndProfileView: View {
                         .frame(width: 48, height: 42)
                         .foregroundColor(.white)
                 }
-                
                 Spacer()
                 
                 // Dog Walking icon
@@ -60,7 +57,6 @@ struct SettingsAndProfileView: View {
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
                 }
-                
                 Spacer()
                 
                 // Profile icon
@@ -71,6 +67,7 @@ struct SettingsAndProfileView: View {
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
                 }
+                Spacer()
             }
             .padding()
             .background(Color.blue.opacity(0.7))

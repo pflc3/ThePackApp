@@ -7,7 +7,6 @@ import SwiftUI
 
 struct DogInfoListView: View {
     var body: some View {
-        
         VStack {
             // Title
             Text("Your Furry Friends")
@@ -21,23 +20,20 @@ struct DogInfoListView: View {
             
             Spacer()
             
-            VStack(spacing: 20) {
+            VStack(spacing: 30) {
                 DogInfoRow()
                 DogInfoRow()
                 DogInfoRow()
             }
-            .padding(.bottom, 20)
+            .padding(.bottom, 30)
             
             Spacer()
         }
-        
-        .background(
-            LinearGradient(
-                gradient: Gradient(colors: [Color.white, Color.blue.opacity(0.7)]),
-                startPoint: .top,
-                endPoint: .bottom
-            )
-        )
+        .background(LinearGradient(
+            gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.white.opacity(0.8)]),
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        ))
     }
 }
 
