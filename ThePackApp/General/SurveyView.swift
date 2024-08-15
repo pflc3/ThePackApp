@@ -22,7 +22,7 @@ struct SurveyView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 25) {
                     // View Title
-                    customTitle(title: "Fetch Me Your Story!", w: 360, h: 65)
+                    customTitle(title: "Fetch Me Your Story!", w: 360, h: 65, opac: 1)
                     
                     // SignIn And SignUp Switch
                     Picker("Sign Up / Sign In", selection: $isSignUp) {
@@ -79,7 +79,7 @@ struct SurveyView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.blue.opacity(0.9))
+                            .background(Color.blue.opacity(1))
                             .cornerRadius(10)
                     }
                 }
@@ -94,28 +94,6 @@ struct SurveyView: View {
 
 #Preview {
     SurveyView()
-}
-
-// Title function
-func customTitle(title: String, w: CGFloat, h: CGFloat) -> some View {
-    Text(title)
-        .font(.largeTitle)
-        .fontWeight(.bold)
-        .foregroundColor(.blue.opacity(0.9))
-        .frame(width: w, height:h)
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 40)
-}
-
-// Blue gradient function
-func blueGradient(opac: Double) -> some View {
-    LinearGradient(
-        gradient: Gradient(colors: [Color.blue.opacity(opac), Color.white.opacity(opac)]),
-        startPoint: .topLeading,
-        endPoint: .bottomTrailing
-    )
-    .edgesIgnoringSafeArea(.all)
 }
 
 // Used for drop down answers

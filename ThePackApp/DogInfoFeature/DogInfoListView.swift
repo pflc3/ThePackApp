@@ -13,20 +13,20 @@ struct DogInfoListView: View {
             
             Spacer()
             
-            VStack(spacing: 30) {
+            VStack(spacing: 35) {
                 DogInfoRow()
                 DogInfoRow()
                 DogInfoRow()
             }
-            .padding(.bottom, 30)
+            .padding(.bottom, 25)
             
             Spacer()
         }
-        .background(blueGradient(opac: 0.8))
+        .padding()
+        .background(blueGradient())
     }
 }
 
 #Preview {
     DogInfoListView()
 }
-

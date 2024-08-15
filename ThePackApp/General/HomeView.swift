@@ -33,7 +33,7 @@ struct HomeView: View {
                 Spacer()
                 
                 // Title for facts bubble
-                bubbleTitle(title: "Furr Facts")
+                bubbleTitle(title: "Fur Facts")
                 
                 // Facts bubble
                 bubbleText(options: dogFacts, otherwise: "Dogs are amazing!")
@@ -47,18 +47,16 @@ struct HomeView: View {
                 bubbleText(options: dogJokes, otherwise: "Dogs are funny!")
                 
                 Spacer()
-                
-                // Navigation bar
-                navBarHome()
             }
             .padding()
-            .background(blueGradient(opac: 0.8))
+            .background(blueGradient())
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
-    HomeView()
+    ContentView()
 }
 
 // Bubble Functions
@@ -84,56 +82,4 @@ func bubbleText(options: [String], otherwise: String) -> some View {
         .background(Color.blue.opacity(0.7))
         .cornerRadius(20)
         .shadow(radius: 25)
-}
-
-// Navigation Bar Functions
-func iconNavLink(dest: some View, iconName: String, w: CGFloat=40, h: CGFloat=40) -> some View {
-    NavigationLink(destination: dest) {
-        Image(systemName: iconName)
-            .resizable()
-            .scaledToFit()
-            .frame(width: w, height: h)
-            .foregroundColor(.white)
-    }
-}
-
-func iconButton(iconName: String, w: CGFloat=40, h: CGFloat=40) -> some View {
-    Button(action: {}) {
-        Image(systemName: iconName)
-            .resizable()
-            .scaledToFit()
-            .frame(width: w, height: h)
-            .foregroundColor(.white)
-    }
-}
-
-func navBarHome() -> some View {
-    // Navigation bar
-    HStack {
-        Spacer()
-        
-        // Dog icon
-        iconNavLink(dest: DogInfoListView(), iconName: "pawprint.fill")
-        Spacer()
-        
-        // Message Board icon
-        iconNavLink(dest: PostBoardListView(), iconName: "message.fill")
-        Spacer()
-        
-        // Home icon
-        iconButton(iconName: "house.fill", w: 48, h: 42)
-        Spacer()
-        
-        // Dog Walking icon
-        iconButton(iconName: "figure.walk")
-        Spacer()
-        
-        // Profile icon
-        iconNavLink(dest: ProfileView(), iconName: "person.fill")
-        Spacer()
-    }
-    .padding()
-    .background(Color.blue.opacity(0.7))
-    .cornerRadius(20)
-    .shadow(radius: 10)
 }
