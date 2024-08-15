@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+            <point key="canvasLocation" x="-776" y="55"/>
         </scene>
         <!--Root-->
         <scene sceneID="nXr-hR-4Aa">
@@ -124,7 +124,7 @@
                 <menu isSystemItem="YES" title="Root" identifier="com.apple.menu.root" id="ezP-cW-U7e" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKI-GZ-qbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="-10"/>
+            <point key="canvasLocation" x="-777" y="-298"/>
         </scene>
     </scenes>
     <resources>
@@ -132,7 +132,7 @@
         <image name="dog.circle.fill" catalog="system" width="128" height="123"/>
         <image name="swift" catalog="system" width="128" height="108"/>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
