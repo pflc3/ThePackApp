@@ -28,7 +28,6 @@
 		E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */; };
 		E88C99C92C5EA6E000C22347 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C82C5EA6E000C22347 /* README.md */; };
 		E89020452C62A9C800895CC5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E89020442C62A9C800895CC5 /* .gitignore */; };
-		E8A7D43B2C6DD80500ED234E /* SplashLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A7D43A2C6DD80500ED234E /* SplashLaunchScreen.storyboard */; };
 		E8A7D43F2C6DDBAB00ED234E /* SplashLaunchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E88C99C82C5EA6E000C22347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E89020442C62A9C800895CC5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		E8A7D43A2C6DD80500ED234E /* SplashLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashLaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashLaunchPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,6 @@
 		E846BBEA2C6C00E600A0A199 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				E8A7D43A2C6DD80500ED234E /* SplashLaunchScreen.storyboard */,
 				E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */,
 				BF0BE2932C6A80F500F96288 /* SurveyView.swift */,
 				BF14A3EB2C6A81AC00AF7692 /* HomeView.swift */,
@@ -224,7 +221,6 @@
 			files = (
 				BF8440BF2C6D0DD400D3ADD7 /* DogMessages.json in Resources */,
 				BFE7ED2C2C6BD50B0013C661 /* DogList.json in Resources */,
-				E8A7D43B2C6DD80500ED234E /* SplashLaunchScreen.storyboard in Resources */,
 				E89020452C62A9C800895CC5 /* .gitignore in Resources */,
 				E88C99C92C5EA6E000C22347 /* README.md in Resources */,
 				E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */,
