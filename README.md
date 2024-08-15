@@ -15,7 +15,7 @@ Home Page
 - Will have a navigation bar at the bottom that will lead to different pages
 - Navigation bar will be on every other page as well 
 
-SettingsAndProfile Page
+Profile Page
 - Will have profile and information
 - Will have settings that you can be tweaked
 
