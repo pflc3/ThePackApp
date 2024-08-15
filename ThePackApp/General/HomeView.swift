@@ -27,15 +27,8 @@ struct HomeView: View {
         
         NavigationView {
             VStack {
-                // Title of homeView
-                Text("Welcome to The Pack")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.blue.opacity(0.9))
-                    .frame(width: 360, height: 65)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(radius: 40)
+                // View Title
+                customTitle(title: "Welcome to The Pack", w: 360, h: 65)
                 
                 Spacer()
                 
@@ -56,44 +49,19 @@ struct HomeView: View {
                 Spacer()
                 
                 // Navigation bar
-                HStack {
-                    Spacer()
-                    
-                    // Dog icon
-                    iconNavLink(dest: DogInfoListView(), iconName: "pawprint.fill")
-                    Spacer()
-                    
-                    // Message Board icon
-                    iconNavLink(dest: PostBoardListView(), iconName: "message.fill")
-                    Spacer()
-                    
-                    // Home icon
-                    iconButton(iconName: "house.fill", w: 48, h: 42)
-                    Spacer()
-                    
-                    // Dog Walking icon
-                    iconButton(iconName: "figure.walk", w: 40, h: 40)
-                    Spacer()
-                    
-                    // Profile icon
-                    iconNavLink(dest: SettingsAndProfileView(), iconName: "person.fill")
-                    Spacer()
-                }
-                .padding()
-                .background(Color.blue.opacity(0.7))
-                .cornerRadius(20)
-                .shadow(radius: 10)
+                navBar()
             }
             .padding()
-            .background(LinearGradient(
-                gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.white.opacity(0.8)]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            ))
+            .background(blueGradient(opac: 0.8))
         }
     }
 }
 
+#Preview {
+    HomeView()
+}
+
+// Bubble Functions
 func bubbleTitle(title: String) -> some View {
     Text(title)
         .font(.system(size: 30))
@@ -118,6 +86,7 @@ func bubbleText(options: [String], otherwise: String) -> some View {
         .shadow(radius: 25)
 }
 
+// Navigation Bar Functions
 func iconNavLink(dest: some View, iconName: String) -> some View {
     NavigationLink(destination: dest) {
         Image(systemName: iconName)
@@ -138,6 +107,33 @@ func iconButton(iconName: String, w: CGFloat, h: CGFloat) -> some View {
     }
 }
 
-#Preview {
-    HomeView()
+func navBar() -> some View {
+    // Navigation bar
+    HStack {
+        Spacer()
+        
+        // Dog icon
+        iconNavLink(dest: DogInfoListView(), iconName: "pawprint.fill")
+        Spacer()
+        
+        // Message Board icon
+        iconNavLink(dest: PostBoardListView(), iconName: "message.fill")
+        Spacer()
+        
+        // Home icon
+        iconButton(iconName: "house.fill", w: 48, h: 42)
+        Spacer()
+        
+        // Dog Walking icon
+        iconButton(iconName: "figure.walk", w: 40, h: 40)
+        Spacer()
+        
+        // Profile icon
+        iconNavLink(dest: SettingsAndProfileView(), iconName: "person.fill")
+        Spacer()
+    }
+    .padding()
+    .background(Color.blue.opacity(0.7))
+    .cornerRadius(20)
+    .shadow(radius: 10)
 }
