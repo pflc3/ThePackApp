@@ -72,7 +72,7 @@ struct SurveyView: View {
                     Spacer()
                     
                     // Submit Button
-                    NavigationLink(destination: HomeView()) {
+                    NavigationLink(destination: ContentView()) {
                         Text("Submit")
                             .font(.title2)
                             .fontWeight(.medium)

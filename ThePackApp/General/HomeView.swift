@@ -56,7 +56,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
 
 // Bubble Functions

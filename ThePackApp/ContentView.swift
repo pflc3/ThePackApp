@@ -6,10 +6,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Default is Home tab
+    @State var selectedTab = 2
+    
     var body: some View {
-        // Default is Home tab
-        @State var selectedTab = 2
-        
         // Tab bar
         TabView(selection: $selectedTab) {
             // Dog Info tab
@@ -52,6 +52,7 @@ struct ContentView: View {
                 }
                 .tag(4)
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     // Tab Bar Attributes
