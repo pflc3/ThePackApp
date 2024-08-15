@@ -49,7 +49,7 @@ struct HomeView: View {
                 Spacer()
                 
                 // Navigation bar
-                navBar()
+                navBarHome()
             }
             .padding()
             .background(blueGradient(opac: 0.8))
@@ -87,17 +87,17 @@ func bubbleText(options: [String], otherwise: String) -> some View {
 }
 
 // Navigation Bar Functions
-func iconNavLink(dest: some View, iconName: String) -> some View {
+func iconNavLink(dest: some View, iconName: String, w: CGFloat=40, h: CGFloat=40) -> some View {
     NavigationLink(destination: dest) {
         Image(systemName: iconName)
             .resizable()
             .scaledToFit()
-            .frame(width: 40, height: 40)
+            .frame(width: w, height: h)
             .foregroundColor(.white)
     }
 }
 
-func iconButton(iconName: String, w: CGFloat, h: CGFloat) -> some View {
+func iconButton(iconName: String, w: CGFloat=40, h: CGFloat=40) -> some View {
     Button(action: {}) {
         Image(systemName: iconName)
             .resizable()
@@ -107,7 +107,7 @@ func iconButton(iconName: String, w: CGFloat, h: CGFloat) -> some View {
     }
 }
 
-func navBar() -> some View {
+func navBarHome() -> some View {
     // Navigation bar
     HStack {
         Spacer()
@@ -125,11 +125,11 @@ func navBar() -> some View {
         Spacer()
         
         // Dog Walking icon
-        iconButton(iconName: "figure.walk", w: 40, h: 40)
+        iconButton(iconName: "figure.walk")
         Spacer()
         
         // Profile icon
-        iconNavLink(dest: SettingsAndProfileView(), iconName: "person.fill")
+        iconNavLink(dest: ProfileView(), iconName: "person.fill")
         Spacer()
     }
     .padding()
