@@ -11,8 +11,8 @@
 		BF14A3EC2C6A81AC00AF7692 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14A3EB2C6A81AC00AF7692 /* HomeView.swift */; };
 		BF4451B92C6BBC3D007E25F8 /* DogInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */; };
 		BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */; };
-		BF8440BD2C6D0D4700D3ADD7 /* DogMessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8440BC2C6D0D4700D3ADD7 /* DogMessagesManager.swift */; };
-		BF8440BF2C6D0DD400D3ADD7 /* DogMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8440BE2C6D0DD400D3ADD7 /* DogMessages.json */; };
+		BF8440BD2C6D0D4700D3ADD7 /* DogPostsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8440BC2C6D0D4700D3ADD7 /* DogPostsManager.swift */; };
+		BF8440BF2C6D0DD400D3ADD7 /* DogPosts.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8440BE2C6D0DD400D3ADD7 /* DogPosts.json */; };
 		BFE7ED2C2C6BD50B0013C661 /* DogList.json in Resources */ = {isa = PBXBuildFile; fileRef = BFE7ED2B2C6BD50B0013C661 /* DogList.json */; };
 		E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */; };
 		E846BBF12C6C02CB00A0A199 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBF02C6C02CB00A0A199 /* PostRow.swift */; };
@@ -36,8 +36,8 @@
 		BF14A3EB2C6A81AC00AF7692 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoListView.swift; sourceTree = "<group>"; };
 		BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRow.swift; sourceTree = "<group>"; };
-		BF8440BC2C6D0D4700D3ADD7 /* DogMessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMessagesManager.swift; sourceTree = "<group>"; };
-		BF8440BE2C6D0DD400D3ADD7 /* DogMessages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogMessages.json; sourceTree = "<group>"; };
+		BF8440BC2C6D0D4700D3ADD7 /* DogPostsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPostsManager.swift; sourceTree = "<group>"; };
+		BF8440BE2C6D0DD400D3ADD7 /* DogPosts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogPosts.json; sourceTree = "<group>"; };
 		BFE7ED2B2C6BD50B0013C661 /* DogList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogList.json; sourceTree = "<group>"; };
 		E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBoardListView.swift; sourceTree = "<group>"; };
 		E846BBF02C6C02CB00A0A199 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 		E846BBE82C6C005700A0A199 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				BF8440BC2C6D0D4700D3ADD7 /* DogMessagesManager.swift */,
-				BF8440BE2C6D0DD400D3ADD7 /* DogMessages.json */,
+				BF8440BC2C6D0D4700D3ADD7 /* DogPostsManager.swift */,
+				BF8440BE2C6D0DD400D3ADD7 /* DogPosts.json */,
 				BFE7ED2B2C6BD50B0013C661 /* DogList.json */,
 			);
 			path = Data;
@@ -219,7 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8440BF2C6D0DD400D3ADD7 /* DogMessages.json in Resources */,
+				BF8440BF2C6D0DD400D3ADD7 /* DogPosts.json in Resources */,
 				BFE7ED2C2C6BD50B0013C661 /* DogList.json in Resources */,
 				E89020452C62A9C800895CC5 /* .gitignore in Resources */,
 				E88C99C92C5EA6E000C22347 /* README.md in Resources */,
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E846BBF52C6C03FB00A0A199 /* PostDetailView.swift in Sources */,
-				BF8440BD2C6D0D4700D3ADD7 /* DogMessagesManager.swift in Sources */,
+				BF8440BD2C6D0D4700D3ADD7 /* DogPostsManager.swift in Sources */,
 				E846D8BA2C6DB09D00A2F015 /* WalkerDetailView.swift in Sources */,
 				E846BBF32C6C03E000A0A199 /* DogInfoDetailView.swift in Sources */,
 				E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */,
