@@ -43,7 +43,6 @@ Post Detail Page
 - Will be able to see other comments and comment yourself
 - Different dog owners can respond or answer questions with comments
 
-
 ## Team
 - Estuardo
 - Bradley
