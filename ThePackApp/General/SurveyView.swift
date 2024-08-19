@@ -22,7 +22,11 @@ struct SurveyView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 25) {
                     // View Title
-                    customTitle(title: "Fetch Me Your Story!", w: 360, h: 65, opac: 1)
+                    Text("Fetch Me Your Story!")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.blue.opacity(0.9))
+                        .cornerRadius(10)
                     
                     // SignIn And SignUp Switch
                     Picker("Sign Up / Sign In", selection: $isSignUp) {
@@ -72,7 +76,7 @@ struct SurveyView: View {
                     Spacer()
                     
                     // Submit Button
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: TabBarView()) {
                         Text("Submit")
                             .font(.title2)
                             .fontWeight(.medium)
@@ -84,9 +88,7 @@ struct SurveyView: View {
                     }
                 }
                 .padding()
-                //.navigationTitle("Fetch Me Your Story!")
             }
-            .background(blueGradient(opac: 1))
         }
         
     }
