@@ -9,7 +9,7 @@ struct PostBoardListView: View {
     var body: some View {
         VStack {
             // View Title
-            customTitle(title: "Post feed", w: 340, h: 50)
+            customTitle(title: "Bark Board", w: 340, h: 50)
             
             Spacer()
             
