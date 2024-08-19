@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF0BE2942C6A80F500F96288 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BE2932C6A80F500F96288 /* SurveyView.swift */; };
 		BF14A3EC2C6A81AC00AF7692 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14A3EB2C6A81AC00AF7692 /* HomeView.swift */; };
+		BF32A7032C738ACA00766F9B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32A7022C738ACA00766F9B /* TabBarView.swift */; };
 		BF4451B92C6BBC3D007E25F8 /* DogInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */; };
 		BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */; };
 		BF8440BD2C6D0D4700D3ADD7 /* DogPostsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8440BC2C6D0D4700D3ADD7 /* DogPostsManager.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		BF0BE2932C6A80F500F96288 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		BF14A3EB2C6A81AC00AF7692 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BF32A7022C738ACA00766F9B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoListView.swift; sourceTree = "<group>"; };
 		BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRow.swift; sourceTree = "<group>"; };
 		BF8440BC2C6D0D4700D3ADD7 /* DogPostsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPostsManager.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				E86627352C6A5B3800E84A4C /* ThePackApp.swift */,
 				E88C99BC2C5EA69200C22347 /* ContentView.swift */,
+				BF32A7022C738ACA00766F9B /* TabBarView.swift */,
 				E88C99BE2C5EA69400C22347 /* Assets.xcassets */,
 				E846BBEA2C6C00E600A0A199 /* General */,
 				E846BBE92C6C007900A0A199 /* DogInfoFeature */,
@@ -238,6 +241,7 @@
 			files = (
 				E846BBF52C6C03FB00A0A199 /* PostDetailView.swift in Sources */,
 				BF8440BD2C6D0D4700D3ADD7 /* DogPostsManager.swift in Sources */,
+				BF32A7032C738ACA00766F9B /* TabBarView.swift in Sources */,
 				E846D8BA2C6DB09D00A2F015 /* WalkerDetailView.swift in Sources */,
 				E846BBF32C6C03E000A0A199 /* DogInfoDetailView.swift in Sources */,
 				E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */,
