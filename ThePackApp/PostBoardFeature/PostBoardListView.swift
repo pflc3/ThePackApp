@@ -7,7 +7,26 @@ import SwiftUI
 
 struct PostBoardListView: View {
     var body: some View {
-        Text("Post Board List View!")
+        VStack {
+            // View Title
+            customTitle(title: "Post feed", w: 340, h: 50)
+            
+            Spacer()
+            
+            VStack(spacing: 35) {
+                PostRow()
+                PostRow()
+                PostRow()
+                PostRow()
+                PostRow()
+                PostRow()
+            }
+            .padding(.bottom, 25)
+            
+            Spacer()
+        }
+        .padding()
+        .background(blueGradient())
     }
 }
 
