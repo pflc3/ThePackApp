@@ -46,5 +46,3 @@ struct DogInfoRow: View {
         }
     }
 }
-
-
