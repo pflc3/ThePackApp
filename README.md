@@ -15,7 +15,7 @@ Home Page
 - Will have a navigation bar at the bottom that will lead to different pages
 - Navigation bar will be on every other page as well 
 
-SettingsAndProfile Page
+Profile Page
 - Will have profile and information
 - Will have settings that you can be tweaked
 
@@ -43,6 +43,15 @@ Post Detail Page
 - Will be able to see other comments and comment yourself
 - Different dog owners can respond or answer questions with comments
 
+## Walker Feature
+Walker List Page
+- Will consist of multiple WalkerRows
+- WalkerRows will have picture, name, small description, price, rating
+- Will have filters at the top (availability, location, etc)
+
+Walker Detail Page
+- Will be able to message walker
+- Book walker? Hire walker?
 
 ## Team
 - Estuardo

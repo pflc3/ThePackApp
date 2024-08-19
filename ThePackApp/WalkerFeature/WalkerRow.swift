@@ -1,28 +1,30 @@
 //
-//  DogInfoRow.swift
+//  WalkerRow.swift
 //  ThePackApp
+//
+//  Created by Estuardo Lopez Letona on 8/14/24.
 //
 
 import SwiftUI
 
-struct DogInfoRow: View {
+struct WalkerRow: View {
     var body: some View {
         HStack {
-            Image(systemName: "pawprint.fill")
+            Image(systemName: "figure.walk")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 24, height: 24)
                 .foregroundColor(.white)
                 .padding(.leading, 10)
             
-            Text("Dog Name")
+            Text("Walker Name")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding(.leading, 10)
             
             Spacer()
 
-            Text("Description")
+            Text("Price")
                 .font(.subheadline)
                 .foregroundColor(.white)
                 .padding(.trailing, 10)

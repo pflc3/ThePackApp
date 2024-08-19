@@ -1,22 +1,24 @@
 //
-//  DogInfoListView.swift
+//  WalkersListView.swift
 //  ThePackApp
+//
+//  Created by Estuardo Lopez Letona on 8/14/24.
 //
 
 import SwiftUI
 
-struct DogInfoListView: View {
+struct WalkerListView: View {
     var body: some View {
         VStack {
             // View Title
-            customTitle(title: "Your Furry Friends", w: 340, h: 65)
+            customTitle(title: "Woof Walkers", w: 340, h: 65)
             
             Spacer()
             
             VStack(spacing: 35) {
-                DogInfoRow()
-                DogInfoRow()
-                DogInfoRow()
+                WalkerRow()
+                WalkerRow()
+                WalkerRow()
             }
             .padding(.bottom, 25)
             
@@ -28,5 +30,5 @@ struct DogInfoListView: View {
 }
 
 #Preview {
-    DogInfoListView()
+    WalkerListView()
 }

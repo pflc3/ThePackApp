@@ -8,145 +8,34 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            ZStack {
-                // Background color with subtle gradient
-                LinearGradient(
-                    gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.white.opacity(0.8)]),
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .edgesIgnoringSafeArea(.all)
-
-                VStack {
-                    // Title of homeView
-                    Text("Welcome to The Pack")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(.blue.opacity(0.9))
-                        .frame(width: 360, height: 65)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(radius: 40)
-
-                    Spacer()
-
-                    // Title for facts
-                    Text("Furr Facts")
-                        .font(.system(size: 30))
-                        .bold()
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 45)
-                        .scaledToFit()
-                        .background(.blue.opacity(0.7))
-                        .cornerRadius(15)
-
-                    // Facts bubble
-                    Text(dogFacts.randomElement() ?? "Dogs are amazing!")
-                        .font(.system(size: 24))
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .frame(width: 320, height: 120)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .background(Color.blue.opacity(0.7))
-                        .cornerRadius(20)
-                        .shadow(radius: 25)
-
-                    Spacer().frame(height: 30)
-
-                    // Title for jokes
-                    Text("Puppy Puns")
-                        .font(.system(size: 30))
-                        .bold()
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 45)
-                        .scaledToFit()
-                        .background(.blue.opacity(0.7))
-                        .cornerRadius(15)
-
-                    // Jokes bubble
-                    Text(dogJokes.randomElement() ?? "Dogs are funny!")
-                        .font(.system(size: 24))
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .frame(width: 320, height: 120)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .background(Color.blue.opacity(0.7))
-                        .cornerRadius(20)
-                        .shadow(radius: 25)
-
-                    Spacer()
-
-                    // Navigation bar
-                    HStack {
-                        Spacer()
-
-                        // Dog icon
-                        NavigationLink(destination: DogInfoListView()) {
-                            Image(systemName: "pawprint.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
-                        }
-
-                        Spacer()
-
-                        // Message Board icon
-                        NavigationLink(destination: PostBoardListView()) {
-                            Image(systemName: "message.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
-                        }
-
-                        Spacer()
-
-                        // Home icon
-                        Button(action: {}) {
-                            Image(systemName: "house.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 48, height: 42)
-                                .foregroundColor(.white)
-                        }
-
-                        Spacer()
-
-                        // Dog Walking icon
-                        Button(action: {}) {
-                            Image(systemName: "figure.walk")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
-                        }
-
-                        Spacer()
-
-                        // Profile icon
-                        NavigationLink(destination: SettingsAndProfileView()) {
-                            Image(systemName: "person.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
-                        }
-
-                        Spacer()
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.7))
-                    .cornerRadius(20)
-                    .shadow(radius: 10)
-                }
-                .padding()
+            VStack {
+                // View Title
+                customTitle(title: "Welcome to The Pack", w: 360, h: 65)
+                
+                Spacer()
+                
+                // Title for facts bubble
+                bubbleTitle(title: "Fur Facts")
+                
+                // Facts bubble
+                bubbleText(options: dogFacts, otherwise: "Dogs are amazing!")
+                
+                Spacer().frame(height: 30)
+                
+                // Title for jokes bubble
+                bubbleTitle(title: "Puppy Puns")
+                
+                // Jokes bubble
+                bubbleText(options: dogJokes, otherwise: "Dogs are funny!")
+                
+                Spacer()
             }
+            .padding()
+            .background(blueGradient())
         }
+        .navigationBarBackButtonHidden(true)
     }
-
+    
     // Dog facts array
     let dogFacts: [String] = [
         "Dogs have a sense of time. It's been proven that they know the difference between an hour and five hours.",
@@ -168,4 +57,29 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+}
+
+// Bubble Functions
+func bubbleTitle(title: String) -> some View {
+    Text(title)
+        .font(.system(size: 30))
+        .bold()
+        .foregroundColor(.white)
+        .frame(width: 200, height: 45)
+        .scaledToFit()
+        .background(.blue.opacity(0.7))
+        .cornerRadius(15)
+}
+
+func bubbleText(options: [String], otherwise: String) -> some View {
+    Text(options.randomElement() ?? otherwise)
+        .font(.system(size: 24))
+        .fontWeight(.medium)
+        .foregroundColor(.white)
+        .frame(width: 320, height: 120)
+        .multilineTextAlignment(.center)
+        .padding()
+        .background(Color.blue.opacity(0.7))
+        .cornerRadius(20)
+        .shadow(radius: 25)
 }

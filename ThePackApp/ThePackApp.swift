@@ -6,7 +6,7 @@
 import SwiftUI
 
 @main
-struct PackApp: App {
+struct ThePackApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
