@@ -3,7 +3,6 @@
 //  ThePackApp
 //
 
-import Foundation
 import SwiftUI
 
 struct PostRow: View {
