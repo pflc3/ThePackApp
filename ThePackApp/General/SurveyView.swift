@@ -6,17 +6,20 @@
 import SwiftUI
 
 struct SurveyView: View {
+    // Declare & Initalize variables
+    @State var isSignUp: Bool = true
+    @State var username: String = ""
+    @State var password: String = ""
+    @State var name: String = ""
+    @State var breeds: [String] = ["None2", "Nonefggffgr", "None",]
+    @State var experience: String = "Beginnertt"
+    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
+    
+    @State var breedSelection = "None"
+    let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
+    let fontSize: CGFloat = 20
     var body: some View {
-        // Declare & Initalize variables
-        @State var isSignUp: Bool = true
-        @State var username: String = ""
-        @State var password: String = ""
-        @State var name: String = ""
-        @State var breeds: [String] = ["None", "None", "None",]
-        @State var experience: String = "Beginner"
-        let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
-        let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
-        let fontSize: CGFloat = 20
+        
 
         NavigationView {
             ScrollView {
@@ -62,7 +65,7 @@ struct SurveyView: View {
                         Text("2. Choose up to 3 dog breeds?\n(At least 1)")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        dropDownAnswer(title: "1st Dog breed", selection: $breeds[0], options: breedOptions)
+                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelection, options: breedOptions)
                         dropDownAnswer(title: "2nd Dog breed", selection: $breeds[1], options: breedOptions)
                         dropDownAnswer(title: "3rd Dog breed", selection: $breeds[2], options: breedOptions)
                         
