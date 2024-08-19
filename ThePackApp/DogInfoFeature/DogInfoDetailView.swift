@@ -46,8 +46,6 @@ struct DogInfoDetailView: View {
     }
 }
 
-
 #Preview {
   DogInfoDetailView()
 }
-
