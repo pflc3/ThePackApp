@@ -1,38 +1,172 @@
 [
     {
-       
-       [
-           {
-               "name": "Golden Retriever",
-               "lifeStage": "Puppy",
-               "age": "0-15 months",
-               "key": "value"
-               "Descrip1": "Golden Retrievers are very energetic"
-               "Descrip2": "Very dependent as newborns"
-               "Descrip3": "Around 9-12 months they reach full size"
-               "MedAdv1": "Need to ensure vaccinations and start parasite control (0-6 months)"
-               "MedAdv2": "Need dental care and alot of socialization (6-12 months)"
-               "MedAdv3": "Need vet check-ups, weight management, and good exercise (12-15 months)"
-               "FoodAdv1": "Feed a high-quality puppy food designed for large breeds.(0-6 months)
-               "FoodAdv2": "Transition to adult food as advised by your vet. (6-12 months)"
-               "FoodAdv3": " Maintain a balanced diet; monitor weight and adjust portions as needed. (12-15 months)"
-               "Ttwaf1":"Monitor for signs of hip dysplasia, allergies, and dental problems."
-               "Ttwaf2":"Check for excessive shedding, mats, or skin issues."
-               "Ttwaf3":"Ensure they get adequate exercise to prevent obesity and maintain joint health.
-
-               
-           
-           },
-           
-           {
-               "name": "Siberian Husky",
-               "age":"0-8+ years" ,
-               "description":"Siberian Huskies are energetic, independent, and friendly dogs known for their striking blue eyes and thick double coat. They have a strong work ethic, originally bred for sledding, and are highly social and playful. They require regular exercise and mental stimulation and are known for their vocal and spirited nature." ,
-
-           }
-       ]
-
-
-
-
-
+        "name": "Golden Retriever",
+        "lifeStage": "Puppy",
+        "age": "0-15 months",
+        "key": "value",
+        "Descrip1": "Golden Retrievers are very energetic",
+        "Descrip2": "Very dependent as newborns",
+        "Descrip3": "Around 9-12 months they reach full size",
+        "MedAdv1": "Need to ensure vaccinations and start parasite control (0-6 months)",
+        "MedAdv2": "Need dental care and alot of socialization (6-12 months)",
+        "MedAdv3": "Need vet check-ups, weight management, and good exercise (12-15 months)",
+        "FoodAdv1": "Feed a high-quality puppy food designed for large breeds (0-6 months)",
+        "FoodAdv2": "Transition to adult food as advised by your vet (6-12 months)",
+        "FoodAdv3": " Maintain a balanced diet; monitor weight and adjust portions as needed (12-15 months)",
+        "Ttwof1":"Monitor for signs of hip dysplasia, allergies, and dental problems",
+        "Ttwof2":"Check for excessive shedding, mats, or skin issues",
+        "Ttwof3":"Ensure they get adequate exercise to prevent obesity and maintain joint health",
+    },
+    
+    {
+        "name": "Golden Retriever",
+        "lifeStage": "Adult",
+        "age": "15 months to 6 years",
+        "key": "value",
+        "Descrip1": "They are full grown around (2 years",
+        "Descrip2": "Usually in peak health after (2 years)",
+        "Descrip3": "Signs of aging around (4-6 years)",
+        "MedAdv1": "Regular vet check-ups, maintain vaccinations, and monitor for any behavioral or health changes (15 months - 2 years)",
+        "MedAdv2": "Watch for signs of common issues like hip dysplasia or allergies; ensure consistent exercise and dental care (2-4 years)",
+        "MedAdv3": "Be alert to early signs of aging or joint problems; continue regular health checks and maintain a balanced diet (4-6 years)",
+        "FoodAdv1": "Transition to adult dog food; ensure a balanced diet (15 months - 2 years)",
+        "FoodAdv2": "Maintain a consistent feeding routine; monitor weight and adjust portions as needed (2-4 years)",
+        "FoodAdv3": "Consider senior dog food if needed; watch for weight changes and adjust diet to maintain health (4-6 years)",
+        "Ttwof1":"Watch for gain or loss",
+        "Ttwof2":"Check for allergies or excessive shedding and Watch for bad breath or eating difficulty",
+        "Ttwof3":"Sudden behavioral changes and Look for stiffness or limping",
+    },
+    
+    {
+        "name": "Golden Retriever",
+        "lifeStage": "Senior",
+        "age": "6+ years",
+        "key": "value",
+        "Descrip1": "often less active and slower",
+        "Descrip2": "May show signs of aging, such as graying fur and a less vibrant coat",
+        "Descrip3": "Potential decline in energy and playfulness; may need more rest and comfort",
+        "MedAdv1": "Regular vet check-ups; monitor for age-related health issues (7-8 years)",
+        "MedAdv2": "Watch for signs of arthritis, dental issues, and reduced energy (9-10 years)",
+        "MedAdv3": "Increase vet visits; manage chronic conditions and adjust diet for senior needs (11-12 years)",
+        "FoodAdv1": " Consider senior dog food; adjust portions for weight management (7-8 years)",
+        "FoodAdv2": "Monitor weight; provide easily digestible food (9-10 years)",
+        "FoodAdv3": " Focus on a diet that supports joint health and overall wellness (11-12 years)",
+        "Ttwof1":"Joint Health: Watch for arthritis or mobility issues",
+        "Ttwof2":"Weight Changes: Monitor for weight gain or loss",
+        "Ttwof3":"Cognitive Changes: Be alert to signs of confusion or disorientation",
+    },
+    
+    {
+        "name": "Sibrerian Husky",
+        "lifeStage": "Puppy",
+        "age": "0-1 years",
+        "key": "value",
+        "Descrip1": "Huskies are social and family-oriented",
+        "Descrip2": "These pups are cunning escape artists and notorious howlers",
+        "Descrip3": "A Siberian Husky needs to run",
+        "MedAdv1": "Huskies are prone to many eye diseases",
+        "MedAdv2": "pet parents should take them for an annual eye exam",
+        "MedAdv3": "can help diagnose disease early if you take them to the vet",
+        "FoodAdv1": "chicken, beef, lamb, fish, fruits",
+        "FoodAdv2": "no grapes, prunes or raisins",
+        "FoodAdv3": "vegetables",
+        "Ttwof1":"Likes to dig",
+        "Ttwof2":"Destructive chewing",
+        "Ttwof3":"Can be difficult to housetrain",
+    },
+    
+    {
+        "name": "Sibrerian Husky",
+        "lifeStage": "Adult",
+        "age": "1-8 years",
+        "key": "value",
+        "Descrip1": "Quick and nimble-footed",
+        "Descrip2": "Siberians are known for their powerful but seemingly effortless gait",
+        "Descrip3": "Huskies can reach full physical maturity between 10 months and 18 months and are usually considered an adult from 12 months onwards",
+        "MedAdv1": "Your Husky will need a minimum of two hours of exercise every day",
+        "MedAdv2": "you'll need plenty of space and an extremely secure garden for them",
+        "MedAdv3": "Skin Problems",
+        "FoodAdv1": "a mixture of commercial dog food and raw food",
+        "FoodAdv2": "wet and dry dog foods, raw food, and home-cooked diets",
+        "FoodAdv3": "fresh meat such as chicken, beef, lamb, or fish",
+        "Ttwof1":"Personal Grooming",
+        "Ttwof2":"Skin infections",
+        "Ttwof3":"Cataracts",
+    },
+    
+    {
+        "name": "Sibrerian Husky",
+        "lifeStage": "Senior",
+        "age": "8 years",
+        "key": "value",
+        "Descrip1": "They will be graying hair to loss of mobility",
+        "Descrip2": "vision and hearing changes",
+        "Descrip3": "change to a senior diet and to start to reduce the amount of intense exercise given",
+        "MedAdv1": "Be aware of cancer",
+        "MedAdv2": "Be aware of Corneal dystrophy,
+        "MedAdv3": "Be aware of Hip Dysplasia",
+        "FoodAdv1": "They should eat wet food",
+        "FoodAdv2": "high-quality protein, healthy fats, vitamins, minerals, and fibre",
+        "FoodAdv3": "vegetables and berries",
+        "Ttwof1": "Getting Slower",
+        "Ttwof2": "Less Exercise",
+        "Ttwof3": "Cancer",
+    },
+    
+    {
+        "name": "Dachsund",
+        "lifeStage": "Puppy",
+        "age": "0-8 months",
+        "key": "value",
+        "Descrip1": "Their adaptability and compact size make them well-suited for both homes and apartments",
+        "Descrip2": "They are very social, love to play with their pet parents, and when socialized properly, can easily get along with other pets and humans",
+        "Descrip3": "They have a reputation for being on the stubborn side",
+        "MedAdv1": "He should have an obvious waist behind the ribs, when viewed from above",
+        "MedAdv2": "There should be little abdominal fat and a slight tuck-up should be evident when he is viewed from the side",
+        "MedAdv3": "generally healthy breed but can have back disc issues due to their long frame",
+        "FoodAdv1": "Eat beef or chicken",
+        "FoodAdv2": "turkey and lamb",
+        "FoodAdv3": "duck, eggs, and fish.",
+        "Ttwof1":"Make sure all potential hazards, valuables, and breakables are out of reach",
+        "Ttwof2":"Install baby gates to prevent access to certain areas of the house",
+        "Ttwof3":"Dachshunds are susceptible to slipped discs in their backs, so never let them run up and down stairs, or jump from high places",
+    },
+    
+    {
+        "name": "Dachsund",
+        "lifeStage": "Adult",
+        "age": "8 months - 10 years",
+        "key": "value",
+        "Descrip1": "They make other hounds look enormous",
+        "Descrip2": "They can't keep quiet",
+        "Descrip3": "They Have Three Different Types of Coats",
+        "MedAdv1": "Keep your Dachshund at a healthy weight",
+        "MedAdv2": "provide steps or ramps to stop your dog from jumping onto and off tall furniture",
+        "MedAdv3": "have your veterinarian examine and weigh your Dachshund a few times a year to ensure they remain healthy",
+        "FoodAdv1": "Meat, bone, offal",
+        "FoodAdv2": "a small amount of plant ingredients",
+        "FoodAdv3": "Protein",
+        "Ttwof1":"Back problems",
+        "Ttwof2":"Bold and outgoing",
+        "Ttwof3":"Dry Eye",
+    },
+    
+    {
+        "name": "Dachsund",
+        "lifeStage": "Senior",
+        "age": "10+ Years",
+        "key": "value",
+        "Descrip1": "Senior dog with reduced energy and potential signs of aging like graying fur and slower mobility",
+        "Descrip2": "They remain affectionate and enjoy gentle activities",
+        "Descrip3": "require regular vet check-ups for their health",
+        "MedAdv1": "Ensure regular veterinary check-ups, maintain a balanced diet",
+        "MedAdv2": "provide joint supplements if needed, and monitor for any signs of pain or discomfort",
+        "MedAdv3": "Adjust exercise to suit their reduced stamina and watch for age-related issues like dental problems or decreased vision",
+        "FoodAdv1": "Offer a diet rich in high-quality protein, healthy fats, and fiber, with controlled calories to prevent weight gain",
+        "FoodAdv2": "Include joint-supporting supplements like glucosamine and chondroitin",
+        "FoodAdv3": "provide easily digestible foods to accommodate any changes in their digestive system",
+        "Ttwof1":"Signs of arthritis, weight gain, dental issues, decreased appetite."
+        "Ttwof2":"changes in behavior",
+        "Ttwof3":"Regularly monitor their mobility, vision, and hearing",
+    }
+]
