@@ -7,17 +7,16 @@ import SwiftUI
 
 struct SurveyView: View {
     // Declare & Initalize variables
-    @State var isSignUp: Bool = true
-    @State var username: String = ""
-    @State var password: String = ""
-    @State var name: String = ""
-    @State var breeds: [String] = ["None2", "Nonefggffgr", "None",]
-    @State var experience: String = "Beginnertt"
+    @State private var isSignUp: Bool = true
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var name: String = ""
+    @State private var breedSelections: [String] = ["None", "None", "None",]
+    @State private var expSelection: String = "Beginner"
     let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
-    
-    @State var breedSelection = "None"
     let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
     let fontSize: CGFloat = 20
+    
     var body: some View {
         
 
@@ -65,15 +64,15 @@ struct SurveyView: View {
                         Text("2. Choose up to 3 dog breeds?\n(At least 1)")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelection, options: breedOptions)
-                        dropDownAnswer(title: "2nd Dog breed", selection: $breeds[1], options: breedOptions)
-                        dropDownAnswer(title: "3rd Dog breed", selection: $breeds[2], options: breedOptions)
+                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelections[0], options: breedOptions)
+                        dropDownAnswer(title: "2nd Dog breed", selection: $breedSelections[1], options: breedOptions)
+                        dropDownAnswer(title: "3rd Dog breed", selection: $breedSelections[2], options: breedOptions)
                         
                         // Question 3: Experience
                         Text("3. What is your experience with dog owning?")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        dropDownAnswer(title: "Your Experience", selection: $experience, options: expOptions)
+                        dropDownAnswer(title: "Your Experience", selection: $expSelection, options: expOptions)
                     }
                     
                     Spacer()
