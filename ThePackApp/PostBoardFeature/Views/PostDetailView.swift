@@ -15,15 +15,13 @@ struct PostDetailView: View {
                     .scaledToFit()
                     .frame(width: 30, height: 30)
                     .foregroundColor(.blue)
-                .padding(.leading, 10)
-              Spacer()
+                    .padding(.leading, 10)
+                Spacer()
                 Text("category")
                     .foregroundColor(.blue)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-        
-            Spacer()
-            
+
             Image(systemName: "camera.fill")
                 .resizable()
                 .scaledToFit()
@@ -31,41 +29,38 @@ struct PostDetailView: View {
                 .foregroundColor(.white)
                 .padding(.leading, 10)
             
-            @State var Post: String = ""
-
             
-            
-      
             Text("dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr")
-            
-            Spacer()
-            Spacer()
-            
-            Text("dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn ")
+                .padding()
             
             HStack {
-                Image ("Image")
+                Image("postPhoto")
                     .resizable()
-                    .scaledToFit()
-                    .cornerRadius(70)
-                    .frame(width: 50, height: 70)
-                    .foregroundColor(.white)
-                    .padding(.leading, 10)
+                    .frame(width: 45, height: 45)
+                
+                
+                
                 @State var firstName: String = ""
+                // Question 1: First Name
                 let fontSize: CGFloat = 20
                 
-                    // Question 1: First Name
-                    Text("")
-                        .font(.system(size: fontSize))
-                        .fontWeight(.medium)
-                    TextField("Comment your thoughts", text: $firstName)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                Text("")
+                    .font(.system(size: fontSize))
+                    .fontWeight(.medium)
+                TextField("Comment your thoughts", text: $firstName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            Spacer()
+            Spacer()
+        
+               
+                }
             }
         }
-    }
-}
     
 
+    
 #Preview {
-    PostDetailView()
-}
+        PostDetailView()
+    }
+
