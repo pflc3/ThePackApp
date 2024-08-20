@@ -24,7 +24,7 @@ struct WalkerRow: View {
                 
                 Spacer()
                 
-                Image("goldenPup")
+                Image("walkerWoman")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 40, height: 45)
