@@ -13,8 +13,8 @@ struct DogInfoDetailView: View {
             Spacer().frame(height:40)
             
             Image("goldenPup")
-                .resizable()  // Make the image resizable
-                .aspectRatio(contentMode: .fill)  //
+                .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 160)
                 .clipShape(Circle())
                 .overlay {

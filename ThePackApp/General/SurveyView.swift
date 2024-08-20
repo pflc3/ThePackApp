@@ -10,16 +10,15 @@ struct SurveyView: View {
     @State private var isSignUp: Bool = true
     @State private var username: String = ""
     @State private var password: String = ""
-    @State private var name: String = ""
-    @State private var breedSelections: [String] = ["None", "None", "None",]
+    @State private var firstName: String = ""
+    @State private var lastName: String = ""
+    @State private var breedSelecs: [String] = ["None", "None", "None"]
     @State private var expSelection: String = "Beginner"
     let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
     let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
     let fontSize: CGFloat = 20
     
     var body: some View {
-        
-
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 25) {
@@ -37,7 +36,7 @@ struct SurveyView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.vertical)
-                   
+                    
                     // Username
                     Text("Username")
                         .font(.system(size: fontSize))
@@ -53,23 +52,30 @@ struct SurveyView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     if (isSignUp) {
-                        // Question 1: Name
-                        Text("1. What is your first/last name?")
+                        // Question 1: First Name
+                        Text("1. What is your first name?")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        TextField("Enter your name", text: $name)
+                        TextField("Enter your name", text: $firstName)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                        // Question 2: Dog Breeds
-                        Text("2. Choose up to 3 dog breeds?\n(At least 1)")
+                        // Question 2: Last Name
+                        Text("2. What is your last name?")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelections[0], options: breedOptions)
-                        dropDownAnswer(title: "2nd Dog breed", selection: $breedSelections[1], options: breedOptions)
-                        dropDownAnswer(title: "3rd Dog breed", selection: $breedSelections[2], options: breedOptions)
+                        TextField("Enter your name", text: $lastName)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                        // Question 3: Experience
-                        Text("3. What is your experience with dog owning?")
+                        // Question 3: Dog Breeds
+                        Text("3. Choose up to 3 dog breeds?\n(At least 1)")
+                            .font(.system(size: fontSize))
+                            .fontWeight(.medium)
+                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelecs[0], options: breedOptions)
+                        dropDownAnswer(title: "2nd Dog breed", selection: $breedSelecs[1], options: breedOptions)
+                        dropDownAnswer(title: "3rd Dog breed", selection: $breedSelecs[2], options: breedOptions)
+                        
+                        // Question 4: Experience
+                        Text("4. What is your experience with dog owning?")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
                         dropDownAnswer(title: "Your Experience", selection: $expSelection, options: expOptions)
@@ -92,7 +98,6 @@ struct SurveyView: View {
                 .padding()
             }
         }
-        
     }
 }
 

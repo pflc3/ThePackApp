@@ -9,11 +9,15 @@ import PhotosUI
 struct ProfileView: View {
     // Declare & Initalize variables
     @State private var isEditing: Bool = false
-    @State private var username: String = "PackUser"
-    @State private var bio: String = "Dog lover and SwiftUI enthusiast."
+    @State private var firstName: String = "Jane"
+    @State private var lastName: String = "Doe"
     @State private var email: String = "thePack@example.com"
     @State private var phoneNumber: String = "(123) 456-7890"
-    @State private var password: String = ""
+    @State private var username: String = "PackUser"
+    @State private var password: String = "Pass123!"
+    
+    @State private var breedSelecs: [String] = ["Dachshund", "Siberian Husky", "Golden Retriever"]
+    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
     
     // Holds currenly displayed profile pic
     @State private var profilePic: Image = Image(systemName: "person.crop.circle.fill")
@@ -23,69 +27,82 @@ struct ProfileView: View {
     @State private var inputImage: UIImage?
     
     var body: some View {
-        VStack(spacing: 20) {
-            // Profile picture
-            profilePic
-                .resizable()
-                .scaledToFill()
-                .frame(width: 120, height: 120)
-                .foregroundColor(.white)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .shadow(radius: 10)
-                .padding(.top, 40)
-                .onTapGesture {
-                    if isEditing {
-                        showingImagePicker = true
+        ScrollView {
+            VStack {
+                // Profile picture
+                profilePic
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 120, height: 120)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                    .shadow(radius: 10)
+                    .padding(.top, 40)
+                    .onTapGesture {
+                        if isEditing {
+                            showingImagePicker = true
+                        }
+                    }
+                
+                Spacer().frame(height: 40)
+                
+                if isEditing {
+                    // Editable firstNm, lastNm, dog breeds, email, number, user, password
+                    VStack(alignment: .leading, spacing: 20) {
+                        textBox(label: "First Name", info: $firstName)
+                        textBox(label: "Last Name", info: $lastName)
+                        
+                        Text("Dog Breeds")
+                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelecs[0], options: breedOptions)
+                        dropDownAnswer(title: "2nd Dog breed", selection: $breedSelecs[1], options: breedOptions)
+                        dropDownAnswer(title: "3rd Dog breed", selection: $breedSelecs[2], options: breedOptions)
+                        
+                        textBox(label: "Email", info: $email, keyboardType: .emailAddress)
+                        textBox(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
+                        textBox(label: "Username", info: $username)
+                        secureTextBox(label: "Password", info: $password)
+                    }
+                    .padding(.horizontal, 20)
+                } else {
+                    // Display firstNm, dog breeds, email, number, user
+                    VStack(spacing: 35) {
+                        Text("Howl-o "+firstName+"!")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                        VStack(spacing: 15) {
+                            infoRow(icon: "pawprint.fill", text: breedSelecs[0])
+                            infoRow(icon: "pawprint.fill", text: breedSelecs[1])
+                            infoRow(icon: "pawprint.fill", text: breedSelecs[2])
+                        }
+                        infoRow(icon: "envelope.fill", text: email)
+                        infoRow(icon: "phone.fill", text: phoneNumber)
+                        infoRow(icon: "person.fill", text: username)
                     }
                 }
-            
-            Spacer().frame(height: 10)
-            
-            if isEditing {
-                // Editable user, bio, email, number, password
-                VStack(spacing: 20) {
-                    textBox(label: "Username", info: $username)
-                    textBox(label: "Bio", info: $bio)
-                    textBox(label: "Email", info: $email, keyboardType: .emailAddress)
-                    textBox(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
-                    secureTextBox(label: "Password", info: $password)
+                
+                Spacer().frame(height: 40)
+                
+                // Button
+                Button(action: {isEditing.toggle()}) {
+                    // Switch from save and edit profile
+                    Text(isEditing ? "Save" : "Edit Profile")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 40)
                 }
-                .padding(.horizontal, 20)
-            } else {
-                // Display user, bio, email, number
-                VStack(spacing: 45) {
-                    Text(username)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    Text(bio)
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                    infoRow(icon: "envelope.fill", text: email)
-                        .font(.title2)
-                    infoRow(icon: "phone.fill", text: phoneNumber)
-                        .font(.title2)
+                
+                if(isEditing){
+                    Spacer().frame(height: 40)
                 }
             }
-            
-            Spacer()
-            
-            // Button
-            Button(action: {isEditing.toggle()}) {
-                // Switch from save and edit profile
-                Text(isEditing ? "Save" : "Edit Profile")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 40)
-            }
-            .padding(.top, 30)
         }
         .background(largeBlueGradient())
         // Displays ImagePicker as sheet when showingImagePicker is true
@@ -104,6 +121,10 @@ struct ProfileView: View {
     }
 }
 
+#Preview {
+    ProfileView()
+}
+
 // Blue gradient function with more blue
 func largeBlueGradient(opac: Double = 0.8) -> some View {
     LinearGradient(
@@ -116,7 +137,7 @@ func largeBlueGradient(opac: Double = 0.8) -> some View {
 
 // Label and text box
 func textBox(label: String, info: Binding<String>, keyboardType: UIKeyboardType = .default) -> some View {
-    VStack (alignment: .leading) {
+    VStack(alignment: .leading) {
         Text(label)
             .fontWeight(.medium)
             .foregroundColor(.white)
@@ -128,7 +149,7 @@ func textBox(label: String, info: Binding<String>, keyboardType: UIKeyboardType 
 
 // Label and secure text box
 func secureTextBox(label: String, info: Binding<String>) -> some View {
-    VStack (alignment: .leading) {
+    VStack(alignment: .leading) {
         Text(label)
             .fontWeight(.medium)
             .frame(width: 100, alignment: .leading)
@@ -146,6 +167,7 @@ func infoRow(icon: String, text: String) -> some View {
         Text(text)
             .foregroundColor(.white)
     }
+    .font(.title2)
 }
 
 // ImagePicker struct, a custom wrapper around the UIImagePickerController
@@ -181,8 +203,4 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePicker>) {}
-}
-
-#Preview {
-    ProfileView()
 }

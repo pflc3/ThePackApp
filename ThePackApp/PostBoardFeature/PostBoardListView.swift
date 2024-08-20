@@ -7,26 +7,32 @@ import SwiftUI
 
 struct PostBoardListView: View {
     var body: some View {
-        VStack {
-            // View Title
-            customTitle(title: "Bark Board", w: 340, h: 50)
-            
-            Spacer()
-            
-            VStack(spacing: 35) {
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
+        NavigationView {
+            ScrollView {
+                VStack {
+                    // Page Title
+                    customTitle(title: "Bark Board", w: 340, h: 50)
+                    
+                    Spacer().frame(height: 50)
+                    
+                    VStack(spacing: 40) {
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                        PostRow()
+                    }
+                    
+                    Spacer().frame(height: 50)
+                }
+                .padding()
             }
-            .padding(.bottom, 25)
-            
-            Spacer()
+            .background(blueGradient())
         }
-        .padding()
-        .background(blueGradient())
     }
 }
 
