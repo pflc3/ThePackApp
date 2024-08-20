@@ -24,7 +24,9 @@ struct WalkerDetailView: View {
                 }
                 .shadow(radius: 7)
             
-            // Descrition / Details
+            // Small Bio
+        
+            // Descrition
             
             // General location
             
@@ -32,7 +34,7 @@ struct WalkerDetailView: View {
             
             // Rating
             
-            // Phone numberi
+            // Phone number
         }
         .padding()
         .background(blueGradient())

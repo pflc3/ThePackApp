@@ -149,8 +149,8 @@
 				E846BBEA2C6C00E600A0A199 /* General */,
 				E846BBE92C6C007900A0A199 /* DogInfoFeature */,
 				E846BBEB2C6C015F00A0A199 /* PostBoardFeature */,
-				E846BBE82C6C005700A0A199 /* Data */,
 				E846D8B42C6DB02900A2F015 /* WalkerFeature */,
+				E846BBE82C6C005700A0A199 /* Data */,
 				E88C99C02C5EA69400C22347 /* Preview Content */,
 			);
 			path = ThePackApp;

@@ -1,57 +1,65 @@
 # The Pack App 🐶
+## ThePackApp
+ThePackApp
+- Main function that runs contentView
+ContentView
+- Starts at survey page which leads to tab bar page
+TabBarView
+- Has a tab bar at the bottom that will connect all the different pages
+Other
+- Project Name is 'The Pack'
+- AppIcon in assets used to hold our app icon
 
 ## General
 Launch Splash Page
-- Will pop up shortly
-- Will have our logo, the name of our app, and the swift logo
+- Pops up shortly
+- App logo, app name, swift logo, and paw prints
 
 Survey Page
-- Will only pop up for first time users
-- Will ask for user info on them, their dog(s), and experience
-- Will signup for an account or signin to account
+- Asks for user info (personal, their dogs, experience, etc)
+- Able to signup for an account or signin to an account
+* (Will only pop up for first time users)
     
 Home Page
-- Will include a random dog fun fact and joke
-- Will have a navigation bar at the bottom that will lead to different pages
-- Navigation bar will be on every other page as well 
+- Includes a random dog fun fact and joke
 
 Profile Page
-- Will have profile and information
-- Will have settings that you can be tweaked
+- Displays profile info and profile pic
+- Able to change profile info (ex. dog breeds) and profile pic
 
 ## DogInfo Feature
 DogInfo List Page
-- Will consist of 3 DogInfoRows
-- Will show up to 3 different breeds with a picture and title
-- Will be able to add/remove breeds
+- Consists of 3 DogInfoRows
+- DogInfoRows have a title and headshot picture
 
 DogInfo Detail Page
-- It will have a bigger picture of the breed and title
-- It will a variety of information about the breed
-- The detail page will have 3 diff versions for 3 diff life stages
+- Title and bigger full body picture
+* Has a variety of information about the breed
+* (Will have 3 diff versions for 3 diff life stages)
 
 ## PostBoard Feature
 PostBoard List Page
-- Will consist of multiple PostRows
-- Posts will only have titles
-- Will have filters at the top (breed, etc)
-- Different dog owners can share infromation or ask questions
-- Will have a post button without functionality
+- Consists of 9 PostRows
+- Posts have a title and category (Question, PSA, etc)
+* Has a post button without functionality
+* (Will have filters at the top (breed, category, etc))
 
 Post Detail Page
-- Will be able to see title and full description
-- Will be able to see other comments and comment yourself
-- Different dog owners can respond or answer questions with comments
+* Title, category, and a full description
+* Able to see other comments
+* Able to comment yourself
+* (Will have optional photo)
 
 ## Walker Feature
 Walker List Page
-- Will consist of multiple WalkerRows
-- WalkerRows will have picture, name, small description, price, rating
-- Will have filters at the top (availability, location, etc)
+- Consists of 9 WalkerRows
+- WalkerRows have a title and headshot picture
+* (Will have filters at the top (location, prie, etc))
 
 Walker Detail Page
-- Will be able to message walker
-- Book walker? Hire walker?
+- Title and headshot picture
+* Small bio and description
+* Location, price, rating, phone number
 
 ## Team
 - Estuardo

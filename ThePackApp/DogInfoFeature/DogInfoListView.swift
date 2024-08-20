@@ -7,23 +7,25 @@ import SwiftUI
 
 struct DogInfoListView: View {
     var body: some View {
-        VStack {
-            // View Title
-            customTitle(title: "Your Furry Friends", w: 340, h: 65)
-            
-            Spacer()
-            
-            VStack(spacing: 35) {
-                DogInfoRow()
-                DogInfoRow()
-                DogInfoRow()
+        NavigationView {
+            VStack {
+                // Page Title
+                customTitle(title: "Your Furry Friends", w: 340, h: 65)
+                
+                Spacer()
+                
+                VStack(spacing: 35) {
+                    DogInfoRow()
+                    DogInfoRow()
+                    DogInfoRow()
+                }
+                .padding(.bottom, 25)
+                
+                Spacer()
             }
-            .padding(.bottom, 25)
-            
-            Spacer()
+            .padding()
+            .background(blueGradient())
         }
-        .padding()
-        .background(blueGradient())
     }
 }
 

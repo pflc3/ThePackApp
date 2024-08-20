@@ -57,9 +57,8 @@ struct TabBarView: View {
     
     // Tab Bar Attributes
     init() {
-        // Get reference to tab bar and set up
+        // Get reference to tab bar
         let tabBarAttribs = UITabBarAppearance()
-        tabBarAttribs.configureWithOpaqueBackground()
         
         // Back ground color
         tabBarAttribs.backgroundColor = UIColor(Color.blue.opacity(0.7))
