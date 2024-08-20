@@ -21,24 +21,22 @@ Launch Splash Page
 Survey Page
 - Asks for user info (personal, their dogs, experience, etc)
 - Able to signup for an account or signin to an account
-* (Will only pop up for first time users)
     
 Home Page
 - Includes a random dog fun fact and joke
 
 Profile Page
 - Displays profile info and profile pic
-- Able to change profile info (ex. dog breeds) and profile pic
+- Able to change profile info and profile pic
 
 ## DogInfo Feature
 DogInfo List Page
-- Consists of 3 DogInfoRows
+- Consists of 9 DogInfoRows
 - DogInfoRows have a title and headshot picture
 
 DogInfo Detail Page
 - Title and bigger full body picture
-* Has a variety of information about the breed
-* (Will have 3 diff versions for 3 diff life stages)
+- Has a variety of information about the breed
 
 ## PostBoard Feature
 PostBoard List Page
@@ -61,8 +59,8 @@ Walker List Page
 
 Walker Detail Page
 - Title and headshot picture
-* Small bio and description
-* Location, price, rating, phone number
+- Small bio and description
+- Location, price, rating, phone number
 
 ## Team
 - Estuardo
