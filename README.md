@@ -2,10 +2,13 @@
 ## ThePackApp
 ThePackApp
 - Main function that runs contentView
+
 ContentView
 - Starts at survey page which leads to tab bar page
+
 TabBarView
 - Has a tab bar at the bottom that will connect all the different pages
+
 Other
 - Project Name is 'The Pack'
 - AppIcon in assets used to hold our app icon
