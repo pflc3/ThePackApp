@@ -2,8 +2,6 @@
 //  DogMessagesManager.swift
 //  ThePackApp
 //
-//  Created by Gcode on 8/14/24.
-//
 
 import Foundation
 import SwiftUI
