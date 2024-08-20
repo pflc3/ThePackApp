@@ -2,8 +2,6 @@
 //  TabBarView.swift
 //  ThePackApp
 //
-//  Created by Gcode on 8/19/24.
-//
 
 import SwiftUI
 

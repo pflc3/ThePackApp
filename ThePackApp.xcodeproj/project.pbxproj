@@ -50,7 +50,7 @@
 		E846D8B92C6DB09D00A2F015 /* WalkerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkerDetailView.swift; sourceTree = "<group>"; };
 		E86627352C6A5B3800E84A4C /* ThePackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePackApp.swift; sourceTree = "<group>"; };
 		E88297D62C6C314200A29FF9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E88C99B72C5EA69200C22347 /* ThePackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88C99B72C5EA69200C22347 /* The Pack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Pack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88C99BC2C5EA69200C22347 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E88C99BE2C5EA69400C22347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		E88C99B82C5EA69200C22347 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E88C99B72C5EA69200C22347 /* ThePackApp.app */,
+				E88C99B72C5EA69200C22347 /* The Pack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 			);
 			name = ThePackApp;
 			productName = ThePackApp;
-			productReference = E88C99B72C5EA69200C22347 /* ThePackApp.app */;
+			productReference = E88C99B72C5EA69200C22347 /* The Pack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -403,7 +403,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Gcode3.ThePackApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The Pack";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,7 +433,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Gcode3.ThePackApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The Pack";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
