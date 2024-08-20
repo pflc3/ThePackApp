@@ -23,7 +23,7 @@ struct WalkerDetailView: View {
                 .shadow(radius: 7)
             
             Spacer()
-            
+            Text("contact info:")
             Text("Email: name@example.com")
                 .padding(.bottom, 5)
             Text("Phone: (123) 456-7890")
