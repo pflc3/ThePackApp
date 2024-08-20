@@ -8,13 +8,11 @@ import SwiftUI
 struct WalkerDetailView: View {
     var body: some View {
         VStack {
-            // Walker Name
             customTitle(title: "Walker Name", w: 360, h: 65)
             
-            Spacer()
+            Spacer().frame(height:40)
             
-            // Person Image
-            Image("goldenPup")
+            Image("walkerGirl")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 160)
@@ -24,17 +22,16 @@ struct WalkerDetailView: View {
                 }
                 .shadow(radius: 7)
             
-            // Small Bio
-        
-            // Descrition
+            Spacer()
             
-            // General location
+            Text("Email: name@example.com")
+                .padding(.bottom, 5)
+            Text("Phone: (123) 456-7890")
+                .padding(.bottom, 5)
+            Text("Address: 123 Washington St")
+                .padding(.bottom, 5)
             
-            // Price
-            
-            // Rating
-            
-            // Phone number
+            Spacer()
         }
         .padding()
         .background(blueGradient())
