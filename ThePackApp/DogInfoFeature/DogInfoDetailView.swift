@@ -12,7 +12,7 @@ struct DogInfoDetailView: View {
             
             Spacer().frame(height: 40)
             
-            Image("GoldenPupBody")
+            Image("goldenAdultBody")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 250, height: 160)
@@ -25,14 +25,14 @@ struct DogInfoDetailView: View {
             
             VStack(alignment: .leading, spacing: 15) {
                 Group {
-                    Text("Breed: Golden Retriever")
+                    Text("Life Stage: Adult")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.primary)
                     
                     Divider().background(Color.blue.opacity(0.4))
                     
-                    Text("Age: 3 years")
+                    Text("Age: 8 to 10 months")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     

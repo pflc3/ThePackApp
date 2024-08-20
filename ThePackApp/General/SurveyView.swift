@@ -14,7 +14,7 @@ struct SurveyView: View {
     @State private var lastName: String = ""
     @State private var breedSelecs: [String] = ["None", "None", "None"]
     @State private var expSelection: String = "Beginner"
-    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
+    let breedOptions: [String] = ["None", "Dachshund", "Siberian Husky", "Golden Retriever", "German Shepard", "Bulldog", "Poodle", "Rottweilers", "Beagle", "American Pit Bull Terrier"]
     let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
     let fontSize: CGFloat = 20
     

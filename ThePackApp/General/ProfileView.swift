@@ -13,11 +13,11 @@ struct ProfileView: View {
     @State private var lastName: String = "Doe"
     @State private var email: String = "thePack@example.com"
     @State private var phoneNumber: String = "(123) 456-7890"
-    @State private var username: String = "PackUser"
+    @State private var username: String = "janedoe.is.cool"
     @State private var password: String = "Pass123!"
     
     @State private var breedSelecs: [String] = ["Dachshund", "Siberian Husky", "Golden Retriever"]
-    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund"]
+    let breedOptions: [String] = ["None", "Dachshund", "Siberian Husky", "Golden Retriever", "German Shepard", "Bulldog", "Poodle", "Rottweilers", "Beagle", "American Pit Bull Terrier"]
     
     // Holds currenly displayed profile pic
     @State private var profilePic: Image = Image(systemName: "person.crop.circle.fill")

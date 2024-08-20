@@ -2,7 +2,7 @@
     {
         "name": "Golden Retriever",
         "lifeStage": "Puppy",
-        "age": "0-15 months",
+        "age": "0 to 15 months",
         "key": "value",
         "Descrip1": "Golden Retrievers are very energetic",
         "Descrip2": "Very dependent as newborns",
@@ -59,7 +59,7 @@
     {
         "name": "Sibrerian Husky",
         "lifeStage": "Puppy",
-        "age": "0-1 years",
+        "age": "0 to 1 years",
         "key": "value",
         "Descrip1": "Huskies are social and family-oriented",
         "Descrip2": "These pups are cunning escape artists and notorious howlers",
@@ -78,7 +78,7 @@
     {
         "name": "Sibrerian Husky",
         "lifeStage": "Adult",
-        "age": "1-8 years",
+        "age": "1 to 8 years",
         "key": "value",
         "Descrip1": "Quick and nimble-footed",
         "Descrip2": "Siberians are known for their powerful but seemingly effortless gait",
@@ -97,7 +97,7 @@
     {
         "name": "Sibrerian Husky",
         "lifeStage": "Senior",
-        "age": "8 years",
+        "age": "8+ years",
         "key": "value",
         "Descrip1": "They will be graying hair to loss of mobility",
         "Descrip2": "vision and hearing changes",
@@ -116,7 +116,7 @@
     {
         "name": "Dachsund",
         "lifeStage": "Puppy",
-        "age": "0-8 months",
+        "age": "0 to 8 months",
         "key": "value",
         "Descrip1": "Their adaptability and compact size make them well-suited for both homes and apartments",
         "Descrip2": "They are very social, love to play with their pet parents, and when socialized properly, can easily get along with other pets and humans",
@@ -135,7 +135,7 @@
     {
         "name": "Dachsund",
         "lifeStage": "Adult",
-        "age": "8 months - 10 years",
+        "age": "8 months to 10 years",
         "key": "value",
         "Descrip1": "They make other hounds look enormous",
         "Descrip2": "They can't keep quiet",
