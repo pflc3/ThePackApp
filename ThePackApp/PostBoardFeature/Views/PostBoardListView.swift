@@ -15,7 +15,7 @@ struct PostBoardListView: View {
                     
                     Spacer().frame(height: 50)
                     
-                    VStack(spacing: 40) {
+                    VStack(spacing: 25) {
                         PostRow()
                         PostRow()
                         PostRow()

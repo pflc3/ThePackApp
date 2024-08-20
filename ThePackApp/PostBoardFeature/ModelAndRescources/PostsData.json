@@ -1,28 +1,74 @@
 [
     {
         "Title": "At what age should I start taking my dog on walks?",
-        "Comment1": "Yes",
-        "Comment2": "No" ,
+        "Category": "Question",
+        "Description": "My dog is 4 months old and I've been faily new to this whole dog owner thing at what age would you start walking your dog to the park.",
+        "Comment1": "I would first give it it's shots to make sure it will not get sick then start thinking about walking the dog",
+        "Comment2": "You should buy a leash and start taking your dog out as soon as it turns 5 months." ,
     },
     
     {
-        "Title": "My dog wont stop chewing on my furniture!",
-        "Comment1": "So real",
-        "Comment2": "Call pest control" ,
+        "Title": "How often should I bathe my puppy?",
+        "Category": "Grooming",
+        "Description": "I just got a new puppy, and I'm unsure how often I should be bathing him. Any advice?",
+        "Comment1": "I recommend bathing your puppy once every two weeks, but make sure you're using a gentle puppy shampoo.",
+        "Comment2": "Only bathe when necessary, like if they get dirty. Too much bathing can dry out their skin."
+    },
 
-        "Title": "Trying to get my dog used to other pets has been an adventure.",
-        "Comment1": "I know right",
-        "Comment2": "Literally" ,
-        
-        
-        "Title": "My dog gets anxious when I leave, and I’m sharing what seems to help.",
-        "Comment1": "Thank you so much!",
-        "Comment2": "Cant relate lol" ,
-        
-        
-        "Title": "My dog likes to cuddle with my baby at night",
-        "Comment1": "Aww so cute!",
-        "Comment2": "I wish my dog would do that!" ,
+    {
+        "Title": "What is the best way to socialize a puppy?",
+        "Category": "Behavior",
+        "Description": "I have a 3-month-old puppy, and I'm worried about making sure he is well socialized. What should I do?",
+        "Comment1": "Introduce your puppy to different people, places, and other dogs gradually. Puppy classes can also help.",
+        "Comment2": "Make sure all interactions are positive. Avoid overwhelming the puppy with too much too soon."
+    },
+   
+    {
+        "Title": "What should I feed my dog?",
+        "Category": "Nutrition",
+        "Description": "I just adopted a 2-year-old dog, and I'm not sure what kind of food is best. Should I stick with dry kibble or try wet food?",
+        "Comment1": "Dry kibble is great for keeping teeth clean, but adding some wet food can make meals more enjoyable for your dog.",
+        "Comment2": "Consider the nutritional needs of your dog. Some dogs do well on a mix of both, while others might have specific dietary needs."
+    },
+
+    {
+        "Title": "How do I stop my dog from chewing on furniture?",
+        "Category": "Training",
+        "Description": "My 6-month-old puppy keeps chewing on the couch. How can I get him to stop?",
+        "Comment1": "Make sure your puppy has plenty of chew toys. Redirect his attention to those whenever he starts chewing on furniture.",
+        "Comment2": "Use a deterrent spray on furniture, and always reward your puppy when he chooses to chew on his toys instead."
+    },
+
+    {
+        "Title": "Should I crate train my dog?",
+        "Category": "Training",
+        "Description": "I’m considering crate training for my new puppy but I’m not sure if it’s the right choice. What are the benefits?",
+        "Comment1": "Crate training can help with housebreaking and gives your dog a safe space to relax. Just make sure the crate is comfortable and not used for punishment.",
+        "Comment2": "Start with short periods in the crate and gradually increase the time. Always associate the crate with positive experiences."
+    },
+    
+    {
+        "Title": "How can I help my dog with separation anxiety?",
+        "Category": "Behavior",
+        "Description": "My dog seems very anxious whenever I leave the house. How can I make her more comfortable when I'm gone?",
+        "Comment1": "Try leaving your dog with a special toy or treat that she only gets when you leave. This can help create positive associations with your departure.",
+        "Comment2": "Practice short departures and gradually increase the time. You can also leave the TV or radio on to provide some background noise."
+    },
+    
+    {
+        "Title": "When should I spay or neuter my dog?",
+        "Category": "Health",
+        "Description": "I have a 5-month-old dog, and I'm not sure when the best time to spay or neuter is. Any recommendations?",
+        "Comment1": "It's often recommended to spay or neuter your dog around 6 months, but consult your vet for advice based on your dog's breed and health.",
+        "Comment2": "Some vets suggest waiting until the dog is slightly older, especially for larger breeds, to allow for full growth."
+    },
+    
+    {
+        "Title": "What are the best toys for a teething puppy?",
+        "Category": "Grooming",
+        "Description": "My 4-month-old puppy is teething, and I want to get him some good toys to help. What should I look for?",
+        "Comment1": "Look for durable, rubber toys that can withstand chewing. Some toys can even be frozen to soothe sore gums.",
+        "Comment2": "Avoid toys that can easily be torn apart or swallowed. Kong toys are a popular choice for teething puppies."
     }
 ]
 
