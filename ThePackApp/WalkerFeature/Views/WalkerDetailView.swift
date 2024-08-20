@@ -18,7 +18,7 @@ struct WalkerDetailView: View {
                 .frame(width: 150, height: 160)
                 .clipShape(Circle())
                 .overlay {
-                    Circle().stroke(.gray, lineWidth: 4)
+                    Circle().stroke(.white, lineWidth: 1)
                 }
                 .shadow(radius: 7)
             
