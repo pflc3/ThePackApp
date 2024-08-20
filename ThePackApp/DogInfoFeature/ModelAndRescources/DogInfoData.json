@@ -3,6 +3,7 @@
         "name": "Golden Retriever",
         "lifeStage": "Puppy",
         "age": "0 to 15 months",
+        "weight": "55 to 75 pounds",
         "key": "value",
         "Descrip1": "Golden Retrievers are very energetic",
         "Descrip2": "Very dependent as newborns",
@@ -15,13 +16,14 @@
         "FoodAdv3": " Maintain a balanced diet; monitor weight and adjust portions as needed (12-15 months)",
         "Ttwof1":"Monitor for signs of hip dysplasia, allergies, and dental problems",
         "Ttwof2":"Check for excessive shedding, mats, or skin issues",
-        "Ttwof3":"Ensure they get adequate exercise to prevent obesity and maintain joint health",
+        "Ttwof3":"Ensure they get adequate exercise to prevent obesity and maintain joint health"
     },
     
     {
         "name": "Golden Retriever",
         "lifeStage": "Adult",
         "age": "15 months to 6 years",
+        "weight" "65-85 pounds",
         "key": "value",
         "Descrip1": "They are full grown around (2 years",
         "Descrip2": "Usually in peak health after (2 years)",
@@ -34,13 +36,14 @@
         "FoodAdv3": "Consider senior dog food if needed; watch for weight changes and adjust diet to maintain health (4-6 years)",
         "Ttwof1":"Watch for gain or loss",
         "Ttwof2":"Check for allergies or excessive shedding and Watch for bad breath or eating difficulty",
-        "Ttwof3":"Sudden behavioral changes and Look for stiffness or limping",
+        "Ttwof3":"Sudden behavioral changes and Look for stiffness or limping"
     },
     
     {
         "name": "Golden Retriever",
         "lifeStage": "Senior",
         "age": "6+ years",
+        "weight: 65-85 pounds",
         "key": "value",
         "Descrip1": "often less active and slower",
         "Descrip2": "May show signs of aging, such as graying fur and a less vibrant coat",
@@ -53,13 +56,14 @@
         "FoodAdv3": " Focus on a diet that supports joint health and overall wellness (11-12 years)",
         "Ttwof1":"Joint Health: Watch for arthritis or mobility issues",
         "Ttwof2":"Weight Changes: Monitor for weight gain or loss",
-        "Ttwof3":"Cognitive Changes: Be alert to signs of confusion or disorientation",
+        "Ttwof3":"Cognitive Changes: Be alert to signs of confusion or disorientation"
     },
     
     {
         "name": "Sibrerian Husky",
         "lifeStage": "Puppy",
         "age": "0 to 1 years",
+        "weight": "45-60 pounds",
         "key": "value",
         "Descrip1": "Huskies are social and family-oriented",
         "Descrip2": "These pups are cunning escape artists and notorious howlers",
@@ -72,13 +76,14 @@
         "FoodAdv3": "vegetables",
         "Ttwof1":"Likes to dig",
         "Ttwof2":"Destructive chewing",
-        "Ttwof3":"Can be difficult to housetrain",
+        "Ttwof3":"Can be difficult to housetrain"
     },
     
     {
         "name": "Sibrerian Husky",
         "lifeStage": "Adult",
         "age": "1 to 8 years",
+        "weight": "45-60 pounds",
         "key": "value",
         "Descrip1": "Quick and nimble-footed",
         "Descrip2": "Siberians are known for their powerful but seemingly effortless gait",
@@ -91,13 +96,14 @@
         "FoodAdv3": "fresh meat such as chicken, beef, lamb, or fish",
         "Ttwof1":"Personal Grooming",
         "Ttwof2":"Skin infections",
-        "Ttwof3":"Cataracts",
+        "Ttwof3":"Cataracts"
     },
     
     {
         "name": "Sibrerian Husky",
         "lifeStage": "Senior",
         "age": "8+ years",
+        "weight": "45-60 pounds",
         "key": "value",
         "Descrip1": "They will be graying hair to loss of mobility",
         "Descrip2": "vision and hearing changes",
@@ -110,13 +116,14 @@
         "FoodAdv3": "vegetables and berries",
         "Ttwof1": "Getting Slower",
         "Ttwof2": "Less Exercise",
-        "Ttwof3": "Cancer",
+        "Ttwof3": "Cancer"
     },
     
     {
         "name": "Dachsund",
         "lifeStage": "Puppy",
         "age": "0 to 8 months",
+        "weight": "16 pounds",
         "key": "value",
         "Descrip1": "Their adaptability and compact size make them well-suited for both homes and apartments",
         "Descrip2": "They are very social, love to play with their pet parents, and when socialized properly, can easily get along with other pets and humans",
@@ -129,13 +136,14 @@
         "FoodAdv3": "duck, eggs, and fish.",
         "Ttwof1":"Make sure all potential hazards, valuables, and breakables are out of reach",
         "Ttwof2":"Install baby gates to prevent access to certain areas of the house",
-        "Ttwof3":"Dachshunds are susceptible to slipped discs in their backs, so never let them run up and down stairs, or jump from high places",
+        "Ttwof3":"Dachshunds are susceptible to slipped discs in their backs, so never let them run up and down stairs, or jump from high places"
     },
     
     {
         "name": "Dachsund",
         "lifeStage": "Adult",
         "age": "8 months to 10 years",
+        "weight": "16-32 pounds",
         "key": "value",
         "Descrip1": "They make other hounds look enormous",
         "Descrip2": "They can't keep quiet",
@@ -148,13 +156,13 @@
         "FoodAdv3": "Protein",
         "Ttwof1":"Back problems",
         "Ttwof2":"Bold and outgoing",
-        "Ttwof3":"Dry Eye",
+        "Ttwof3":"Dry Eye"
     },
     
     {
         "name": "Dachsund",
         "lifeStage": "Senior",
-        "age": "10+ Years",
+        "age": "16-32 pounds",
         "key": "value",
         "Descrip1": "Senior dog with reduced energy and potential signs of aging like graying fur and slower mobility",
         "Descrip2": "They remain affectionate and enjoy gentle activities",
@@ -167,6 +175,6 @@
         "FoodAdv3": "provide easily digestible foods to accommodate any changes in their digestive system",
         "Ttwof1":"Signs of arthritis, weight gain, dental issues, decreased appetite."
         "Ttwof2":"changes in behavior",
-        "Ttwof3":"Regularly monitor their mobility, vision, and hearing",
+        "Ttwof3":"Regularly monitor their mobility, vision, and hearing"
     }
 ]
