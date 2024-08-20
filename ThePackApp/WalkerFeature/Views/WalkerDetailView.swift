@@ -12,7 +12,7 @@ struct WalkerDetailView: View {
             
             Spacer().frame(height:40)
             
-            Image("walkerGirl")
+            Image("dogWalker")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 160)
