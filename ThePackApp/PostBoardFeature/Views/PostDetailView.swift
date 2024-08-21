@@ -11,15 +11,16 @@ struct PostDetailView: View {
     var body: some View {
         VStack {
             customTitle(title: "Post Title", w: 360, h: 65)
-            
+        
+         
             HStack {
                 Image(systemName: "camera.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30, height: 25)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.black)
                 Text("Category")
-                    .foregroundColor(.blue)
+                    .foregroundColor(.black)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .center)
@@ -36,12 +37,12 @@ struct PostDetailView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding()
-            
             Spacer()
         }
+        .background(blueGradient())
     }
 }
-    
+
 
     
 #Preview {
