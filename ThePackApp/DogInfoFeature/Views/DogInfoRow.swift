@@ -24,7 +24,6 @@ struct DogInfoRow: View {
             Text(dogInfoVar.lifeStage)
                 .font(.headline)
                 .fontWeight(.light)
-                .padding(.trailing, 10)
         }
     }
 }
