@@ -22,7 +22,7 @@ struct WalkerListView: View {
             .scrollContentBackground(.hidden)
             .background(blueGradient())
         } detail: {
-            Text("Select a dog info detail page")
+            Text("Select a walker detail page")
         }
     }
 }
