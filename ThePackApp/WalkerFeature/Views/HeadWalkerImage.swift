@@ -11,6 +11,7 @@ struct HeadWalkerImage: View {
     var walkerVar: Walker
     
     var body: some View {
+        // Headshot walker pic
         walkerVar.headImageView
             .resizable()
             .aspectRatio(contentMode: .fill)

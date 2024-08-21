@@ -7,7 +7,7 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
-    // Declare & Initalize variables
+    // Declare and initialize variables
     @State private var isEditing: Bool = false
     @State private var firstName: String = "Jane"
     @State private var lastName: String = "Doe"
@@ -50,8 +50,8 @@ struct ProfileView: View {
                 if isEditing {
                     // Editable firstNm, lastNm, dog breeds, email, number, user, password
                     VStack(alignment: .leading, spacing: 20) {
-                        textBox(label: "First Name", info: $firstName)
-                        textBox(label: "Last Name", info: $lastName)
+                        textAnswer(label: "First Name", info: $firstName)
+                        textAnswer(label: "Last Name", info: $lastName)
                         
                         Text("Dog Breeds")
                             .fontWeight(.medium)
@@ -60,10 +60,10 @@ struct ProfileView: View {
                         dropDownAnswer(title: "2nd Dog breed", selection: $breedSelecs[1], options: breedOptions)
                         dropDownAnswer(title: "3rd Dog breed", selection: $breedSelecs[2], options: breedOptions)
                         
-                        textBox(label: "Email", info: $email, keyboardType: .emailAddress)
-                        textBox(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
-                        textBox(label: "Username", info: $username)
-                        secureTextBox(label: "Password", info: $password)
+                        textAnswer(label: "Email", info: $email, keyboardType: .emailAddress)
+                        textAnswer(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
+                        textAnswer(label: "Username", info: $username)
+                        secureTextAnswer(label: "Password", info: $password)
                     }
                     .padding(.horizontal, 20)
                 } else {
@@ -74,13 +74,13 @@ struct ProfileView: View {
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                         VStack(spacing: 15) {
-                            infoRow(icon: "pawprint.fill", text: breedSelecs[0])
-                            infoRow(icon: "pawprint.fill", text: breedSelecs[1])
-                            infoRow(icon: "pawprint.fill", text: breedSelecs[2])
+                            displayInfo(icon: "pawprint.fill", text: breedSelecs[0])
+                            displayInfo(icon: "pawprint.fill", text: breedSelecs[1])
+                            displayInfo(icon: "pawprint.fill", text: breedSelecs[2])
                         }
-                        infoRow(icon: "envelope.fill", text: email)
-                        infoRow(icon: "phone.fill", text: phoneNumber)
-                        infoRow(icon: "person.fill", text: username)
+                        displayInfo(icon: "envelope.fill", text: email)
+                        displayInfo(icon: "phone.fill", text: phoneNumber)
+                        displayInfo(icon: "person.fill", text: username)
                     }
                 }
                 
@@ -125,7 +125,7 @@ struct ProfileView: View {
     ProfileView()
 }
 
-// Blue gradient function with more blue
+// Blue and white gradient with more blue
 func largeBlueGradient(opac: Double = 0.8) -> some View {
     LinearGradient(
         gradient: Gradient(colors: [Color.blue.opacity(1), Color.blue.opacity(opac), Color.white.opacity(opac)]),
@@ -135,8 +135,8 @@ func largeBlueGradient(opac: Double = 0.8) -> some View {
     .edgesIgnoringSafeArea(.all)
 }
 
-// Label and text box
-func textBox(label: String, info: Binding<String>, keyboardType: UIKeyboardType = .default) -> some View {
+// Label and text box to give answer
+func textAnswer(label: String, info: Binding<String>, keyboardType: UIKeyboardType = .default) -> some View {
     VStack(alignment: .leading) {
         Text(label)
             .fontWeight(.medium)
@@ -147,8 +147,8 @@ func textBox(label: String, info: Binding<String>, keyboardType: UIKeyboardType 
     }
 }
 
-// Label and secure text box
-func secureTextBox(label: String, info: Binding<String>) -> some View {
+// Label and secure text box to give answer
+func secureTextAnswer(label: String, info: Binding<String>) -> some View {
     VStack(alignment: .leading) {
         Text(label)
             .fontWeight(.medium)
@@ -160,7 +160,7 @@ func secureTextBox(label: String, info: Binding<String>) -> some View {
 }
 
 // Display info with icon and text
-func infoRow(icon: String, text: String) -> some View {
+func displayInfo(icon: String, text: String) -> some View {
     HStack {
         Image(systemName: icon)
             .foregroundColor(.white)

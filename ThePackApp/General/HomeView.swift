@@ -9,7 +9,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // View Title
+                // Home Title
                 customTitle(title: "Welcome to The Pack", w: 360, h: 65)
                 
                 Spacer()
@@ -59,7 +59,7 @@ struct HomeView: View {
     HomeView()
 }
 
-// Bubble Functions
+// Bubble title
 func bubbleTitle(title: String) -> some View {
     Text(title)
         .font(.system(size: 30))
@@ -71,6 +71,7 @@ func bubbleTitle(title: String) -> some View {
         .cornerRadius(15)
 }
 
+// Bubble text
 func bubbleText(options: [String], otherwise: String) -> some View {
     Text(options.randomElement() ?? otherwise)
         .font(.system(size: 24))

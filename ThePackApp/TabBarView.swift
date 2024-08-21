@@ -86,25 +86,3 @@ struct TabBarView: View {
 #Preview {
     TabBarView()
 }
-
-// Title function
-func customTitle(title: String, w: CGFloat, h: CGFloat, opac: Double = 0.9) -> some View {
-    Text(title)
-        .font(.largeTitle)
-        .fontWeight(.bold)
-        .foregroundColor(.blue.opacity(opac))
-        .frame(width: w, height:h)
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 40)
-}
-
-// Blue gradient function
-func blueGradient(opac: Double = 0.8) -> some View {
-    LinearGradient(
-        gradient: Gradient(colors: [Color.blue.opacity(opac), Color.white.opacity(opac)]),
-        startPoint: .topLeading,
-        endPoint: .bottomTrailing
-    )
-    .edgesIgnoringSafeArea(.all)
-}

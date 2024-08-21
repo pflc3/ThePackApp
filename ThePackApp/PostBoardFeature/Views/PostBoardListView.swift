@@ -9,8 +9,10 @@ struct PostBoardListView: View {
     var body: some View {
         NavigationSplitView {
             VStack {
+                // PostList Title
                 customTitle(title: "Bark Board", w: 360, h: 65)
                 
+                // List of PostRows
                 List(postArray) { postItem in
                     NavigationLink {
                         PostDetailView(postVar: postItem)

@@ -11,22 +11,27 @@ struct DogInfoDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
+                // Breed
                 customTitle(title: dogInfoVar.breed, w: 360, h: 65)
                 
                 Spacer().frame(height: 20)
                 
+                // Fully pic
                 FullDogImage(imageVar: dogInfoVar.bodyImageView)
                 
                 VStack(alignment: .leading, spacing: 15) {
+                    // Life stage and age
                     displayInfoHoriz(label: "Life Stage", text: dogInfoVar.lifeStage)
                     displayInfoHoriz(label: "Age", text: dogInfoVar.age)
                     
                     Divider()
                     
+                    // Description
                     displayInfoVert(label: "Description", text: dogInfoVar.description)
                     
                     Divider()
                     
+                    // Advice
                     displayInfoList(label: "Medical Advice", t1: dogInfoVar.medAdvice1, t2: dogInfoVar.medAdvice2, t3: dogInfoVar.medAdvice3)
                     displayInfoList(label: "Food Advice", t1: dogInfoVar.foodAdvice1, t2: dogInfoVar.foodAdvice2, t3: dogInfoVar.foodAdvice3)
                     displayInfoList(label: "Watch Out For", t1: dogInfoVar.thingsToWatch1, t2:dogInfoVar.thingsToWatch2, t3: dogInfoVar.thingsToWatch3)
@@ -56,6 +61,7 @@ struct DogInfoDetailView: View {
     DogInfoDetailView(dogInfoVar: dogInfoArray[1])
 }
 
+// Display info horizontally with label and text
 func displayInfoHoriz(label: String, text: String) -> some View {
     HStack {
         Text(label+":")
@@ -67,6 +73,7 @@ func displayInfoHoriz(label: String, text: String) -> some View {
     }
 }
 
+// Display info vertically with label and text
 func displayInfoVert(label: String, text: String) -> some View {
     VStack (alignment: .leading) {
         Text(label)
@@ -78,6 +85,7 @@ func displayInfoVert(label: String, text: String) -> some View {
     }
 }
 
+// Display numbered list info with label and texts
 func displayInfoList(label: String, t1: String, t2:String, t3: String) -> some View {
     VStack (alignment: .leading) {
         Text(label)

@@ -10,17 +10,20 @@ struct DogInfoRow: View {
     
     var body: some View {
         HStack {
+            // Headshot pic
             dogInfoVar.headImageView
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 50, height: 50)
             
+            // Breed
             Text(dogInfoVar.breed)
                 .font(.title3)
                 .fontWeight(.medium)
             
             Spacer()
             
+            // Life stage
             Text(dogInfoVar.lifeStage)
                 .font(.headline)
                 .fontWeight(.light)

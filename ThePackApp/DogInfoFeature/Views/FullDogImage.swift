@@ -9,6 +9,7 @@ struct FullDogImage: View {
     var imageVar: Image
     
     var body: some View {
+        // Full body dog pic
         imageVar
             .resizable()
             .aspectRatio(contentMode: .fill)
