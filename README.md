@@ -27,14 +27,20 @@ Survey Page
     
 Home Page
 - Includes a random dog fun fact and joke
+- Holds bubbleTitle() and bubbleText() functions
 
 Profile Page
 - Displays profile info and profile pic
 - Able to change profile info and profile pic
+- Holds largeBlueGradient(), textAnswer(), secureTextAnswer(), displayInfo() functions
+- Holds ImagePicker struct and loadImage() function
 
 Mode Data
 - Declare and initialize arrays from JSON files
 - Holds load() function for initializing arrays from JSON files
+
+ModelAndRescources
+- Every feature has this folder that holds their object and JSON file data
 
 ## DogInfo Feature
 DogInfo List Page
@@ -46,6 +52,7 @@ DogInfo Detail Page
 - FullDogImage; bigger full body pic
 - Life stage and age
 - Description, medical advice, food advice, and things to watch out for
+- Holds displayInfoHoriz(), displayInfoVert(), displayInfoList()
 
 ## PostBoard Feature
 PostBoard List Page
