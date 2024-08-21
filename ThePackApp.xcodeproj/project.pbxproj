@@ -14,6 +14,7 @@
 		BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */; };
 		BF8440BF2C6D0DD400D3ADD7 /* PostsData.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8440BE2C6D0DD400D3ADD7 /* PostsData.json */; };
 		BFE7ED2C2C6BD50B0013C661 /* DogInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFE7ED2B2C6BD50B0013C661 /* DogInfoData.json */; };
+		E83DB5632C75984200B5B51E /* HeadWalkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83DB5622C75984200B5B51E /* HeadWalkerImage.swift */; };
 		E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */; };
 		E846BBF12C6C02CB00A0A199 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBF02C6C02CB00A0A199 /* PostRow.swift */; };
 		E846BBF32C6C03E000A0A199 /* DogInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBF22C6C03E000A0A199 /* DogInfoDetailView.swift */; };
@@ -45,6 +46,7 @@
 		BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRow.swift; sourceTree = "<group>"; };
 		BF8440BE2C6D0DD400D3ADD7 /* PostsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PostsData.json; sourceTree = "<group>"; };
 		BFE7ED2B2C6BD50B0013C661 /* DogInfoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogInfoData.json; sourceTree = "<group>"; };
+		E83DB5622C75984200B5B51E /* HeadWalkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadWalkerImage.swift; sourceTree = "<group>"; };
 		E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBoardListView.swift; sourceTree = "<group>"; };
 		E846BBF02C6C02CB00A0A199 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
 		E846BBF22C6C03E000A0A199 /* DogInfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoDetailView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				E846D8B72C6DB07E00A2F015 /* WalkerRow.swift */,
 				E846D8B52C6DB05500A2F015 /* WalkerListView.swift */,
+				E83DB5622C75984200B5B51E /* HeadWalkerImage.swift */,
 				E846D8B92C6DB09D00A2F015 /* WalkerDetailView.swift */,
 			);
 			path = Views;
@@ -301,6 +304,7 @@
 				E846D8BA2C6DB09D00A2F015 /* WalkerDetailView.swift in Sources */,
 				E846BBF32C6C03E000A0A199 /* DogInfoDetailView.swift in Sources */,
 				E8625CBE2C74FD3D005DEA4D /* Post.swift in Sources */,
+				E83DB5632C75984200B5B51E /* HeadWalkerImage.swift in Sources */,
 				E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */,
 				E846D8B82C6DB07E00A2F015 /* WalkerRow.swift in Sources */,
 				E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */,

@@ -12,15 +12,7 @@ struct WalkerDetailView: View {
             
             Spacer().frame(height:40)
             
-            Image("dogWalker")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 160)
-                .clipShape(Circle())
-                .overlay {
-                    Circle().stroke(.white, lineWidth: 1)
-                }
-                .shadow(radius: 7)
+            HeadWalkerImage()
             
             Spacer()
             Text("contact info:")
