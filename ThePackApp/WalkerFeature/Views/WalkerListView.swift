@@ -11,16 +11,9 @@ struct WalkerListView: View {
             customTitle(title: "Woofless Walkers", w: 360, h: 65)
 
             List {
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
-                WalkerRow()
+                WalkerRow(walkerVar: walkerArray[0])
+                WalkerRow(walkerVar: walkerArray[1])
+                WalkerRow(walkerVar: walkerArray[2])
             }
         }
         .scrollContentBackground(.hidden)
