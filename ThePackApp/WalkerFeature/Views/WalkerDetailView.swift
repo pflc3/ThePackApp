@@ -11,15 +11,18 @@ struct WalkerDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
+                // Name
                 customTitle(title: walkerVar.name, w: 360, h: 65)
                 
                 Spacer().frame(height:40)
                 
+                // Headshot pic
                 HeadWalkerImage(walkerVar: walkerVar)
                 
                 Spacer()
                 
                 VStack(spacing: 15){
+                    // Bio and description
                     VStack(alignment: .leading) {
                         Text("Bio")
                             .fontWeight(.bold)
@@ -33,6 +36,7 @@ struct WalkerDetailView: View {
                         
                     Divider()
                     
+                    // Location, price, rating, email, and phone number
                     HStack {
                         Text("Location:")
                             .fontWeight(.semibold)

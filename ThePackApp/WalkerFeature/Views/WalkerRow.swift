@@ -10,17 +10,20 @@ struct WalkerRow: View {
     
     var body: some View {
         HStack {
+            // Headshot pic
             walkerVar.headImageView
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 55, height: 55)
             
+            // Name
             Text(walkerVar.name)
                 .font(.title3)
                 .fontWeight(.medium)
             
             Spacer()
             
+            // Icon
             Image(systemName: "figure.walk")
                 .resizable()
                 .scaledToFit()

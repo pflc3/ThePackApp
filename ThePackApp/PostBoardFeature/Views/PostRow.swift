@@ -10,11 +10,13 @@ struct PostRow: View {
     
     var body: some View {
         HStack {
-            Image("postLogo")
+            // Icon
+            Image("postIcon")
                 .resizable()
                 .frame(width: 45, height: 45)
                 .cornerRadius(10)
             
+            // Title
             Text(postVar.title)
                 .font(.title3)
                 .fontWeight(.medium)
@@ -22,6 +24,7 @@ struct PostRow: View {
             
             Spacer()
             
+            // Category
             Text(postVar.category)
                 .font(.headline)
                 .fontWeight(.light)

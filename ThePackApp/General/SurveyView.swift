@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct SurveyView: View {
-    // Declare & Initalize variables
+    // Declare and initialize variables
     @State private var isSignUp: Bool = true
     @State private var username: String = ""
     @State private var password: String = ""
@@ -22,7 +22,7 @@ struct SurveyView: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 25) {
-                    // View Title
+                    // Survery Title
                     Text("Fetch Me Your Story!")
                         .font(.largeTitle)
                         .fontWeight(.bold)
@@ -105,7 +105,7 @@ struct SurveyView: View {
     SurveyView()
 }
 
-// Used for drop down answers
+// Drop down answers
 func dropDownAnswer(title: String, selection: Binding<String>, options: [String]) -> some View {
         Picker(title, selection: selection) {
             ForEach(options, id: \.self) {

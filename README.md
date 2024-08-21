@@ -5,6 +5,7 @@ ThePackApp
 
 ContentView
 - Starts at the survey page which leads to tab bar view
+- Holds customTitle() and blueGradient() functions
 
 TabBarView
 - Has a tab bar at the bottom that will connect all the different pages
@@ -22,6 +23,7 @@ Survey Page
 - Asks for user info (personal, their dogs, experience, etc)
 - Able to signup for an account or signin to an account
 - Leads to tab bar view when done
+- Holds dropDownAnswer() function
     
 Home Page
 - Includes a random dog fun fact and joke
@@ -29,6 +31,10 @@ Home Page
 Profile Page
 - Displays profile info and profile pic
 - Able to change profile info and profile pic
+
+Mode Data
+- Declare and initialize arrays from JSON files
+- Holds load() function for initializing arrays from JSON files
 
 ## DogInfo Feature
 DogInfo List Page

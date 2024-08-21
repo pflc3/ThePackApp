@@ -6,6 +6,7 @@
 import Foundation
 import SwiftUI
 
+// PostInfo object to store data from JSON file
 struct Post: Hashable, Codable, Identifiable {
     var id: Int
     var title: String

@@ -5,12 +5,13 @@
 
 import Foundation
 
+// Declare and initialize arrays from json files
 var dogInfoArray: [DogInfo] = load("DogInfoData.json")
-
 var postArray: [Post] = load("PostsData.json")
-
 var walkerArray: [Walker] = load("WalkerData.json")
 
+// Loads and decodes a JSON file into a specified data type
+// Throws a runtime error if file not found, can't be loaded, or can't be decoded
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
