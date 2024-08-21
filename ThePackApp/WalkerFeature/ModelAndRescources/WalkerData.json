@@ -35,7 +35,7 @@
         "rating": "4.9",
         "email": "apollo.dogwalker@example.com",
         "phoneNumber": "(555) 123-4567",
-        "headImage": "walker3
+        "headImage": "walker3"
     },
     
     {
@@ -48,7 +48,7 @@
         "rating": "4.9",
         "email": "lyra.dogwalker@example.com",
         "phoneNumber": "(555) 987-6543",
-        "headImage": "walker4
+        "headImage": "walker4"
         
     },
     
@@ -93,14 +93,14 @@
     },
     
     {
-        "name": "Samuel Oriowo",
-        "bio": "Samuel Oriowo is a dedicated dog walker with over 7 years of experience. He has a deep love for animals and is committed to providing the best care for your furry friends.",
-        "description": "Samuel specializes in walking large and active dogs, ensuring they get the exercise and attention they need. He is known for his punctuality, reliability, and friendly demeanor.",
+        "name": "Emmanuel Larose",
+        "bio": "Emmanuel Larose is a dedicated dog walker with over 7 years of experience. He has a deep love for animals and is committed to providing the best care for your furry friends.",
+        "description": "Emmanuel specializes in walking large and active dogs, ensuring they get the exercise and attention they need. He is known for his punctuality, reliability, and friendly demeanor.",
         "id": 1008,
         "location": "Chicago, IL",
         "price": "$25 per walk",
         "rating": "4.7",
-        "email": "samuel.oriowo@example.com",
+        "email": "emmanuel.larose@example.com",
         "phoneNumber": "(312) 555-7890",
         "headImage": "walker8"
     },
@@ -116,5 +116,5 @@
         "email": "cam.thomas@example.com",
         "phoneNumber": "(503) 987-6543",
         "headImage": "walker9"
-    },
+    }
 ]

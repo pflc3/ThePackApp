@@ -10,10 +10,8 @@ struct WalkerListView: View {
         VStack {
             customTitle(title: "Woofless Walkers", w: 360, h: 65)
 
-            List {
-                WalkerRow(walkerVar: walkerArray[0])
-                WalkerRow(walkerVar: walkerArray[1])
-                WalkerRow(walkerVar: walkerArray[2])
+            List(walkerArray) { walkerItem in
+                WalkerRow(walkerVar: walkerItem)
             }
         }
         .scrollContentBackground(.hidden)
