@@ -46,7 +46,7 @@ PostBoard List Page
 - Consists of 9 PostRows
 - Posts have a icon, title, and category
 * Post button without functionality
-* (Maybe will have filters at the top (breed, category, etc))
+* (Maybe will have filters at the top (category, etc))
 
 Post Detail Page
 - Title, category, and full description
