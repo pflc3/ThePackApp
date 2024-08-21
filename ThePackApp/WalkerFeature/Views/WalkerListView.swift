@@ -7,17 +7,26 @@ import SwiftUI
 
 struct WalkerListView: View {
     var body: some View {
-        VStack {
-            customTitle(title: "Woofless Walkers", w: 360, h: 65)
-
-            List(walkerArray) { walkerItem in
-                WalkerRow(walkerVar: walkerItem)
+        NavigationSplitView {
+            VStack {
+                customTitle(title: "Woofless Walkers", w: 360, h: 65)
+                
+                List(walkerArray) { walkerItem in
+                    NavigationLink {
+                        WalkerDetailView()
+                    } label: {
+                        WalkerRow(walkerVar: walkerItem)
+                    }
+                }
             }
+            .scrollContentBackground(.hidden)
+            .background(blueGradient())
+        } detail: {
+            Text("Select a dog info detail page")
         }
-        .scrollContentBackground(.hidden)
-        .background(blueGradient())
     }
 }
+    
 #Preview {
     WalkerListView()
 }
