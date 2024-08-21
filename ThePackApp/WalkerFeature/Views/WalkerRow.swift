@@ -10,7 +10,7 @@ struct WalkerRow: View {
     
     var body: some View {
         HStack {
-            Image("dogWalker")
+            Image(walkerVar.name)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 50, height: 50)
