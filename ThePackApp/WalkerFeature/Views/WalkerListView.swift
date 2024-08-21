@@ -13,7 +13,7 @@ struct WalkerListView: View {
                 
                 List(walkerArray) { walkerItem in
                     NavigationLink {
-                        WalkerDetailView()
+                        WalkerDetailView(walkerVar: walkerItem)
                     } label: {
                         WalkerRow(walkerVar: walkerItem)
                     }
