@@ -1,14 +1,14 @@
 [
     {
-        "name": "Bob Illutunji",
-        "bio": "I'm Bob, a passionate dog lover with over 5 years of experience in walking and caring for dogs of all sizes and breeds. I pride myself on providing personalized attention and ensuring that every walk is a fun and safe adventure for your furry friend.",
+        "name": "Kyle Rice",
+        "bio": "I'm Kyle, a passionate dog lover with over 5 years of experience in walking and caring for dogs of all sizes and breeds. I pride myself on providing personalized attention and ensuring that every walk is a fun and safe adventure for your furry friend.",
         "description": "Reliable and friendly dog walker dedicated to keeping your pets happy and healthy. I offer individual and group walks, and I can accommodate special needs and requests to ensure your dog gets the best care possible.",
         "id": 1001,
         "location": "Newark, NJ",
-        "price": "$20 per 30-minute walk",
+        "price": "$20 per walk",
         "rating": "5.0",
-        "email": "bob.dogwalker@example.com",
-        "phoneNumber": "(123) 456-7890",
+        "email": "Kyle.dogwalker@icloud.com",
+        "phoneNumber": "(206) 342-8631",
         "headImage": "walker1"
     },
     
@@ -18,10 +18,10 @@
         "description": "Experienced dog walker with a passion for animals. Provides personalized care and attention.",
         "id": 1002,
         "location": "New Orleans, LA",
-        "price": "$20 per walk",
+        "price": "$25 per walk",
         "rating": "4.5",
-        "email": "jamal@gmail.com",
-        "phoneNumber": "+1-555-123-4567",
+        "email": "jamal@icloud.com",
+        "phoneNumber": "+(555) 123-4567",
         "headImage": "walker2"
     },
     
@@ -31,9 +31,9 @@
         "description": "Apollo is reliable, caring, and ensures your dog gets the exercise and attention they need. He specializes in walking small to medium-sized dogs and offers personalized care for each pet.",
         "id": 1003,
         "location": "Denver, CO",
-        "price": "$20 per walk",
+        "price": "$18 per walk",
         "rating": "4.9",
-        "email": "apollo.dogwalker@example.com",
+        "email": "apollo.dogwalker@icloud.com",
         "phoneNumber": "(555) 123-4567",
         "headImage": "walker3"
     },
@@ -44,9 +44,9 @@
         "description": "Lyra is known for her patience and attention to detail, ensuring each dog gets a tailored experience during their walks. She is experienced with dogs of all sizes and offers both group and solo walks.",
         "id": 1004,
         "location": "Madison, WI",
-        "price": "$25 per walk",
+        "price": "$28 per walk",
         "rating": "4.9",
-        "email": "lyra.dogwalker@example.com",
+        "email": "lyra.dogwalker@icloud.com",
         "phoneNumber": "(555) 987-6543",
         "headImage": "walker4"
         
@@ -58,9 +58,9 @@
         "description": "Jax is known for his punctuality and attention to detail, making sure your dog gets the exercise they need. He specializes in handling energetic dogs and provides tailored walking services.",
         "id": 1005,
         "location": "Los Angeles, CA",
-        "price": "$25 per walk",
+        "price": "$22 per walk",
         "rating": "4.8",
-        "email": "jax.walks@example.com",
+        "email": "jax.walks@icloud.com",
         "phoneNumber": "(555) 987-6543",
         "headImage": "walker5"
 
@@ -72,9 +72,9 @@
         "description": "Specializing in large breeds and active dogs, Cosmo provides tailored walking sessions to meet the needs of your pet. He is known for his punctuality and attention to detail, making sure your dog is safe and happy.",
         "id": 1006,
         "location": "Austin, TX",
-        "price": "$25 per walk",
+        "price": "$20 per walk",
         "rating": "4.6",
-        "email": "cosmo.dogwalker@example.com",
+        "email": "cosmo.dogwalker@icloud.com",
         "phoneNumber": "(512) 987-6543",
         "headImage": "walker6"
     },
@@ -85,9 +85,9 @@
        "description": "Booker offers reliable dog walking services with a focus on safety and fun. She provides individualized care, ensuring each dog enjoys a fulfilling walk with plenty of playtime.",
        "id": 1007,
        "location": "Phoenix, AZ",
-       "price": "$18 per walk",
+       "price": "$25 per walk",
        "rating": "4.6",
-       "email": "booker.dogwalker@example.com",
+       "email": "booker.dogwalker@icloud.com",
        "phoneNumber": "(303) 987-6543",
        "headImage": "walker7"
     },
@@ -98,9 +98,9 @@
         "description": "Emmanuel specializes in walking large and active dogs, ensuring they get the exercise and attention they need. He is known for his punctuality, reliability, and friendly demeanor.",
         "id": 1008,
         "location": "Chicago, IL",
-        "price": "$25 per walk",
+        "price": "$24 per walk",
         "rating": "4.7",
-        "email": "emmanuel.larose@example.com",
+        "email": "emmanuel.larose@icloud.com",
         "phoneNumber": "(312) 555-7890",
         "headImage": "walker8"
     },
@@ -111,9 +111,9 @@
         "description": "Cam specializes in long walks and play sessions, ensuring that your dog gets plenty of exercise and fun. He is known for his patience and ability to handle dogs with different temperaments.",
         "id": 1009,
         "location": "Brooklyn, NY",
-        "price": "$25 per walk",
+        "price": "$20 per walk",
         "rating": "4.9",
-        "email": "cam.thomas@example.com",
+        "email": "cam.thomas@icloud.com",
         "phoneNumber": "(503) 987-6543",
         "headImage": "walker9"
     }
