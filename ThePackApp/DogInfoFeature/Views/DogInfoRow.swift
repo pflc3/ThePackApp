@@ -20,7 +20,7 @@ struct DogInfoRow: View {
                 .fontWeight(.medium)
             
             Spacer()
-
+            
             Text(dogInfoVar.lifeStage)
                 .font(.headline)
                 .fontWeight(.light)
