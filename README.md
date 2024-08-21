@@ -32,35 +32,37 @@ Profile Page
 ## DogInfo Feature
 DogInfo List Page
 - Consists of 9 DogInfoRows
-- DogInfoRows have a title and headshot picture
+- DogInfoRows have headshot pic, breed, and life stage
 
 DogInfo Detail Page
-- Title and bigger full body picture
-- Has a variety of information about the breed
+- Breed and bigger full body picture
+- Life stage and age
+- Description, medical advice, food advice, and things to watch out for
 
 ## PostBoard Feature
 PostBoard List Page
 - Consists of 9 PostRows
-- Posts have a title and category (Question, PSA, etc)
-* Has a post button without functionality
+- Posts have a icon, title, and category (Question, PSA, etc)
+* (Will have a post button without functionality)
 * (Will have filters at the top (breed, category, etc))
 
 Post Detail Page
-* Title, category, and a full description
-* Able to see other comments
-* Able to comment yourself
+- Title, category, and full description
+- Able to see other comments
+- Able to comment yourself
 * (Will have optional photo)
 
 ## Walker Feature
 Walker List Page
 - Consists of 9 WalkerRows
-- WalkerRows have a title and headshot picture
+- WalkerRows have headshot picture and name
 * (Will have filters at the top (location, prie, etc))
 
 Walker Detail Page
 - Title and headshot picture
 - Small bio and description
-- Location, price, rating, phone number
+- General location, price, and rating
+- Email and phone number
 
 ## Team
 - Estuardo

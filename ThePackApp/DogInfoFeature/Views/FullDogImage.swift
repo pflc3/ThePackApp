@@ -12,7 +12,7 @@ struct FullDogImage: View {
         imageVar
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 250, height: 160)
+            .frame(width: 300, height: 210)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .overlay {
                 RoundedRectangle(cornerRadius: 12)

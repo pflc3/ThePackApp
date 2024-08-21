@@ -122,10 +122,10 @@
 		E8625CB52C74FBA6005DEA4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */,
 				BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */,
-				E846BBF22C6C03E000A0A199 /* DogInfoDetailView.swift */,
+				BF4451B82C6BBC3D007E25F8 /* DogInfoListView.swift */,
 				E88608FA2C75731100E7853A /* FullDogImage.swift */,
+				E846BBF22C6C03E000A0A199 /* DogInfoDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 		E8625CB92C74FC53005DEA4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */,
 				E846BBF02C6C02CB00A0A199 /* PostRow.swift */,
+				E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */,
 				E846BBF42C6C03FB00A0A199 /* PostDetailView.swift */,
 			);
 			path = Views;
@@ -161,8 +161,8 @@
 		E8625CBB2C74FCE6005DEA4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E846D8B52C6DB05500A2F015 /* WalkerListView.swift */,
 				E846D8B72C6DB07E00A2F015 /* WalkerRow.swift */,
+				E846D8B52C6DB05500A2F015 /* WalkerListView.swift */,
 				E846D8B92C6DB09D00A2F015 /* WalkerDetailView.swift */,
 			);
 			path = Views;
