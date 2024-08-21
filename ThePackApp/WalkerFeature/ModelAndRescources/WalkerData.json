@@ -54,15 +54,15 @@
     
     {
         "name": "Jax Frost",
-       "bio": "Jax is a dedicated dog walker with a love for all breeds. With over 3 years of experience, he ensures each walk is a fun and safe adventure for your pet.",
-       "description": "Jax is known for his punctuality and attention to detail, making sure your dog gets the exercise they need. He specializes in handling energetic dogs and provides tailored walking services.",
-       "id": 1005,
-       "location": "Los Angeles, CA",
-       "price": "$25 per walk",
-       "rating": "4.8",
-       "email": "jax.walks@example.com",
-       "phoneNumber": "(555) 987-6543",
-       "headImage": "walker5"
+        "bio": "Jax is a dedicated dog walker with a love for all breeds. With over 3 years of experience, he ensures each walk is a fun and safe adventure for your pet.",
+        "description": "Jax is known for his punctuality and attention to detail, making sure your dog gets the exercise they need. He specializes in handling energetic dogs and provides tailored walking services.",
+        "id": 1005,
+        "location": "Los Angeles, CA",
+        "price": "$25 per walk",
+        "rating": "4.8",
+        "email": "jax.walks@example.com",
+        "phoneNumber": "(555) 987-6543",
+        "headImage": "walker5"
 
     },
     

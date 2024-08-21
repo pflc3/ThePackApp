@@ -11,7 +11,7 @@ struct Walker: Hashable, Codable, Identifiable {
     var name: String
     var bio: String
     var description: String
-    var Location: String
+    var location: String
     var price: String
     var rating: String
     var email: String

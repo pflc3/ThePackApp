@@ -22,7 +22,6 @@ struct WalkerListView: View {
                 WalkerRow()
                 WalkerRow()
             }
-            
         }
         .scrollContentBackground(.hidden)
         .background(blueGradient())
