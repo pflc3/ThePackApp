@@ -34,7 +34,7 @@ struct WalkerDetailView: View {
     }
 }
 
-#Preview("Bob Illutunji") {
+#Preview("Kyle Rice") {
     WalkerDetailView(walkerVar: walkerArray[0])
 }
 
