@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct WalkerRow: View {
+    var walkerVar: Walker
+    
     var body: some View {
         HStack {
             Image("dogWalker")
@@ -13,7 +15,7 @@ struct WalkerRow: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 50, height: 50)
             
-            Text("Walker Name")
+            Text(walkerVar.name)
                 .font(.title3)
                 .fontWeight(.medium)
             
@@ -31,7 +33,7 @@ struct WalkerRow: View {
 
 #Preview {
     Group {
-        WalkerRow()
-        WalkerRow()
+        WalkerRow(walkerVar: walkerArray[0])
+        WalkerRow(walkerVar: walkerArray[1])
     }
 }
