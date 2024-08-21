@@ -6,57 +6,41 @@
 import SwiftUI
 
 struct PostDetailView: View {
+    @State private var comment: String = ""
+    
     var body: some View {
         VStack {
             customTitle(title: "Post Title", w: 360, h: 65)
+            
             HStack {
                 Image(systemName: "camera.fill")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 30, height: 25)
                     .foregroundColor(.blue)
-                    .padding(.leading, 10)
-                Spacer()
-                Text("category")
+                Text("Category")
                     .foregroundColor(.blue)
-                    .frame(maxWidth: .infinity, alignment: .leading)
             }
-
-            Image(systemName: "camera.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 50, height: 40)
-                .foregroundColor(.white)
-                .padding(.leading, 10)
-            
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
             
             Text("dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr dksjbver wepiofjrnew wdieorh pweiorhjf l2ekfn wdeliwnr")
                 .padding()
             
             HStack {
-                Image("postPhoto")
+                Image(systemName: "person.crop.circle.fill")
                     .resizable()
                     .frame(width: 45, height: 45)
-                
-                
-                
-                @State var firstName: String = ""
-                // Question 1: First Name
-                let fontSize: CGFloat = 20
-                
-                Text("")
-                    .font(.system(size: fontSize))
-                    .fontWeight(.medium)
-                TextField("Comment your thoughts", text: $firstName)
+                    .foregroundColor(.blue)
+                TextField("Add a comment...", text: $comment)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
+            .padding()
+            
             Spacer()
-            Spacer()
-        
-               
-                }
-            }
         }
+    }
+}
     
 
     

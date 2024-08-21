@@ -16,8 +16,8 @@ struct ProfileView: View {
     @State private var username: String = "janedoe.is.cool"
     @State private var password: String = "Pass123!"
     
-    @State private var breedSelecs: [String] = ["Dachshund", "Siberian Husky", "Golden Retriever"]
-    let breedOptions: [String] = ["None", "Dachshund", "Siberian Husky", "Golden Retriever", "German Shepard", "Bulldog", "Poodle", "Rottweilers", "Beagle", "American Pit Bull Terrier"]
+    @State private var breedSelecs: [String] = ["Golden Retriever", "Siberian Husky", "Dachshund"]
+    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund", "German Shepard", "Bulldog", "Poodle", "Rottweiler", "Beagle", "American Pit Bull Terrier"]
     
     // Holds currenly displayed profile pic
     @State private var profilePic: Image = Image(systemName: "person.crop.circle.fill")
