@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct PostRow: View {
+    var postVar: Post
+    
     var body: some View {
         HStack {
             Image("postLogo")
@@ -13,14 +15,14 @@ struct PostRow: View {
                 .frame(width: 45, height: 45)
                 .cornerRadius(10)
             
-            Text("Post Title")
+            Text(postVar.title)
                 .font(.title3)
                 .fontWeight(.medium)
                 .padding(.leading, 5)
             
             Spacer()
             
-            Text("Category")
+            Text(postVar.category)
                 .font(.headline)
                 .fontWeight(.light)
         }
@@ -29,7 +31,7 @@ struct PostRow: View {
 
 #Preview {
     Group {
-        PostRow()
-        PostRow()
+        PostRow(postVar: postArray[0])
+        PostRow(postVar: postArray[1])
     }
 }
