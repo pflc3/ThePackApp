@@ -11,7 +11,7 @@ struct PostRow: View {
             Image(systemName: "camera.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 35, height: 35)
+                .frame(width: 40, height: 40)
                 .foregroundColor(.white)
                 .padding(.leading, 10)
             
@@ -49,4 +49,3 @@ struct PostRow: View {
         PostRow()
     }
 }
-

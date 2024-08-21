@@ -24,9 +24,12 @@ struct DogInfoDetailView: View {
                     Divider()
                     
                     displayInfoVert(label: "Description", text: dogInfoVar.description)
+                    
+                    Divider()
+                    
                     displayInfoList(label: "Medical Advice", t1: dogInfoVar.medAdvice1, t2: dogInfoVar.medAdvice2, t3: dogInfoVar.medAdvice3)
                     displayInfoList(label: "Food Advice", t1: dogInfoVar.foodAdvice1, t2: dogInfoVar.foodAdvice2, t3: dogInfoVar.foodAdvice3)
-                    displayInfoList(label: "Things to Watch Out For", t1: dogInfoVar.thingsToWatch1, t2:dogInfoVar.thingsToWatch2, t3: dogInfoVar.thingsToWatch3)
+                    displayInfoList(label: "Watch Out For", t1: dogInfoVar.thingsToWatch1, t2:dogInfoVar.thingsToWatch2, t3: dogInfoVar.thingsToWatch3)
                 }
                 .padding()
                 .frame(width: UIScreen.main.bounds.width * 0.92)

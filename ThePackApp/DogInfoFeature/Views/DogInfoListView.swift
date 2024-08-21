@@ -8,14 +8,19 @@ import SwiftUI
 struct DogInfoListView: View {
     var body: some View {
         NavigationSplitView {
-            List(dogInfoArray) { dogInfoVar in
-                NavigationLink {
-                    DogInfoDetailView(dogInfoVar: dogInfoVar)
-                } label: {
-                    DogInfoRow(dogInfoVar: dogInfoVar)
+            VStack{
+                customTitle(title: "Your Furry Friends", w: 360, h: 65)
+                
+                List(dogInfoArray) { dogInfoItem in
+                    NavigationLink {
+                        DogInfoDetailView(dogInfoVar: dogInfoItem)
+                    } label: {
+                        DogInfoRow(dogInfoVar: dogInfoItem)
+                    }
                 }
             }
-            .navigationTitle("Your Furry Friends")
+            .scrollContentBackground(.hidden)
+            .background(blueGradient())
         } detail: {
             Text("Select a dog info detail page")
         }
