@@ -13,7 +13,7 @@ struct WalkerRow: View {
             walkerVar.headImageView
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
+                .frame(width: 55, height: 55)
             
             Text(walkerVar.name)
                 .font(.title3)

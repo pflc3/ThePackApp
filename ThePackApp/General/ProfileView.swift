@@ -11,7 +11,7 @@ struct ProfileView: View {
     @State private var isEditing: Bool = false
     @State private var firstName: String = "Jane"
     @State private var lastName: String = "Doe"
-    @State private var email: String = "thePack@example.com"
+    @State private var email: String = "the.pack@example.com"
     @State private var phoneNumber: String = "(123) 456-7890"
     @State private var username: String = "janedoe.is.cool"
     @State private var password: String = "Pass123!"

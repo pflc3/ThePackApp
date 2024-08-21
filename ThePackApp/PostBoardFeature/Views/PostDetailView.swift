@@ -33,9 +33,15 @@ struct PostDetailView: View {
             Spacer()
             
             VStack(alignment: .leading, spacing: 20) {
+                Divider()
+                
                 Text(postVar.comment1)
                 
+                Divider()
+                    
                 Text(postVar.comment2)
+                
+                Divider()
             }
             
             Spacer()
