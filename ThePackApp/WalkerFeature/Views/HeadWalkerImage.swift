@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HeadWalkerImage: View {
     var body: some View {
-        Image("dogWalker")
+        Image("walker1")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 150, height: 160)
