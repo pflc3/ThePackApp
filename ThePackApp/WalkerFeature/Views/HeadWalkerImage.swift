@@ -23,6 +23,10 @@ struct HeadWalkerImage: View {
     }
 }
 
-#Preview {
+#Preview("Walker 1") {
     HeadWalkerImage(walkerVar: walkerArray[0])
+}
+
+#Preview("Walker 2") {
+    HeadWalkerImage(walkerVar: walkerArray[1])
 }
