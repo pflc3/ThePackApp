@@ -9,6 +9,8 @@ var dogInfoArray: [DogInfo] = load("DogInfoData.json")
 
 var postArray: [Post] = load("PostsData.json")
 
+var walkerArray: [Walker] = load("WalkerData.json")
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

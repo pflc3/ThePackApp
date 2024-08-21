@@ -10,7 +10,6 @@ struct DogInfoListView: View {
         NavigationSplitView {
             VStack{
                 customTitle(title: "Your Furry Friends", w: 360, h: 65)
-                
                 List(dogInfoArray) { dogInfoItem in
                     NavigationLink {
                         DogInfoDetailView(dogInfoVar: dogInfoItem)
