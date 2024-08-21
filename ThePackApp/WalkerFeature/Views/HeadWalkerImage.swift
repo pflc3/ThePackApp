@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct HeadWalkerImage: View {
+    var walkerVar: Walker
+    
     var body: some View {
-        Image("dogWalker")
+        walkerVar.headImageView
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 160)
+            .frame(width: 200, height: 210)
             .clipShape(Circle())
             .overlay {
                 Circle().stroke(.white, lineWidth: 1)
@@ -22,5 +24,5 @@ struct HeadWalkerImage: View {
 }
 
 #Preview {
-    HeadWalkerImage()
+    HeadWalkerImage(walkerVar: walkerArray[0])
 }

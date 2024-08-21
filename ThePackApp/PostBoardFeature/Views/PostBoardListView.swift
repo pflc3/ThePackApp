@@ -10,16 +10,8 @@ struct PostBoardListView: View {
         VStack {
             customTitle(title: "Bark Board", w: 360, h: 65)
             
-            List {
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
-                PostRow()
+            List(postArray) { postItem in
+                PostRow(postVar: postItem)
             }
         }
         .scrollContentBackground(.hidden)
@@ -30,3 +22,5 @@ struct PostBoardListView: View {
 #Preview {
     PostBoardListView()
 }
+
+
