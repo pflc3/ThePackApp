@@ -1,46 +1,131 @@
 [
     {
-        "Name":"Bob",
-        "Price": "",
-        "Locat":
-        "rating":
-        "phonumb":
+            "name": "Bob Illutunji",
+            "bio": "I'm Bob, a passionate dog lover with over 5 years of experience in walking and caring for dogs of all sizes and breeds. I pride myself on providing personalized attention and ensuring that every walk is a fun and safe adventure for your furry friend.",
+            "description": "Reliable and friendly dog walker dedicated to keeping your pets happy and healthy. I offer individual and group walks, and I can accommodate special needs and requests to ensure your dog gets the best care possible.",
+            "location": "Newark, NJ",
+            "price": "$20 per 30-minute walk",
+            "rating": "5.0",
+            "email": "bob.dogwalker@example.com",
+            "phoneNumber": "(123) 456-7890",
+            "headImage": "https://example.com/images/bob_dogwalker.jpg"
+    },
+    
+    {
+            "name": "Shane Crawford",
+            "bio": "I'm Shane, an experienced dog walker who loves spending time with dogs. With a background in animal care and training, I ensure every walk is enjoyable and beneficial for your pup. I’m dedicated to providing personalized attention and creating a positive experience for both you and your dog.",
+            "description": "Professional and friendly dog walker offering reliable and enthusiastic service. I specialize in both solo and group walks, catering to the unique needs of each dog. My goal is to ensure your pet gets the exercise and socialization they need while you’re busy.",
+            "location": "Portland, OR",
+            "price": "$25 per 45-minute walk",
+            "rating": "4.8",
+            "email": "shane.dogwalker@example.com",
+            "phoneNumber": "(987) 654-3210",
+            "headImage": "https://example.com/images/shane_dogwalker.jpg
         
     },
     
     {
-        "Name": "Shane",
-        "Price": "",
-        "Locat":
-        "rating":
-        "phonumb":
+            "name": "Jamal Specter",
+            "bio": "Jamal has been a professional dog walker for over 5 years. He specializes in large breeds and enjoys taking dogs on nature trails.",
+            "description": "Experienced dog walker with a passion for animals. Provides personalized care and attention.",
+            "location": "New Orleans, LA",
+            "price": "$20 per walk",
+            "rating": "4.5",
+            "email": "jamal@gmail.com",
+            "phoneNumber": "+1-555-123-4567",
+            "headImage": "jamal_headshot.png"
+            
+    },
+    
+    {
+            "name": "Apollo Ross",
+            "bio": "An experienced and friendly dog walker with a passion for pets. Apollo has been walking dogs for over 5 years and knows all the best routes in town.",
+            "description": "Apollo is reliable, caring, and ensures your dog gets the exercise and attention they need. He specializes in walking small to medium-sized dogs and offers personalized care for each pet.",
+            "location": "Denver, CO",
+            "price": "$20 per walk",
+            "rating": "4.9",
+            "email": "apollo.dogwalker@example.com",
+            "phoneNumber": "(555) 123-4567",
+            "headImage": "apollo_profile_image.png"
         
     },
     
     {
-        "Name": "Jamal",
-        "Price": "",
-        "Locat":
-        "rating": 
-        "phonumb":
+            "name": "Lyra Simone",
+            "bio": "Lyra is a passionate animal lover with a gentle touch. She has been walking dogs professionally for over 3 years and enjoys helping pets stay active and healthy.",
+            "description": "Lyra is known for her patience and attention to detail, ensuring each dog gets a tailored experience during their walks. She is experienced with dogs of all sizes and offers both group and solo walks.",
+            "location": "Madison, WI",
+            "price": "$25 per walk",
+            "rating": "4.9",
+            "email": "lyra.dogwalker@example.com",
+            "phoneNumber": "(555) 987-6543",
+            "headImage": "lyra_profile_image.png"
         
     },
     
     {
-        "Name": "Apollo",
-        "Price": "",
-        "Locat":
-        "rating":
-        "phonumb":
+        "name": "Jax Frost",
+           "bio": "Jax is a dedicated dog walker with a love for all breeds. With over 3 years of experience, he ensures each walk is a fun and safe adventure for your pet.",
+           "description": "Jax is known for his punctuality and attention to detail, making sure your dog gets the exercise they need. He specializes in handling energetic dogs and provides tailored walking services.",
+           "location": "Los Angeles, CA",
+           "price": "$25 per walk",
+           "rating": "4.8",
+           "email": "jax.walks@example.com",
+           "phoneNumber": "(555) 987-6543",
+           "headImage": "jax_profile_image.png"
+    
+    },
+    
+    {
+        "name": "Cosmo Wanda",
+            "bio": "Cosmo is an energetic and dedicated dog walker who has been working with pets for over 3 years. He loves the outdoors and ensures that every walk is a fun and engaging experience for your dog.",
+            "description": "Specializing in large breeds and active dogs, Cosmo provides tailored walking sessions to meet the needs of your pet. He is known for his punctuality and attention to detail, making sure your dog is safe and happy.",
+            "location": "Austin, TX",
+            "price": "$25 per walk",
+            "rating": "4.6",
+            "email": "cosmo.dogwalker@example.com",
+            "phoneNumber": "(512) 987-6543",
+            "headImage": "cosmo_profile_image.png"
         
     },
     
     {
-        "Name": "Lyra",
-        "Price": "",
-        "Locat":
-        "rating":
-        "phonumb":
+           "name": "Booker Devin",
+           "bio": "Booker is a dedicated dog walker with over 3 years of experience in caring for pets. he is known for his gentle approach and his love for all breeds.",
+           "description": "Booker offers reliable dog walking services with a focus on safety and fun. She provides individualized care, ensuring each dog enjoys a fulfilling walk with plenty of playtime.",
+           "location": "Phoenix, AZ",
+           "price": "$18 per walk",
+           "rating": "4.6",
+           "email": "booker.dogwalker@example.com",
+           "phoneNumber": "(303) 987-6543",
+           "headImage": "booker_profile_image.png"
+        
+    },
+    
+    {
+            "name": "Samuel Oriowo",
+            "bio": "Samuel Oriowo is a dedicated dog walker with over 7 years of experience. He has a deep love for animals and is committed to providing the best care for your furry friends.",
+            "description": "Samuel specializes in walking large and active dogs, ensuring they get the exercise and attention they need. He is known for his punctuality, reliability, and friendly demeanor.",
+            "location": "Chicago, IL",
+            "price": "$25 per walk",
+            "rating": "4.7",
+            "email": "samuel.oriowo@example.com",
+            "phoneNumber": "(312) 555-7890",
+            "headImage": "samuel_profile_image.png"
+        
+        
+    },
+    
+    {
+        "name": "Cam Thomas",
+          "bio": "Cam is an energetic and dedicated dog walker with a love for all breeds. With over 3 years of experience, Cam has developed a reputation for being trustworthy and attentive to each dog's needs.",
+          "description": "Cam specializes in long walks and play sessions, ensuring that your dog gets plenty of exercise and fun. He is known for his patience and ability to handle dogs with different temperaments.",
+          "location": "Brooklyn, NY",
+          "price": "$25 per walk",
+          "rating": "4.9",
+          "email": "cam.thomas@example.com",
+          "phoneNumber": "(503) 987-6543",
+          "headImage": "cam_thomas_profile_image.png"
         
     },
 ]
