@@ -44,7 +44,8 @@ struct PostBoardListView: View {
                                 .clipShape(Circle())
 
                         }
-                        .padding(.horizontal, 30)
+                        .padding(.horizontal, 25)
+                        .padding(.vertical, 25)
                     }
                 }
             }

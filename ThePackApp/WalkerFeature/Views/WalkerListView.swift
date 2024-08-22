@@ -41,7 +41,8 @@ struct WalkerListView: View {
                                 .foregroundColor(.white)
                                 .cornerRadius(20)
                         }
-                        .padding(.horizontal, 30)
+                        .padding(.horizontal, 25)
+                        .padding(.vertical, 25)
                         
                         Spacer()
                     }

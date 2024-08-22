@@ -175,7 +175,7 @@ struct ProfileView: View {
                     .padding(.horizontal, 20)
                 } else {
                     // Display firstNm, dog breeds, email, number, user
-                    VStack(spacing: 35) {
+                    VStack(spacing: 30) {
                         Text("Howl-o "+firstName+"!")
                             .font(.largeTitle)
                             .fontWeight(.bold)
@@ -214,9 +214,7 @@ struct ProfileView: View {
                             .padding(.horizontal, 40)
                 }
                 
-                if(isEditing){
-                    Spacer().frame(height: 40)
-                }
+                Spacer().frame(height: 40)
             }
         }
         .background(largeBlueGradient())
