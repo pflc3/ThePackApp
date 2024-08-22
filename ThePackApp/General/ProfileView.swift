@@ -69,11 +69,12 @@ struct ProfileView: View {
                             Text("Username")
                                 .fontWeight(.medium)
                                 .foregroundColor(.white)
-                            TextField("Username", text: $username, onCommit: {
-                                globalUsername = username
-                            })
+                            TextField("Username", text: $username)
                                 .keyboardType(.default)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .onChange(of: username) { oldVal, newVal in
+                                    globalUsername = newVal
+                                }
                         }
                         secureTextAnswer(label: "Password", info: $password)
                     }

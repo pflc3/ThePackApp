@@ -78,14 +78,14 @@ struct PostDetailView: View {
             
                 // Comments Section
                 VStack(alignment: .leading, spacing: 15) {
-                    // Predefined comments
-                    displayComment(text: postVar.comment1, user: postVar.user1)
-                    displayComment(text: postVar.comment2, user: postVar.user2)
-                    
                     // New comments
                     ForEach(comments, id: \.self) { commentItem in
                         displayComment(text: commentItem, user: globalUsername)
                     }
+                    
+                    // Predefined comments
+                    displayComment(text: postVar.comment1, user: postVar.user1)
+                    displayComment(text: postVar.comment2, user: postVar.user2)
                 }
                 //.padding(.horizontal, 5)
                 .padding(.bottom, 20)
@@ -97,18 +97,20 @@ struct PostDetailView: View {
             HStack {
                 Image(systemName: "person.crop.circle.fill")
                     .resizable()
-                    .frame(width: 45, height: 45)
+                    .frame(width: 40, height: 40)
                     .foregroundColor(.blue.opacity(0.8))
                 
-                TextField("Add a comment...", text: $addComment, onCommit: {
-                    // If addComment is NOT empty, append it to comments array, then reset it
-                    if !addComment.isEmpty {
-                        comments.append(addComment)
-                        addComment = ""
-                    }
-                })
+                TextField("Add a comment...", text: $addComment)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .foregroundColor(.black)
+                .onSubmit {
+                    // If addComment is NOT empty, append it to comments array
+                    // Then clear addComment
+                    if (!addComment.isEmpty) {
+                        comments.insert(addComment, at: 0)
+                        addComment = ""
+                    }
+                }
             }
             
         }
@@ -126,7 +128,7 @@ struct PostDetailView: View {
 }
 
 // Display Comment
-func displayComment(text: String, user: String = "username") -> some View {
+func displayComment(text: String, user: String) -> some View {
     HStack(alignment: .top) {
         Image(systemName: "person.crop.circle.fill")
             .resizable()
