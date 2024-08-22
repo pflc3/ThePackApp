@@ -16,7 +16,7 @@ struct DogInfoDetailView: View {
                 
                 Spacer().frame(height: 20)
                 
-                // Fully pic
+                // Full body pic
                 FullDogImage(imageVar: dogInfoVar.bodyImageView)
                 
                 VStack(alignment: .leading, spacing: 15) {

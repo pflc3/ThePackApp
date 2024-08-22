@@ -6,6 +6,9 @@
 import SwiftUI
 import PhotosUI
 
+// Declare and initialize global variable
+var globalUsername: String = "janedoe.is.cool"
+
 struct ProfileView: View {
     // Declare and initialize variables
     @State private var isEditing: Bool = false
@@ -13,7 +16,7 @@ struct ProfileView: View {
     @State private var lastName: String = "Doe"
     @State private var email: String = "the.pack@example.com"
     @State private var phoneNumber: String = "(123) 456-7890"
-    @State private var username: String = "janedoe.is.cool"
+    @State private var username: String = globalUsername
     @State private var password: String = "Pass123!"
     
     @State private var breedSelecs: [String] = ["Golden Retriever", "Siberian Husky", "Dachshund"]
@@ -62,7 +65,16 @@ struct ProfileView: View {
                         
                         textAnswer(label: "Email", info: $email, keyboardType: .emailAddress)
                         textAnswer(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
-                        textAnswer(label: "Username", info: $username)
+                        VStack(alignment: .leading) {
+                            Text("Username")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            TextField("Username", text: $username, onCommit: {
+                                globalUsername = username
+                            })
+                                .keyboardType(.default)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                        }
                         secureTextAnswer(label: "Password", info: $password)
                     }
                     .padding(.horizontal, 20)

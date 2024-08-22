@@ -24,7 +24,7 @@ func customTitle(title: String, w: CGFloat, h: CGFloat, opac: Double = 0.9) -> s
         .frame(width: w, height:h)
         .background(Color.white)
         .cornerRadius(10)
-        .shadow(radius: 40)
+        .shadow(radius: 20)
 }
 
 // Blue and white gradient
