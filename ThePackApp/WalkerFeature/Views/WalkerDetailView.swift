@@ -24,7 +24,7 @@ struct WalkerDetailView: View {
                 }
                 .padding(.horizontal, 15)
                 
-                // Additional Details
+                // Additional details
                 VStack(spacing: 10) {
                     detailRow(label: "Location", value: walkerVar.location)
                     Divider()
@@ -86,11 +86,3 @@ func detailRow(label: String, value: String) -> some View {
 #Preview("Wanda") {
     WalkerDetailView(walkerVar: walkerArray[1])
 }
-
-#Preview("Rohan") {
-    WalkerDetailView(walkerVar: walkerArray[2])
-}
-
-
-
-

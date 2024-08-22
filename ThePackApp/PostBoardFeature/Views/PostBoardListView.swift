@@ -26,7 +26,7 @@ struct PostBoardListView: View {
                 .scrollContentBackground(.hidden)
                 .background(blueGradient())
                 
-                // Post button positioned in the bottom left corner
+                // Post button
                 VStack {
                     Spacer()
                     

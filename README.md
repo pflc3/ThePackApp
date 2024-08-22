@@ -15,7 +15,7 @@ Other
 - AppIcon in assets used to set app icon
 
 ## General
-Launch Splash Page
+Splash Launch Page
 - Pops up shortly
 - App logo, app name, swift logo, and paw prints
 
@@ -24,7 +24,6 @@ Survey Page
 - Able to signup for an account or signin to an account
 - Declaie and initialize username global vars
 - Leads to tab bar view when done
-- Holds dropDownAnswer() function
     
 Home Page
 - Includes a random dog fun fact and joke
@@ -33,7 +32,7 @@ Home Page
 Profile Page
 - Displays profile info and profile pic
 - Able to change profile info and profile pic
-- Holds largeBlueGradient(), textAnswer(), secureTextAnswer(), displayInfo() functions
+- Holds largeBlueGradient(), textAnswer(), displayInfo() functions
 - Holds ImagePicker struct and loadImage() function
 
 Mode Data
@@ -59,7 +58,7 @@ DogInfo Detail Page
 PostBoard List Page
 - Consists of 9 PostRows
 - Posts have a icon, title, and category
-* Post button without functionality
+- Post button without functionality
 
 Post Detail Page
 - Category, title, and full description
@@ -71,7 +70,7 @@ Post Detail Page
 Walker List Page
 - Consists of 9 WalkerRows
 - WalkerRows have headshot pic, name, and icon
-* Become Walker button without functionality
+- Become Walker button without functionality
 
 Walker Detail Page
 - Name

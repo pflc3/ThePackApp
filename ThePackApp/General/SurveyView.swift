@@ -182,17 +182,3 @@ struct SurveyView: View {
 #Preview {
     SurveyView()
 }
-
-// Drop down answers
-func dropDownAnswer(title: String, selection: Binding<String>, options: [String]) -> some View {
-        Picker(title, selection: selection) {
-            ForEach(options, id: \.self) {
-                Text($0)
-            }
-        }
-        .pickerStyle(MenuPickerStyle())
-        .background(RoundedRectangle(cornerRadius: 5)
-            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
-            .fill(Color.white)
-        )
-}
