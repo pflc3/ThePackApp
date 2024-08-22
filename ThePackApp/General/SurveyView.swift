@@ -11,7 +11,10 @@ var globalBreedSelecs: [String] = ["None", "None", "None"]
 var globalPassword: String = ""
 var globalFirstName: String = ""
 var globalLastName: String = ""
+var globalExpSelec: String = "Beginner"
 
+let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund", "German Shepard", "Bulldog", "Poodle", "Rottweiler", "Beagle", "American Pit Bull Terrier"]
+let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
 
 struct SurveyView: View {
     // Declare and initialize variables
@@ -21,9 +24,7 @@ struct SurveyView: View {
     @State private var firstName: String = globalFirstName
     @State private var lastName: String = globalLastName
     @State private var breedSelecs: [String] = globalBreedSelecs
-    @State private var expSelection: String = "Beginner"
-    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund", "German Shepard", "Bulldog", "Poodle", "Rottweiler", "Beagle", "American Pit Bull Terrier"]
-    let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
+    @State private var expSelection: String = globalExpSelec
     let fontSize: CGFloat = 20
     
     var body: some View {
@@ -140,7 +141,22 @@ struct SurveyView: View {
                         Text("4. What is your experience with dog owning?")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        dropDownAnswer(title: "Your Experience", selection: $expSelection, options: expOptions)
+                        
+                        // Experience
+                        Picker("Your experience", selection: $expSelection) {
+                            ForEach(expOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: expSelection) { oldVal, newVal in
+                            globalExpSelec = newVal
+                        }
+
                     }
                     
                     Spacer()

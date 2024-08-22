@@ -15,9 +15,8 @@ struct ProfileView: View {
     @State private var phoneNumber: String = "(123) 456-7890"
     @State private var username: String = globalUsername
     @State private var password: String = globalPassword
-    
+    @State private var expSelec: String = globalExpSelec
     @State private var breedSelecs: [String] = globalBreedSelecs
-    let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund", "German Shepard", "Bulldog", "Poodle", "Rottweiler", "Beagle", "American Pit Bull Terrier"]
     
     // Holds currenly displayed profile pic
     @State private var profilePic: Image = Image(systemName: "person.crop.circle.fill")
@@ -124,6 +123,25 @@ struct ProfileView: View {
                             globalBreedSelecs[2] = newVal
                         }
                         
+                        Text("Experience")
+                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                        
+                        // Experience
+                        Picker("Experience", selection: $expSelec) {
+                            ForEach(expOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: expSelec) { oldVal, newVal in
+                            globalExpSelec = newVal
+                        }
+                        
                         // Email
                         textAnswer(label: "Email", info: $email, keyboardType: .emailAddress)
                         
@@ -170,6 +188,14 @@ struct ProfileView: View {
                         displayInfo(icon: "envelope.fill", text: email)
                         displayInfo(icon: "phone.fill", text: phoneNumber)
                         displayInfo(icon: "person.fill", text: username)
+                        HStack {
+                            Image("Bone")
+                                .resizable()
+                                .frame(width: 20, height:20)
+                            Text(expSelec)
+                                .foregroundColor(.white)
+                                .font(.title2)
+                        }
                     }
                 }
                 
