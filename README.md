@@ -60,7 +60,6 @@ PostBoard List Page
 - Consists of 9 PostRows
 - Posts have a icon, title, and category
 * Post button without functionality
-* (Maybe will have filters at the top (category, etc))
 
 Post Detail Page
 - Category, title, and full description
@@ -72,7 +71,7 @@ Post Detail Page
 Walker List Page
 - Consists of 9 WalkerRows
 - WalkerRows have headshot pic, name, and icon
-* (Maybe will have filters at the top (location, prie, etc))
+* Become Walker button without functionality
 
 Walker Detail Page
 - Name
