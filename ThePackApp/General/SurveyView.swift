@@ -7,15 +7,20 @@ import SwiftUI
 
 // Declare and initialize global variable
 var globalUsername: String = ""
+var globalBreedSelecs: [String] = ["None", "None", "None"]
+var globalPassword: String = ""
+var globalFirstName: String = ""
+var globalLastName: String = ""
+
 
 struct SurveyView: View {
     // Declare and initialize variables
     @State private var isSignUp: Bool = true
     @State private var username: String = globalUsername
-    @State private var password: String = ""
-    @State private var firstName: String = ""
-    @State private var lastName: String = ""
-    @State private var breedSelecs: [String] = ["None", "None", "None"]
+    @State private var password: String = globalPassword
+    @State private var firstName: String = globalFirstName
+    @State private var lastName: String = globalLastName
+    @State private var breedSelecs: [String] = globalBreedSelecs
     @State private var expSelection: String = "Beginner"
     let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund", "German Shepard", "Bulldog", "Poodle", "Rottweiler", "Beagle", "American Pit Bull Terrier"]
     let expOptions: [String] = ["Beginner", "Intermediate", "Expert"]
@@ -56,6 +61,9 @@ struct SurveyView: View {
                         .fontWeight(.medium)
                     SecureField("Enter your password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .onChange(of: password) { oldVal, newVal in
+                            globalPassword = newVal
+                        }
                     
                     if (isSignUp) {
                         // Question 1: First Name
@@ -64,6 +72,9 @@ struct SurveyView: View {
                             .fontWeight(.medium)
                         TextField("Enter your name", text: $firstName)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .onChange(of: firstName) { oldVal, newVal in
+                                globalFirstName = newVal
+                            }
                         
                         // Question 2: Last Name
                         Text("2. What is your last name?")
@@ -71,14 +82,59 @@ struct SurveyView: View {
                             .fontWeight(.medium)
                         TextField("Enter your name", text: $lastName)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .onChange(of: lastName) { oldVal, newVal in
+                                globalLastName = newVal
+                            }
                         
                         // Question 3: Dog Breeds
                         Text("3. Choose up to 3 dog breeds?\n(At least 1)")
                             .font(.system(size: fontSize))
                             .fontWeight(.medium)
-                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelecs[0], options: breedOptions)
-                        dropDownAnswer(title: "2nd Dog breed", selection: $breedSelecs[1], options: breedOptions)
-                        dropDownAnswer(title: "3rd Dog breed", selection: $breedSelecs[2], options: breedOptions)
+                        
+                        // 1st Dog Breed
+                        Picker("1st Dog breed", selection: $breedSelecs[0]) {
+                            ForEach(breedOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: breedSelecs[0]) { oldVal, newVal in
+                            globalBreedSelecs[0] = newVal
+                        }
+                        
+                        //2nd dog breed
+                        Picker("2nd Dog breed", selection: $breedSelecs[1]) {
+                            ForEach(breedOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: breedSelecs[1]) { oldVal, newVal in
+                            globalBreedSelecs[1] = newVal
+                        }
+                        
+                        //3rd dog breed
+                        Picker("3rd Dog breed", selection: $breedSelecs[2]) {
+                            ForEach(breedOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: breedSelecs[2]) { oldVal, newVal in
+                            globalBreedSelecs[2] = newVal
+                        }
                         
                         // Question 4: Experience
                         Text("4. What is your experience with dog owning?")

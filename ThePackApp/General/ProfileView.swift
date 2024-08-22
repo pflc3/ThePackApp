@@ -9,14 +9,14 @@ import PhotosUI
 struct ProfileView: View {
     // Declare and initialize variables
     @State private var isEditing: Bool = false
-    @State private var firstName: String = "Jane"
-    @State private var lastName: String = "Doe"
+    @State private var firstName: String = globalFirstName
+    @State private var lastName: String = globalLastName
     @State private var email: String = "the.pack@example.com"
     @State private var phoneNumber: String = "(123) 456-7890"
     @State private var username: String = globalUsername
-    @State private var password: String = "Pass123!"
+    @State private var password: String = globalPassword
     
-    @State private var breedSelecs: [String] = ["Golden Retriever", "Siberian Husky", "Dachshund"]
+    @State private var breedSelecs: [String] = globalBreedSelecs
     let breedOptions: [String] = ["None", "Golden Retriever", "Siberian Husky", "Dachshund", "German Shepard", "Bulldog", "Poodle", "Rottweiler", "Beagle", "American Pit Bull Terrier"]
     
     // Holds currenly displayed profile pic
@@ -48,21 +48,89 @@ struct ProfileView: View {
                 Spacer().frame(height: 40)
                 
                 if isEditing {
-                    // Editable firstNm, lastNm, dog breeds, email, number, user, password
+                    // Editable info
                     VStack(alignment: .leading, spacing: 20) {
-                        textAnswer(label: "First Name", info: $firstName)
-                        textAnswer(label: "Last Name", info: $lastName)
+                        // First Name
+                        VStack(alignment: .leading) {
+                            Text("First Name")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            TextField("First Name", text: $firstName)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .onChange(of: firstName) { oldVal, newVal in
+                                    globalFirstName = newVal
+                                }
+                        }
                         
+                        // Last name
+                        VStack(alignment: .leading) {
+                            Text("Last Name")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            TextField("Last Name", text: $lastName)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .onChange(of: lastName) { oldVal, newVal in
+                                    globalLastName = newVal
+                                }
+                        }
+                        
+                        // Dog Breeds
                         Text("Dog Breeds")
                             .fontWeight(.medium)
                             .foregroundColor(.white)
-                        dropDownAnswer(title: "1st Dog breed", selection: $breedSelecs[0], options: breedOptions)
-                        dropDownAnswer(title: "2nd Dog breed", selection: $breedSelecs[1], options: breedOptions)
-                        dropDownAnswer(title: "3rd Dog breed", selection: $breedSelecs[2], options: breedOptions)
                         
+                        // 1st Dog Breed
+                        Picker("1st Dog breed", selection: $breedSelecs[0]) {
+                            ForEach(breedOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: breedSelecs[0]) { oldVal, newVal in
+                            globalBreedSelecs[0] = newVal
+                        }
+                        
+                        //2nd dog breed
+                        Picker("2nd Dog breed", selection: $breedSelecs[1]) {
+                            ForEach(breedOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: breedSelecs[1]) { oldVal, newVal in
+                            globalBreedSelecs[1] = newVal
+                        }
+                        
+                        //3rd dog breed
+                        Picker("3rd Dog breed", selection: $breedSelecs[2]) {
+                            ForEach(breedOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(UIColor.systemGray4),lineWidth: 0.8)
+                            .fill(Color.white)
+                        )
+                        .onChange(of: breedSelecs[2]) { oldVal, newVal in
+                            globalBreedSelecs[2] = newVal
+                        }
+                        
+                        // Email
                         textAnswer(label: "Email", info: $email, keyboardType: .emailAddress)
+                        
+                        // Phone
                         textAnswer(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
                         
+                        // Username
                         VStack(alignment: .leading) {
                             Text("Username")
                                 .fontWeight(.medium)
@@ -74,7 +142,17 @@ struct ProfileView: View {
                                 }
                         }
                         
-                        secureTextAnswer(label: "Password", info: $password)
+                        // Password
+                        VStack(alignment: .leading) {
+                            Text("Password")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            SecureField("Password", text: $password)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .onChange(of: password) { oldVal, newVal in
+                                    globalPassword = newVal
+                                }
+                        }
                     }
                     .padding(.horizontal, 20)
                 } else {
