@@ -7,92 +7,50 @@ import SwiftUI
 
 struct PostDetailView: View {
     var postVar: Post
-    @State private var addComment: String = ""
-    @State private var comments: [String] = []
     
     var body: some View {
         VStack(alignment: .leading) {
-            // Post Title
-            Text(postVar.title)
-                .font(.title)
-                .foregroundColor(.white)
-                .padding(.bottom, 10)
-            
-            // Catgeory and icon
+            // Camera icon and category
             HStack {
                 Image(systemName: "camera.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 25)
-                    .foregroundColor(.white)
                 Text(postVar.category)
-                    .foregroundColor(.white)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.bottom, 20)
             
-            // Post description
+            // Title
+            Text(postVar.title)
+            
+            Spacer().frame(height: 25)
+            
+            // Description
             Text(postVar.description)
-                .foregroundColor(.white)
-                .padding(.bottom, 20)
             
-            Spacer()
+            Spacer().frame(height: 25)
             
-            ScrollView {
-                // Comments
-                VStack(alignment: .leading, spacing: 10) {
-                    Divider()
-                    
-                    Text(postVar.comment1)
-                        .foregroundColor(.white)
-                    
-                    Divider()
-                    
-                    Text(postVar.comment2)
-                        .foregroundColor(.white)
-                    
-                    Divider()
-                    
-                    ForEach(comments, id: \.self) { commentItem in
-                        Text(commentItem)
-                            .foregroundColor(.white)
-                        Divider()
-                    }
-                }
-            }
+            // Comment Section Title
+            Text("Comments")
             
-            Spacer()
+            Spacer().frame(height: 10)
             
-            // Add a comment
-            HStack {
-                Image(systemName: "person.crop.circle.fill")
-                    .resizable()
-                    .frame(width: 45, height: 45)
-                    .foregroundColor(.blue.opacity(0.8))
-                
-                TextField("Add a comment...", text: $addComment, onCommit: {
-                    // If addComment is NOT empty,
-                    // append addComment to comments array then reset it
-                    if (!addComment.isEmpty) {
-                        comments.append(addComment)
-                        addComment = ""
-                    }
-                })
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .foregroundColor(.black)
-            }
+            //Comment Section
+            CommentSection(postVar: postVar)
         }
         .padding()
         .background(blueGradient())
     }
 }
 
-
-    
-#Preview {
+#Preview("Walking Question") {
     PostDetailView(postVar: postArray[0])
 }
 
-#Preview {
+#Preview("Bath Question") {
     PostDetailView(postVar: postArray[1])
 }
+
+// Rectangle for background
+func customRectangle(colorVar: Color = .white) -> some View {
+    RoundedRectangle(cornerRadius: 15)
+        .fill(colorVar.opacity(0.9))
+        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
+}
+

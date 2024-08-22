@@ -5,10 +5,13 @@
 
 import SwiftUI
 
+// Declare and initialize global variable
+var globalUsername: String = ""
+
 struct SurveyView: View {
     // Declare and initialize variables
     @State private var isSignUp: Bool = true
-    @State private var username: String = ""
+    @State private var username: String = globalUsername
     @State private var password: String = ""
     @State private var firstName: String = ""
     @State private var lastName: String = ""
@@ -43,6 +46,9 @@ struct SurveyView: View {
                         .fontWeight(.medium)
                     TextField("Enter Your Username", text: $username)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .onChange(of: username) { oldVal, newVal in
+                            globalUsername = newVal
+                        }
                     
                     // Password
                     Text("Password")

@@ -16,6 +16,7 @@ struct DogInfoListView: View {
                 List(dogInfoArray) { dogInfoItem in
                     NavigationLink {
                         DogInfoDetailView(dogInfoVar: dogInfoItem)
+                            .toolbar(.hidden, for: .tabBar)
                     } label: {
                         DogInfoRow(dogInfoVar: dogInfoItem)
                     }

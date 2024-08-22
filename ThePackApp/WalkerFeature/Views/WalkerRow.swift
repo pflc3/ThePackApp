@@ -27,7 +27,7 @@ struct WalkerRow: View {
             Image(systemName: "figure.walk")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 35, height: 35)
+                .frame(width: 30, height: 30)
                 .foregroundColor(.gray)
            
         }

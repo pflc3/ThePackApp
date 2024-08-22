@@ -14,6 +14,7 @@ struct WalkerListView: View {
                 List(walkerArray) { walkerItem in
                     NavigationLink {
                         WalkerDetailView(walkerVar: walkerItem)
+                            .toolbar(.hidden, for: .tabBar)
                     } label: {
                         WalkerRow(walkerVar: walkerItem)
                     }

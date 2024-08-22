@@ -22,6 +22,7 @@ Launch Splash Page
 Survey Page
 - Asks for user info (personal, their dogs, experience, etc)
 - Able to signup for an account or signin to an account
+- Declaie and initialize username global vars
 - Leads to tab bar view when done
 - Holds dropDownAnswer() function
     
@@ -62,9 +63,9 @@ PostBoard List Page
 * (Maybe will have filters at the top (category, etc))
 
 Post Detail Page
-- Title, category, and full description
-- Able to see 2 other comments
-- Able to comment yourself
+- Category, title, and full description
+- CommentSection: Able to see 2 other comments and comment yourself
+- Holds customRectangle() function
 * (Maybe will have photos)
 
 ## Walker Feature

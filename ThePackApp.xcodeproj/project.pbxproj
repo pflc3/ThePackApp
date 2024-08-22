@@ -35,6 +35,7 @@
 		E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */; };
 		E88C99C92C5EA6E000C22347 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C82C5EA6E000C22347 /* README.md */; };
 		E89020452C62A9C800895CC5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E89020442C62A9C800895CC5 /* .gitignore */; };
+		E89C679B2C76EE04003CA729 /* CommentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89C679A2C76EE04003CA729 /* CommentSection.swift */; };
 		E8A7D43F2C6DDBAB00ED234E /* SplashLaunchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		E88C99C12C5EA69400C22347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E88C99C82C5EA6E000C22347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E89020442C62A9C800895CC5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E89C679A2C76EE04003CA729 /* CommentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSection.swift; sourceTree = "<group>"; };
 		E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashLaunchPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 				E846BBF02C6C02CB00A0A199 /* PostRow.swift */,
 				E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */,
 				E846BBF42C6C03FB00A0A199 /* PostDetailView.swift */,
+				E89C679A2C76EE04003CA729 /* CommentSection.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				E846BBF52C6C03FB00A0A199 /* PostDetailView.swift in Sources */,
 				BF32A7032C738ACA00766F9B /* TabBarView.swift in Sources */,
 				E8625CC22C74FD95005DEA4D /* ModelData.swift in Sources */,
+				E89C679B2C76EE04003CA729 /* CommentSection.swift in Sources */,
 				E846D8BA2C6DB09D00A2F015 /* WalkerDetailView.swift in Sources */,
 				E846BBF32C6C03E000A0A199 /* DogInfoDetailView.swift in Sources */,
 				E8625CBE2C74FD3D005DEA4D /* Post.swift in Sources */,
