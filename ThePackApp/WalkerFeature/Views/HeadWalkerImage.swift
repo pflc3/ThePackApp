@@ -17,10 +17,16 @@ struct HeadWalkerImage: View {
             .aspectRatio(contentMode: .fill)
             .frame(width: 200, height: 210)
             .clipShape(Circle())
-            .overlay {
-                Circle().stroke(.white, lineWidth: 1)
-            }
-            .shadow(radius: 7)
+            .overlay(
+                Circle()
+                    .stroke(LinearGradient(
+                        gradient: Gradient(colors: [Color.blue.opacity(0.9), Color.white.opacity(0.5)]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ), lineWidth: 8)
+            )
+            .shadow(color: Color.blue.opacity(0.5), radius: 10, x: 0, y: 5)
+        
     }
 }
 
