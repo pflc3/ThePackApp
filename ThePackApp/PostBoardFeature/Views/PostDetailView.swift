@@ -7,8 +7,6 @@ import SwiftUI
 
 struct PostDetailView: View {
     var postVar: Post
-    @State private var addComment: String = ""
-    @State private var comments: [String] = []
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -29,127 +27,58 @@ struct PostDetailView: View {
             .background(Color.blue.opacity(0.9))
             .clipShape(Capsule())
             .shadow(radius: 5)
-            .frame(maxWidth: .infinity, alignment: .leading)
             
-            // Post Title
+            // Title
             Text(postVar.title)
                 .font(.title)
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .foregroundColor(.white)
                 .padding(.all, 10)
-                .background(
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.blue.opacity(0.9))
-                        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
-                )
-                    .shadow(radius: 20)
+                .background(customRectangle(colorVar: .blue))
+                .shadow(radius: 20)
             
-            Spacer().frame(height: 20)
+            Spacer().frame(height: 25)
             
-            ScrollView {
-                Text(postVar.description)
-                    .font(.headline)
-                    .fontWeight(.medium)
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.white.opacity(0.9))
-                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
-                    )
-                
-                Spacer().frame(height: 20)
-                
-                // Comments Section Title
-                Text("Comments")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.blue.opacity(0.9))
-                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
-                    )
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-                Spacer().frame(height: 10)
+            // Description
+            Text(postVar.description)
+                .font(.system(size: 20))
+                .fontWeight(.medium)
+                .padding()
+                .background(customRectangle())
             
-                // Comments Section
-                VStack(alignment: .leading, spacing: 15) {
-                    // New comments
-                    ForEach(comments, id: \.self) { commentItem in
-                        displayComment(text: commentItem, user: globalUsername)
-                    }
-                    
-                    // Predefined comments
-                    displayComment(text: postVar.comment1, user: postVar.user1)
-                    displayComment(text: postVar.comment2, user: postVar.user2)
-                }
-                //.padding(.horizontal, 5)
-                .padding(.bottom, 20)
-            }
+            Spacer().frame(height: 25)
             
-            Spacer()
+            // Comment Section Title
+            Text("Comments")
+                .font(.headline)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 4)
+                .background(customRectangle(colorVar: .blue))
             
-            // Add a Comment
-            HStack {
-                Image(systemName: "person.crop.circle.fill")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .foregroundColor(.blue.opacity(0.8))
-                
-                TextField("Add a comment...", text: $addComment)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .foregroundColor(.black)
-                .onSubmit {
-                    // If addComment is NOT empty, append it to comments array
-                    // Then clear addComment
-                    if (!addComment.isEmpty) {
-                        comments.insert(addComment, at: 0)
-                        addComment = ""
-                    }
-                }
-            }
+            Spacer().frame(height: 10)
             
+            //Comment Section
+            CommentSection(postVar: postVar)
         }
         .padding()
         .background(blueGradient())
     }
 }
 
-#Preview {
+#Preview("Walking Question") {
     PostDetailView(postVar: postArray[0])
 }
 
-#Preview {
+#Preview("Bath Question") {
     PostDetailView(postVar: postArray[1])
 }
 
-// Display Comment
-func displayComment(text: String, user: String) -> some View {
-    HStack(alignment: .top) {
-        Image(systemName: "person.crop.circle.fill")
-            .resizable()
-            .frame(width: 30, height: 30)
-            .foregroundColor(.blue.opacity(0.7))
-        
-        VStack{
-            Text(user)
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Text(text)
-                .font(.body)
-                .fontWeight(.medium)
-                .foregroundColor(.black)
-                .padding(.vertical, 5)
-                .padding(.horizontal)
-                .background(Color.gray.opacity(0.3))
-                .cornerRadius(8)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-    }
+// Rectangle for background
+func customRectangle(colorVar: Color = .white) -> some View {
+    RoundedRectangle(cornerRadius: 15)
+        .fill(colorVar.opacity(0.9))
+        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
 }

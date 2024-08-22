@@ -16,6 +16,7 @@ struct PostBoardListView: View {
                 List(postArray) { postItem in
                     NavigationLink {
                         PostDetailView(postVar: postItem)
+                            .toolbar(.hidden, for: .tabBar)
                     } label: {
                         PostRow(postVar: postItem)
                     }
