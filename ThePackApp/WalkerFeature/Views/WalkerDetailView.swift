@@ -22,10 +22,10 @@ struct WalkerDetailView: View {
                     detailSection(title: "Bio:", content: walkerVar.bio)
                     detailSection(title: "Description:", content: walkerVar.description)
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 15)
                 
                 // Additional Details
-                VStack(spacing: 15) {
+                VStack(spacing: 10) {
                     detailRow(label: "Location", value: walkerVar.location)
                     Divider()
                     detailRow(label: "Price", value: walkerVar.price)
@@ -38,12 +38,13 @@ struct WalkerDetailView: View {
                 }
                 .padding()
                 .background(LinearGradient(
-                    gradient: Gradient(colors: [Color.white.opacity(0.95), Color.blue.opacity(0.15)]),
+                    gradient: Gradient(colors: [Color.blue.opacity(0.15), Color.white.opacity(0.95)]),
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 ))
                 .cornerRadius(15)
                 .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                .frame(maxWidth: 350, alignment: .center)
             }
             .padding()
         }
@@ -70,7 +71,7 @@ func detailRow(label: String, value: String) -> some View {
         Text(label + ":")
             .font(.subheadline)
             .fontWeight(.semibold)
-            .foregroundColor(Color.blue.opacity(0.75))
+            .foregroundColor(Color.blue.opacity(0.95))
         Spacer()
         Text(value)
             .font(.subheadline)

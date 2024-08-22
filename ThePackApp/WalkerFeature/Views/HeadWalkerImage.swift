@@ -20,7 +20,7 @@ struct HeadWalkerImage: View {
             .overlay(
                 Circle()
                     .stroke(LinearGradient(
-                        gradient: Gradient(colors: [Color.blue.opacity(0.9), Color.white.opacity(0.5)]),
+                        gradient: Gradient(colors: [Color.blue.opacity(0.9), Color.white.opacity(0.9)]),
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     ), lineWidth: 8)
