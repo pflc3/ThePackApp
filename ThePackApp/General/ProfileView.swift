@@ -262,18 +262,6 @@ func textAnswer(label: String, info: Binding<String>, keyboardType: UIKeyboardTy
     }
 }
 
-// Label and secure text box to give answer
-func secureTextAnswer(label: String, info: Binding<String>) -> some View {
-    VStack(alignment: .leading) {
-        Text(label)
-            .fontWeight(.medium)
-            .frame(width: 100, alignment: .leading)
-            .foregroundColor(.white)
-        SecureField(label, text: info)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-    }
-}
-
 // Display info with icon and text
 func displayInfo(icon: String, text: String) -> some View {
     HStack {

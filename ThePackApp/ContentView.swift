@@ -7,7 +7,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       SurveyView()
+        //Start with Survery which leads to TabBar
+        SurveyView()
     }
 }
 
