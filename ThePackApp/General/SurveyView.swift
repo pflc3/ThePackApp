@@ -54,7 +54,7 @@ struct SurveyView: View {
                     Text("Password")
                         .font(.system(size: fontSize))
                         .fontWeight(.medium)
-                    TextField("Enter your password", text: $password)
+                    SecureField("Enter your password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     if (isSignUp) {
