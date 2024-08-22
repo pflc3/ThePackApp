@@ -16,7 +16,7 @@ struct DogInfoDetailView: View {
                 
                 Spacer().frame(height: 20)
                 
-                // Fully pic
+                // Full body pic
                 FullDogImage(imageVar: dogInfoVar.bodyImageView)
                 
                 VStack(alignment: .leading, spacing: 15) {
@@ -38,11 +38,7 @@ struct DogInfoDetailView: View {
                 }
                 .padding()
                 .frame(width: UIScreen.main.bounds.width * 0.92)
-                .background(
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.white.opacity(0.9))
-                        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
-                )
+                .background(customRectangle())
                 .padding()
                 
                 Spacer()
