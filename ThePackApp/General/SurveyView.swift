@@ -98,7 +98,7 @@ struct SurveyView: View {
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(Color.blue.opacity(1))
-                            .cornerRadius(10)
+                                .cornerRadius(10)
                     }
                 }
                 .padding()

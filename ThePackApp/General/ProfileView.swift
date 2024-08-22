@@ -106,8 +106,8 @@ struct ProfileView: View {
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.blue)
-                        .cornerRadius(10)
-                        .padding(.horizontal, 40)
+                            .cornerRadius(10)
+                            .padding(.horizontal, 40)
                 }
                 
                 if(isEditing){

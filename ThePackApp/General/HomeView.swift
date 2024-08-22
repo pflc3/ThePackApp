@@ -68,7 +68,7 @@ func bubbleTitle(title: String) -> some View {
         .frame(width: 200, height: 45)
         .scaledToFit()
         .background(.blue.opacity(0.7))
-        .cornerRadius(15)
+            .cornerRadius(15)
 }
 
 // Bubble text
@@ -81,6 +81,5 @@ func bubbleText(options: [String], otherwise: String) -> some View {
         .multilineTextAlignment(.center)
         .padding()
         .background(Color.blue.opacity(0.7))
-        .cornerRadius(20)
-        .shadow(radius: 25)
+            .cornerRadius(20)
 }
