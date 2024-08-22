@@ -21,19 +21,37 @@ struct CommentRow: View {
         HStack(alignment: .top) {
             // Profile pic
             Image(systemName: "person.crop.circle.fill")
+                .resizable()
+                .frame(width: 30, height: 30)
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/.opacity(0.8))
+            
             
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
                     // Username
                     Text(commentVar.username)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                    
                     
                     Spacer()
                     
                     // Date
                     Text(dateFormatted(commentVar.date))
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                
                 }
                 // Comment text
                 Text(commentVar.text)
+                    .font(.body)
+                    .fontWeight(.medium)
+                    .padding(.vertical, 5)
+                    .padding(.horizontal, 10)
+                    .background(Color.gray.opacity(0.3))
+                    .cornerRadius(8)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+            
             }
         }
     }
@@ -73,16 +91,35 @@ struct CommentSection: View {
             
             HStack {
                 // Profile pic
+                Image(systemName: "person.crop.circle.fill")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/.opacity(0.8))
+                    
+                    
                 
                 // Add a comment
+                TextField("add acomment...", text:$newComment)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 // Submit comment button
                 Button(action: {
                     // If the new comment is NOT empty then, make a temporary comment object  with that new comment and insert it into the array
                     // Lastly clear the newComment to be used again
-                    // if()
+                    if(!newComment.isEmpty) {
+                        let tempComment: Comment = Comment(username: 
+                                globalUsername, text: newComment)
+                            commentsArray.insert(tempComment, at: 0)
+                            newComment = ""
+                        
+            
+                    }
                 }) {
-                    //Image()
+                    Image(systemName: "arrow.up.circle.fill")
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                        .foregroundColor(.blue.opacity(0.8))
+                        
                 }
             }
         }
