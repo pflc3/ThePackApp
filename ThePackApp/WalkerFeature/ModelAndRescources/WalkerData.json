@@ -115,5 +115,18 @@
         "email": "cold_frost718@gmail.com",
         "phoneNumber": "(213) 678-3259",
         "headImage": "walker9"
+    },
+    
+    {
+        "name": "Eliot Ikheloa",
+        "bio": "I am a dedicated and experienced dog walker with a deep affection for animals. With over 6 years of experience, I focus on creating positive and engaging walking experiences for dogs of all breeds.",
+        "description": "I specialize in walking both small and large dogs, offering tailored sessions to meet their specific needs. Known for my reliability and gentle approach, I ensure each dog receives the exercise, attention, and care they deserve. My goal is to make every walk enjoyable and enriching for your furry friend.",
+        "id": 1010,
+        "location": "Seattle, WA",
+        "price": "$23 per walk",
+        "rating": "4.7",
+        "email": "eliot.ikheloa@gmail.com",
+        "phoneNumber": "(206) 555-7890",
+        "headImage": "walker10"
     }
 ]
