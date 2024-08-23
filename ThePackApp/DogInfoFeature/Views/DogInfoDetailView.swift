@@ -19,6 +19,8 @@ struct DogInfoDetailView: View {
                 // Full body pic
                 FullDogImage(imageVar: dogInfoVar.bodyImageView)
                 
+                Spacer().frame(height: 20)
+                
                 VStack(alignment: .leading, spacing: 15) {
                     // Life stage and age
                     displayInfoHoriz(label: "Life Stage", text: dogInfoVar.lifeStage)
@@ -28,20 +30,20 @@ struct DogInfoDetailView: View {
                     
                     // Description
                     displayInfoVert(label: "Description", text: dogInfoVar.description)
-                    
-                    Divider()
-                    
-                    // Advice
-                    displayInfoList(label: "Medical Advice", t1: dogInfoVar.medAdvice1, t2: dogInfoVar.medAdvice2, t3: dogInfoVar.medAdvice3)
-                    displayInfoList(label: "Food Advice", t1: dogInfoVar.foodAdvice1, t2: dogInfoVar.foodAdvice2, t3: dogInfoVar.foodAdvice3)
-                    displayInfoList(label: "Watch Out For", t1: dogInfoVar.thingsToWatch1, t2:dogInfoVar.thingsToWatch2, t3: dogInfoVar.thingsToWatch3)
                 }
                 .padding()
-                .frame(width: UIScreen.main.bounds.width * 0.92)
                 .background(customRectangle())
-                .padding()
                 
-                Spacer()
+                Spacer().frame(height: 20)
+                
+                VStack(alignment: .leading, spacing: 15) {
+                    // Advice
+                    displayInfoList(label: "Medical Advice", icon: "bandage.fill", t1: dogInfoVar.medAdvice1, t2: dogInfoVar.medAdvice2, t3: dogInfoVar.medAdvice3)
+                    displayInfoList(label: "Food Advice", icon: "fork.knife", t1: dogInfoVar.foodAdvice1, t2: dogInfoVar.foodAdvice2, t3: dogInfoVar.foodAdvice3)
+                    displayInfoList(label: "Watch Out For", icon: "exclamationmark.triangle.fill" ,t1: dogInfoVar.thingsToWatch1, t2:dogInfoVar.thingsToWatch2, t3: dogInfoVar.thingsToWatch3)
+                }
+                .padding()
+                .background(customRectangle())
             }
             .padding()
         }
@@ -61,10 +63,11 @@ struct DogInfoDetailView: View {
 func displayInfoHoriz(label: String, text: String) -> some View {
     HStack {
         Text(label+":")
-            .font(.title3)
+            .font(.system(size: 19))
             .fontWeight(.bold)
+            .foregroundColor(.blue.opacity(0.9))
         Text(text)
-            .font(.title3)
+            .font(.system(size: 19))
             .fontWeight(.medium)
     }
 }
@@ -73,28 +76,38 @@ func displayInfoHoriz(label: String, text: String) -> some View {
 func displayInfoVert(label: String, text: String) -> some View {
     VStack (alignment: .leading) {
         Text(label)
-            .font(.headline)
+            .font(.system(size: 19))
             .fontWeight(.bold)
+            .foregroundColor(.blue.opacity(0.9))
+        
+        Spacer().frame(height: 5)
+        
         Text(text)
-            .font(.headline)
+            .font(.body)
             .fontWeight(.medium)
     }
 }
 
 // Display numbered list info with label and texts
-func displayInfoList(label: String, t1: String, t2:String, t3: String) -> some View {
-    VStack (alignment: .leading) {
-        Text(label)
-            .font(.headline)
-            .fontWeight(.bold)
+func displayInfoList(label: String, icon: String, t1: String, t2:String, t3: String) -> some View {
+    VStack (alignment: .leading, spacing: 5) {
+        HStack {
+            Text(label)
+                .font(.system(size: 19))
+                .fontWeight(.bold)
+                .foregroundColor(.blue.opacity(0.9))
+            Image(systemName: icon)
+                .font(.system(size: 18))
+                .foregroundColor(.blue.opacity(0.8))
+        }
         Text("1. "+t1)
-            .font(.headline)
+            .font(.body)
             .fontWeight(.medium)
         Text("2. "+t2)
-            .font(.headline)
+            .font(.body)
             .fontWeight(.medium)
         Text("3. "+t3)
-            .font(.headline)
+            .font(.body)
             .fontWeight(.medium)
     }
 }

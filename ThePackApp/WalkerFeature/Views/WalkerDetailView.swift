@@ -10,7 +10,7 @@ struct WalkerDetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
+            VStack() {
                 // Title
                 customTitle(title: walkerVar.name, w: 360, h: 65)
                 
@@ -19,32 +19,30 @@ struct WalkerDetailView: View {
                 
                 // Bio and Description
                 VStack(alignment: .leading, spacing: 20) { // Adjusted spacing here
-                    detailSection(title: "Bio:", content: walkerVar.bio)
-                    detailSection(title: "Description:", content: walkerVar.description)
+                    detailSection(title: "Bio", content: walkerVar.bio)
+                    detailSection(title: "Description", content: walkerVar.description)
                 }
                 .padding(.horizontal, 15)
                 
+                Spacer().frame(height: 30)
+                
                 // Additional details
                 VStack(spacing: 10) {
-                    detailRow(label: "Location", value: walkerVar.location)
+                    detailRow(label: "Location", icon: "mappin.and.ellipse", value: walkerVar.location)
                     Divider()
-                    detailRow(label: "Price", value: walkerVar.price)
+                    detailRow(label: "Price", icon: "dollarsign.circle", value: walkerVar.price)
                     Divider()
-                    detailRow(label: "Rating", value: walkerVar.rating)
+                    detailRow(label: "Rating", icon: "star", value: walkerVar.rating)
                     Divider()
-                    detailRow(label: "Email", value: walkerVar.email)
+                    detailRow(label: "Email", icon: "envelope", value: walkerVar.email)
                     Divider()
-                    detailRow(label: "Phone Number", value: walkerVar.phoneNumber)
+                    detailRow(label: "Phone Number", icon: "phone", value: walkerVar.phoneNumber)
                 }
                 .padding()
-                .background(LinearGradient(
-                    gradient: Gradient(colors: [Color.blue.opacity(0.15), Color.white.opacity(0.95)]),
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                ))
-                .cornerRadius(15)
-                .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
-                .frame(maxWidth: 350, alignment: .center)
+                .background(Color.white)
+                    .cornerRadius(15)
+                    .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                    .frame(maxWidth: 350, alignment: .center)
             }
             .padding()
         }
@@ -58,7 +56,7 @@ func detailSection(title: String, content: String) -> some View {
         Text(title)
             .font(.system(size: 18))
             .fontWeight(.bold)
-            .foregroundColor(Color.blue.opacity(0.95))
+            .foregroundColor(Color.blue.opacity(0.9))
         Text(content)
             .font(.body)
             .padding(12)
@@ -66,15 +64,20 @@ func detailSection(title: String, content: String) -> some View {
     }
 }
 
-func detailRow(label: String, value: String) -> some View {
+func detailRow(label: String, icon: String, value: String) -> some View {
     HStack {
-        Text(label + ":")
-            .font(.subheadline)
+        Image(systemName: icon)
+            .font(.system(size: 18))
+            .foregroundColor(.blue.opacity(0.9))
+        Text(label)
+            .font(.system(size: 16))
             .fontWeight(.semibold)
-            .foregroundColor(Color.blue.opacity(0.95))
+            .foregroundColor(Color.blue.opacity(0.9))
+        
         Spacer()
+        
         Text(value)
-            .font(.subheadline)
+            .font(.system(size: 16))
             .foregroundColor(.primary)
     }
 }

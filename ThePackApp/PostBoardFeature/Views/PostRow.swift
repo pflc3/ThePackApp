@@ -18,7 +18,7 @@ struct PostRow: View {
             
             // Title
             Text(postVar.title)
-                .font(.system(size: 18))
+                .font(.system(size: 17))
                 .fontWeight(.medium)
             
             Spacer()

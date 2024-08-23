@@ -35,7 +35,7 @@ struct ProfileView: View {
                     .frame(width: 120, height: 120)
                     .foregroundColor(.white)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                    .overlay(Circle().stroke(Color.white.opacity(0.8), lineWidth: 4))
                     .shadow(radius: 10)
                     .padding(.top, 40)
                     .onTapGesture {
@@ -123,11 +123,10 @@ struct ProfileView: View {
                             globalBreedSelecs[2] = newVal
                         }
                         
+                        // Experience
                         Text("Experience")
                             .fontWeight(.medium)
                             .foregroundColor(.white)
-                        
-                        // Experience
                         Picker("Experience", selection: $expSelec) {
                             ForEach(expOptions, id: \.self) {
                                 Text($0)
@@ -142,11 +141,11 @@ struct ProfileView: View {
                             globalExpSelec = newVal
                         }
                         
+                        // Phone
+                        textAnswer(label: "Phone Number", info: $phoneNumber, keyboardType: .phonePad)
+                        
                         // Email
                         textAnswer(label: "Email", info: $email, keyboardType: .emailAddress)
-                        
-                        // Phone
-                        textAnswer(label: "Phone", info: $phoneNumber, keyboardType: .phonePad)
                         
                         // Username
                         VStack(alignment: .leading) {
@@ -174,7 +173,7 @@ struct ProfileView: View {
                     }
                     .padding(.horizontal, 20)
                 } else {
-                    // Display firstNm, dog breeds, email, number, user
+                    // Display firstNm, dog breeds, user, exp, number, email
                     VStack(spacing: 30) {
                         Text("Howl-o "+firstName+"!")
                             .font(.largeTitle)
@@ -185,8 +184,6 @@ struct ProfileView: View {
                             displayInfo(icon: "pawprint.fill", text: breedSelecs[1])
                             displayInfo(icon: "pawprint.fill", text: breedSelecs[2])
                         }
-                        displayInfo(icon: "envelope.fill", text: email)
-                        displayInfo(icon: "phone.fill", text: phoneNumber)
                         displayInfo(icon: "person.fill", text: username)
                         HStack {
                             Image("Bone")
@@ -195,7 +192,10 @@ struct ProfileView: View {
                             Text(expSelec)
                                 .foregroundColor(.white)
                                 .font(.title2)
+                                .fontWeight(.medium)
                         }
+                        displayInfo(icon: "phone.fill", text: phoneNumber)
+                        displayInfo(icon: "envelope.fill", text: email)
                     }
                 }
                 
@@ -248,6 +248,30 @@ func largeBlueGradient(opac: Double = 0.8) -> some View {
     .edgesIgnoringSafeArea(.all)
 }
 
+// Format for phone number
+func formatPhoneNumber(_ number: String) -> String {
+    // Remove any non-numeric characters
+    let digits = number.filter { "0123456789".contains($0) }
+
+    // Format for 1-3 digits, 4-6 digits, and 6-9 digits
+    let formattedNumber: String
+    switch digits.count {
+        case 0...3:
+            formattedNumber = digits
+        case 4...6:
+            let areaCode = digits.prefix(3)
+            let rest = digits.suffix(from: digits.index(digits.startIndex, offsetBy: 3))
+            formattedNumber = "(\(areaCode)) \(rest)"
+        default:
+            let areaCode = digits.prefix(3)
+            let midSection = digits[digits.index(digits.startIndex, offsetBy: 3)..<digits.index(digits.startIndex, offsetBy: 6)]
+            let lastSection = digits.suffix(from: digits.index(digits.startIndex, offsetBy: 6))
+            formattedNumber = "(\(areaCode)) \(midSection)-\(lastSection)"
+    }
+
+    return formattedNumber
+}
+
 // Label and text box to give answer
 func textAnswer(label: String, info: Binding<String>, keyboardType: UIKeyboardType = .default) -> some View {
     VStack(alignment: .leading) {
@@ -257,6 +281,12 @@ func textAnswer(label: String, info: Binding<String>, keyboardType: UIKeyboardTy
         TextField(label, text: info)
             .keyboardType(keyboardType)
             .textFieldStyle(RoundedBorderTextFieldStyle())
+            // Keep phone number format
+            .onChange(of: info.wrappedValue) { oldVal, newVal in
+                if label == "Phone Number" {
+                    info.wrappedValue = formatPhoneNumber(newVal)
+                }
+            }
     }
 }
 
@@ -269,6 +299,7 @@ func displayInfo(icon: String, text: String) -> some View {
             .foregroundColor(.white)
     }
     .font(.title2)
+    .fontWeight(.medium)
 }
 
 // ImagePicker struct, a custom wrapper around the UIImagePickerController

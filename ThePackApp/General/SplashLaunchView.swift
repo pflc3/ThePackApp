@@ -8,16 +8,17 @@ import SwiftUI
 struct SplashLaunchView: View {
     var body: some View {
         ZStack {
-            Color.white // Background color
+            // Background color
+            Color.white
             
             VStack(spacing: 20) {
                 Spacer().frame(height: 170)
                 
-                // "The Pack" Title Name
+                // App Name
                 Text("The  Pack")
                     .font(.system(size: 55, weight: .heavy))
                 
-                // Dog icon
+                // App icon
                 Image(systemName: "dog.circle.fill")
                     .resizable()
                     .scaledToFit()
@@ -26,7 +27,7 @@ struct SplashLaunchView: View {
                 
                 Spacer()
                 
-                // Swift logo at the bottom
+                // Swift logo
                 Image(systemName: "swift")
                     .resizable()
                     .scaledToFit()
@@ -36,7 +37,7 @@ struct SplashLaunchView: View {
                 Spacer().frame(height: 130)
             }
             
-            // Random paw prints
+            // Paw prints
             GeometryReader { geometry in
                 // 3 paws at the top
                 pawPrintImage()

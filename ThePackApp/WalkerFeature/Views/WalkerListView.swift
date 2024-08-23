@@ -11,7 +11,7 @@ struct WalkerListView: View {
             ZStack {
                 VStack {
                     // WalkerList Title
-                    customTitle(title: "Woofless Walkers", w: 360, h: 65)
+                    customTitle(title: "Woof Walkers", w: 360, h: 65)
                     
                     // List of WalkerRows
                     List(walkerArray) { walkerItem in

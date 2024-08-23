@@ -12,31 +12,35 @@ struct PostDetailView: View {
         VStack(alignment: .leading) {
             // Camera icon and category
             HStack {
-                Image(systemName: "camera.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 25, height: 25)
-                    .foregroundColor(.white)
-                Text(postVar.category)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
+                Spacer()
+                
+                HStack {
+                    Image(systemName: "camera.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 25, height: 25)
+                        .foregroundColor(.white)
+                    Text(postVar.category)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                }
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(Color.blue.opacity(0.9))
+                    .shadow(radius: 5)
+                    .cornerRadius(15)
             }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 5)
-            .background(Color.blue.opacity(0.9))
-            .shadow(radius: 5)
-            .cornerRadius(15)
             
             // Title
             Text(postVar.title)
-                .font(.title)
+                .font(.system(size: 26))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                 .foregroundColor(.white)
                 .padding(.all, 10)
                 .background(customRectangle(colorVar:. blue))
-                .shadow(radius: 20)
+                    .shadow(radius: 20)
             
             Spacer().frame(height: 25)
             
@@ -64,8 +68,10 @@ struct PostDetailView: View {
             //Comment Section
             CommentSection(postVar: postVar)
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.top, 58)
         .background(blueGradient())
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

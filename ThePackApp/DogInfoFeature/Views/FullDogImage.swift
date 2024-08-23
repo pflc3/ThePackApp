@@ -17,9 +17,9 @@ struct FullDogImage: View {
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .overlay {
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.white.opacity(0.4), lineWidth: 1.3)
+                    .stroke(Color.white.opacity(0.8), lineWidth: 3)
             }
-            .shadow(radius: 8)
+            .shadow(radius: 10)
     }
 }
 

@@ -6,6 +6,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    // Declare and initialize global variable
+    @State private var currentFact: String = ""
+    @State private var currentJoke: String = ""
+    @State private var isFactTurn: Bool = true
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -18,7 +23,8 @@ struct HomeView: View {
                 bubbleTitle(title: "Fur Fact")
                 
                 // Facts bubble
-                bubbleText(options: dogFacts, otherwise: "Dogs are amazing!")
+                bubbleText(text: currentFact)
+                .transition(.opacity)
                 
                 Spacer().frame(height: 30)
                 
@@ -26,12 +32,22 @@ struct HomeView: View {
                 bubbleTitle(title: "Puppy Pun")
                 
                 // Jokes bubble
-                bubbleText(options: dogJokes, otherwise: "Dogs are funny!")
+                bubbleText(text: currentJoke)
+                .transition(.opacity)
                 
                 Spacer()
             }
             .padding()
             .background(blueGradient())
+            .onAppear {
+                // Initialize first fact and joke
+                withAnimation {
+                    currentFact = dogFacts.randomElement() ?? "Dogs are amazing!"
+                    currentJoke = dogJokes.randomElement() ?? "Dogs are funny!"
+                }
+                // Update fact and joke alternately on timer
+                startTimer()
+            }
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -53,6 +69,25 @@ struct HomeView: View {
         "Why did the dog go to the bank? To make a de-paws-it!",
         "What kind of dog does Dracula have? A bloodhound!"
     ]
+    
+    // Update the text in the bubbles alternately
+    func updateText() {
+        withAnimation {
+            if(isFactTurn){
+                currentFact = dogFacts.randomElement() ?? "Dogs are amazing!"
+            } else {
+                currentJoke = dogJokes.randomElement() ?? "Dogs are funny!"
+            }
+        }
+    }
+    
+    // Start a timer to alternate updating text every 10 seconds
+    func startTimer() {
+        Timer.scheduledTimer(withTimeInterval: 7.5, repeats: true) { _ in
+            updateText()
+            isFactTurn.toggle()
+        }
+    }
 }
 
 #Preview {
@@ -62,24 +97,29 @@ struct HomeView: View {
 // Bubble title
 func bubbleTitle(title: String) -> some View {
     Text(title)
-        .font(.system(size: 30))
-        .bold()
-        .foregroundColor(.white)
-        .frame(width: 200, height: 45)
-        .scaledToFit()
-        .background(.blue.opacity(0.7))
+        .font(.title)
+        .fontWeight(.bold)
+        .foregroundColor(.blue.opacity(0.9))
+        .padding(.vertical, 5)
+        .padding(.horizontal, 15)
+        .background(Color.white)
             .cornerRadius(15)
 }
 
 // Bubble text
-func bubbleText(options: [String], otherwise: String) -> some View {
-    Text(options.randomElement() ?? otherwise)
+func bubbleText(text: String) -> some View {
+    Text(text)
         .font(.system(size: 24))
-        .fontWeight(.medium)
+        .fontWeight(.semibold)
         .foregroundColor(.white)
         .frame(width: 320, height: 120)
         .multilineTextAlignment(.center)
-        .padding()
+        .padding(.vertical, 20)
+        .padding(.horizontal, 15)
         .background(Color.blue.opacity(0.7))
             .cornerRadius(20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color.white, lineWidth: 5)
+            )
 }

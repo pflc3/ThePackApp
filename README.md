@@ -27,7 +27,7 @@ Survey Page
     
 Home Page
 - Includes a random dog fun fact and joke
-- Holds bubbleTitle() and bubbleText() functions
+- Holds bubbleTitle(), bubbleText(), updateText(), and startTimer() functions
 
 Profile Page
 - Displays profile info and profile pic
