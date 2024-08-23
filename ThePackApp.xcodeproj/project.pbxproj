@@ -14,6 +14,8 @@
 		BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */; };
 		BF8440BF2C6D0DD400D3ADD7 /* PostsData.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8440BE2C6D0DD400D3ADD7 /* PostsData.json */; };
 		BFE7ED2C2C6BD50B0013C661 /* DogInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFE7ED2B2C6BD50B0013C661 /* DogInfoData.json */; };
+		E83374F72C77E7120057A2BD /* SplashLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83374F62C77E7120057A2BD /* SplashLaunchView.swift */; };
+		E83374F92C78222A0057A2BD /* SplashLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83374F82C78222A0057A2BD /* SplashLaunch.storyboard */; };
 		E83DB5632C75984200B5B51E /* HeadWalkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83DB5622C75984200B5B51E /* HeadWalkerImage.swift */; };
 		E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */; };
 		E846BBF12C6C02CB00A0A199 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846BBF02C6C02CB00A0A199 /* PostRow.swift */; };
@@ -36,7 +38,6 @@
 		E88C99C92C5EA6E000C22347 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E88C99C82C5EA6E000C22347 /* README.md */; };
 		E89020452C62A9C800895CC5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E89020442C62A9C800895CC5 /* .gitignore */; };
 		E89C679B2C76EE04003CA729 /* CommentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89C679A2C76EE04003CA729 /* CommentSection.swift */; };
-		E8A7D43F2C6DDBAB00ED234E /* SplashLaunchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		BF4451BA2C6BD14E007E25F8 /* DogInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRow.swift; sourceTree = "<group>"; };
 		BF8440BE2C6D0DD400D3ADD7 /* PostsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PostsData.json; sourceTree = "<group>"; };
 		BFE7ED2B2C6BD50B0013C661 /* DogInfoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogInfoData.json; sourceTree = "<group>"; };
+		E83374F62C77E7120057A2BD /* SplashLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLaunchView.swift; sourceTree = "<group>"; };
+		E83374F82C78222A0057A2BD /* SplashLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashLaunch.storyboard; sourceTree = "<group>"; };
 		E83DB5622C75984200B5B51E /* HeadWalkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadWalkerImage.swift; sourceTree = "<group>"; };
 		E846BBEC2C6C020100A0A199 /* PostBoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBoardListView.swift; sourceTree = "<group>"; };
 		E846BBF02C6C02CB00A0A199 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		E88C99C82C5EA6E000C22347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E89020442C62A9C800895CC5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E89C679A2C76EE04003CA729 /* CommentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSection.swift; sourceTree = "<group>"; };
-		E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashLaunchPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,8 @@
 		E846BBEA2C6C00E600A0A199 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				E8A7D43E2C6DDBAB00ED234E /* SplashLaunchPage.storyboard */,
+				E83374F82C78222A0057A2BD /* SplashLaunch.storyboard */,
+				E83374F62C77E7120057A2BD /* SplashLaunchView.swift */,
 				BF0BE2932C6A80F500F96288 /* SurveyView.swift */,
 				BF14A3EB2C6A81AC00AF7692 /* HomeView.swift */,
 				E88297D62C6C314200A29FF9 /* ProfileView.swift */,
@@ -287,9 +290,9 @@
 				BFE7ED2C2C6BD50B0013C661 /* DogInfoData.json in Resources */,
 				E8625CB42C74FB44005DEA4D /* WalkerData.json in Resources */,
 				E89020452C62A9C800895CC5 /* .gitignore in Resources */,
+				E83374F92C78222A0057A2BD /* SplashLaunch.storyboard in Resources */,
 				E88C99C92C5EA6E000C22347 /* README.md in Resources */,
 				E88C99C22C5EA69400C22347 /* Preview Assets.xcassets in Resources */,
-				E8A7D43F2C6DDBAB00ED234E /* SplashLaunchPage.storyboard in Resources */,
 				E88C99BF2C5EA69400C22347 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +316,7 @@
 				E846D8B82C6DB07E00A2F015 /* WalkerRow.swift in Sources */,
 				E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */,
 				E88608FB2C75731100E7853A /* FullDogImage.swift in Sources */,
+				E83374F72C77E7120057A2BD /* SplashLaunchView.swift in Sources */,
 				E8625CB82C74FC48005DEA4D /* DogInfo.swift in Sources */,
 				BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */,
 				BF14A3EC2C6A81AC00AF7692 /* HomeView.swift in Sources */,
@@ -462,7 +466,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = SplashLaunchPage.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashLaunch.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,7 +496,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = SplashLaunchPage.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashLaunch.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

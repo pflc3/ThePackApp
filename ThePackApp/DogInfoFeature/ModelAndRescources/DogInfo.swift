@@ -6,7 +6,7 @@
 import Foundation
 import SwiftUI
 
-// DogInfo object to store data from JSON file
+// DogInfo data struct to store data from JSON file
 struct DogInfo: Hashable, Codable, Identifiable {
     var id: Int
     var breed: String

@@ -6,9 +6,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Initially show the splash launch
+    @State private var showSplash = true
+
+    // Always show splash launch page first with delay, then survery
     var body: some View {
-        //Start with Survery which leads to TabBar
-        SurveyView()
+        Group {
+            if (showSplash) {
+                SplashLaunchView()
+            } else {
+                SurveyView()
+            }
+        }
+        .onAppear {
+            // Set the delay to 2 seconds
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                // Set showSplash to false so it's not shown again
+                withAnimation {
+                    self.showSplash = false
+                }
+            }
+        }
     }
 }
 

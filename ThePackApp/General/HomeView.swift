@@ -15,7 +15,7 @@ struct HomeView: View {
                 Spacer()
                 
                 // Title for facts bubble
-                bubbleTitle(title: "Fur Facts")
+                bubbleTitle(title: "Fur Fact")
                 
                 // Facts bubble
                 bubbleText(options: dogFacts, otherwise: "Dogs are amazing!")
@@ -23,7 +23,7 @@ struct HomeView: View {
                 Spacer().frame(height: 30)
                 
                 // Title for jokes bubble
-                bubbleTitle(title: "Puppy Puns")
+                bubbleTitle(title: "Puppy Pun")
                 
                 // Jokes bubble
                 bubbleText(options: dogJokes, otherwise: "Dogs are funny!")

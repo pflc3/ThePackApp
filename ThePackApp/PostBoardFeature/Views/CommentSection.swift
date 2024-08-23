@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-// Comment object
+// Comment data struct
 struct Comment: Identifiable {
     var id: String = UUID().uuidString
     var username: String
