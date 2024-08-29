@@ -16,8 +16,9 @@ Other
 
 ## General
 Splash Launch Page
-- Pops up shortly
-- App logo, app name, swift logo, and paw prints
+- SplashLaunch storyboard pops up shortly as app loads
+- SplashLaunchView pops up after for 2 secs
+- App logo, app name, and swift logo (paw prints only in view)
 
 Survey Page
 - Asks for user info (personal, their dogs, experience, etc)
