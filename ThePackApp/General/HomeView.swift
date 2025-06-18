@@ -2,7 +2,6 @@
 //  HomeView.swift
 //  ThePackApp
 //
-
 import SwiftUI
 
 struct HomeView: View {
@@ -13,32 +12,37 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                // Home Title
-                customTitle(title: "Welcome to The Pack", w: 360, h: 65)
+            // Wrap everything in a ZStack
+            ZStack {
+                // Apply the gradient directly here
+                blueGradient()
                 
-                Spacer()
-                
-                // Title for facts bubble
-                bubbleTitle(title: "Fur Fact")
-                
-                // Facts bubble
-                bubbleText(text: currentFact)
-                .transition(.opacity)
-                
-                Spacer().frame(height: 30)
-                
-                // Title for jokes bubble
-                bubbleTitle(title: "Puppy Pun")
-                
-                // Jokes bubble
-                bubbleText(text: currentJoke)
-                .transition(.opacity)
-                
-                Spacer()
+                VStack {
+                    // Home Title
+                    customTitle(title: "Welcome to The Pack", w: 360, h: 65)
+                    
+                    Spacer()
+                    
+                    // Title for facts bubble
+                    bubbleTitle(title: "Fur Fact")
+                    
+                    // Facts bubble
+                    bubbleText(text: currentFact)
+                    .transition(.opacity)
+                    
+                    Spacer().frame(height: 30)
+                    
+                    // Title for jokes bubble
+                    bubbleTitle(title: "Puppy Pun")
+                    
+                    // Jokes bubble
+                    bubbleText(text: currentJoke)
+                    .transition(.opacity)
+                    
+                    Spacer()
+                }
+                .padding()
             }
-            .padding()
-            .background(blueGradient())
             .onAppear {
                 // Initialize first fact and joke
                 withAnimation {
@@ -55,15 +59,15 @@ struct HomeView: View {
     // Dog facts array
     let dogFacts: [String] = [
         "Dogs have a sense of time. It's been proven that they know the difference between an hour and five hours.",
-        "A dog’s sense of smell is at least 40x better than ours.",
+        "A dog's sense of smell is at least 40x better than ours.",
         "Dogs can understand up to 250 words and gestures.",
         "The average dog is as smart as a two-year-old child.",
-        "Dogs’ noses are wet to help absorb scent chemicals."
+        "Dogs' noses are wet to help absorb scent chemicals."
     ]
 
     // Dog jokes array
     let dogJokes: [String] = [
-        "Why did the dog sit in the shade? Because he didn’t want to be a hot dog!",
+        "Why did the dog sit in the shade? Because he didn't want to be a hot dog!",
         "What kind of dog loves indulging in a good bath? A shampoo-dle!",
         "What do you call a dog magician? A labracadabrador!",
         "Why did the dog go to the bank? To make a de-paws-it!",
@@ -88,10 +92,6 @@ struct HomeView: View {
             isFactTurn.toggle()
         }
     }
-}
-
-#Preview {
-    HomeView()
 }
 
 // Bubble title
@@ -122,4 +122,8 @@ func bubbleText(text: String) -> some View {
                 RoundedRectangle(cornerRadius: 15)
                     .stroke(Color.white, lineWidth: 5)
             )
+}
+
+#Preview {
+    HomeView()
 }

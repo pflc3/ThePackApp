@@ -12,21 +12,25 @@ struct TabBarView: View {
     var body: some View {
         // Tab bar
         TabView(selection: $selectedTab) {
-            // Dog Info tab
-            DogInfoListView()
-                .tabItem {
-                    Image(systemName: "pawprint.fill")
-                    Text("Fur Guide")
-                }
-                .tag(0)
+            // Dog Info tab - Lazy loaded
+            LazyView {
+                DogInfoListView()
+            }
+            .tabItem {
+                Image(systemName: "pawprint.fill")
+                Text("Fur Guide")
+            }
+            .tag(0)
             
-            // Post Board tab
-            PostBoardListView()
-                .tabItem {
-                    Image(systemName: "message.fill")
-                    Text("Bark Board")
-                }
-                .tag(1)
+            // Post Board tab - Lazy loaded
+            LazyView {
+                PostBoardListView()
+            }
+            .tabItem {
+                Image(systemName: "message.fill")
+                Text("Bark Board")
+            }
+            .tag(1)
             
             // Home tab
             HomeView()
@@ -36,13 +40,15 @@ struct TabBarView: View {
                 }
                 .tag(2)
             
-            // Walkers tab
-            WalkerListView()
-                .tabItem {
-                    Image(systemName: "figure.walk")
-                    Text("Woof Walkers")
-                }
-                .tag(3)
+            // Walkers tab - Lazy loaded
+            LazyView {
+                WalkerListView()
+            }
+            .tabItem {
+                Image(systemName: "figure.walk")
+                Text("Woof Walkers")
+            }
+            .tag(3)
             
             // Profile tab
             ProfileView()
@@ -52,7 +58,6 @@ struct TabBarView: View {
                 }
                 .tag(4)
         }
-        .navigationBarBackButtonHidden(true)
     }
     
     // Tab Bar Attributes

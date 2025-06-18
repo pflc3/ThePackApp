@@ -30,6 +30,7 @@
 		E8625CC02C74FD4D005DEA4D /* Walker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8625CBF2C74FD4D005DEA4D /* Walker.swift */; };
 		E8625CC22C74FD95005DEA4D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8625CC12C74FD95005DEA4D /* ModelData.swift */; };
 		E86627362C6A5B3800E84A4C /* ThePackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86627352C6A5B3800E84A4C /* ThePackApp.swift */; };
+		E868FF2D2E033B660056348C /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E868FF2C2E033B600056348C /* LazyView.swift */; };
 		E88297D72C6C314200A29FF9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88297D62C6C314200A29FF9 /* ProfileView.swift */; };
 		E88608FB2C75731100E7853A /* FullDogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88608FA2C75731100E7853A /* FullDogImage.swift */; };
 		E88C99BD2C5EA69200C22347 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C99BC2C5EA69200C22347 /* ContentView.swift */; };
@@ -64,6 +65,7 @@
 		E8625CBF2C74FD4D005DEA4D /* Walker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walker.swift; sourceTree = "<group>"; };
 		E8625CC12C74FD95005DEA4D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		E86627352C6A5B3800E84A4C /* ThePackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePackApp.swift; sourceTree = "<group>"; };
+		E868FF2C2E033B600056348C /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		E88297D62C6C314200A29FF9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E88608FA2C75731100E7853A /* FullDogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDogImage.swift; sourceTree = "<group>"; };
 		E88C99B72C5EA69200C22347 /* The Pack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Pack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 		E88C99B92C5EA69200C22347 /* ThePackApp */ = {
 			isa = PBXGroup;
 			children = (
+				E868FF2C2E033B600056348C /* LazyView.swift */,
 				E86627352C6A5B3800E84A4C /* ThePackApp.swift */,
 				E88C99BC2C5EA69200C22347 /* ContentView.swift */,
 				BF32A7022C738ACA00766F9B /* TabBarView.swift */,
@@ -256,7 +259,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					E88C99B62C5EA69200C22347 = {
 						CreatedOnToolsVersion = 15.4;
@@ -316,6 +319,7 @@
 				E846D8B82C6DB07E00A2F015 /* WalkerRow.swift in Sources */,
 				E846BBED2C6C020100A0A199 /* PostBoardListView.swift in Sources */,
 				E88608FB2C75731100E7853A /* FullDogImage.swift in Sources */,
+				E868FF2D2E033B660056348C /* LazyView.swift in Sources */,
 				E83374F72C77E7120057A2BD /* SplashLaunchView.swift in Sources */,
 				E8625CB82C74FC48005DEA4D /* DogInfo.swift in Sources */,
 				BF4451BB2C6BD14E007E25F8 /* DogInfoRow.swift in Sources */,
@@ -368,6 +372,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XJBBVPAR9T;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -431,6 +436,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XJBBVPAR9T;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -460,7 +466,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThePackApp/Preview Content\"";
-				DEVELOPMENT_TEAM = XJBBVPAR9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -490,7 +495,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThePackApp/Preview Content\"";
-				DEVELOPMENT_TEAM = XJBBVPAR9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

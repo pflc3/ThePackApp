@@ -2,28 +2,40 @@
 //  ContentView.swift
 //  ThePackApp
 //
-
 import SwiftUI
 
-struct ContentView: View {
-    // Initially show the splash launch
-    @State private var showSplash = true
+// App screen states
+enum AppScreen {
+    case splash
+    case survey
+    case main
+}
 
-    // Always show splash launch page first with delay, then survery
+struct ContentView: View {
+    // Track which screen to show
+    @State private var currentScreen: AppScreen = .splash
+    
     var body: some View {
+        // Content based on current screen
         Group {
-            if (showSplash) {
+            if currentScreen == .splash {
                 SplashLaunchView()
+            } else if currentScreen == .survey {
+                // Use the separate SurveyView with a callback for submission
+                SurveyView(onSubmit: {
+                    withAnimation {
+                        currentScreen = .main
+                    }
+                })
             } else {
-                SurveyView()
+                TabBarView()
             }
         }
         .onAppear {
-            // Set the delay to 2 seconds
+            // Transition from splash to survey after 2 seconds
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                // Set showSplash to false so it's not shown again
                 withAnimation {
-                    self.showSplash = false
+                    currentScreen = .survey
                 }
             }
         }
