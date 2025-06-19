@@ -10,43 +10,48 @@ struct WalkerDetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack() {
-                // Title
-                customTitle(title: walkerVar.name, w: 360, h: 65)
+            // Wrap everything in a ZStack
+            ZStack {
+                // Apply the gradient directly here
+                blueGradient()
                 
-                // Headshot Image
-                HeadWalkerImage(walkerVar: walkerVar)
-                
-                // Bio and Description
-                VStack(alignment: .leading, spacing: 20) { // Adjusted spacing here
-                    detailSection(title: "Bio", content: walkerVar.bio)
-                    detailSection(title: "Description", content: walkerVar.description)
-                }
-                .padding(.horizontal, 15)
-                
-                Spacer().frame(height: 30)
-                
-                // Additional details
-                VStack(spacing: 10) {
-                    detailRow(label: "Location", icon: "mappin.and.ellipse", value: walkerVar.location)
-                    Divider()
-                    detailRow(label: "Price", icon: "dollarsign.circle", value: walkerVar.price)
-                    Divider()
-                    detailRow(label: "Rating", icon: "star", value: walkerVar.rating)
-                    Divider()
-                    detailRow(label: "Email", icon: "envelope", value: walkerVar.email)
-                    Divider()
-                    detailRow(label: "Phone Number", icon: "phone", value: walkerVar.phoneNumber)
-                }
-                .padding()
-                .background(Color.white)
+                VStack() {
+                    // Title
+                    customTitle(title: walkerVar.name, w: 360, h: 65)
+                    
+                    // Headshot Image
+                    HeadWalkerImage(walkerVar: walkerVar)
+                    
+                    // Bio and Description
+                    VStack(alignment: .leading, spacing: 20) { // Adjusted spacing here
+                        detailSection(title: "Bio", content: walkerVar.bio)
+                        detailSection(title: "Description", content: walkerVar.description)
+                    }
+                    .padding(.horizontal, 15)
+                    
+                    Spacer().frame(height: 30)
+                    
+                    // Additional details
+                    VStack(spacing: 10) {
+                        detailRow(label: "Location", icon: "mappin.and.ellipse", value: walkerVar.location)
+                        Divider()
+                        detailRow(label: "Price", icon: "dollarsign.circle", value: walkerVar.price)
+                        Divider()
+                        detailRow(label: "Rating", icon: "star", value: walkerVar.rating)
+                        Divider()
+                        detailRow(label: "Email", icon: "envelope", value: walkerVar.email)
+                        Divider()
+                        detailRow(label: "Phone Number", icon: "phone", value: walkerVar.phoneNumber)
+                    }
+                    .padding()
+                    .background(Color.white)
                     .cornerRadius(15)
                     .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
                     .frame(maxWidth: 350, alignment: .center)
+                }
+                .padding()
             }
-            .padding()
         }
-        .background(blueGradient())
     }
 }
 
